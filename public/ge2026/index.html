@@ -627,9 +627,19 @@
         --chipon: #3e2f6b;
         --chiponfg: #cdb8ff;
       }
-      /* fixed width for every part so all lines line up at any screen width */
+      /* Line mode: identity (pic / name / badge) stays left; number columns
+         share one grid, pushed right, so header and body line up at every width. */
+      :root {
+        --ln-r1: 84px;
+        --ln-v1: 84px;
+        --ln-r2: 84px;
+        --ln-est: 240px;
+        --ln-mv: 84px;
+        --ln-tags: 202px;
+        --ln-gap: 12px;
+      }
       .tags {
-        width: 202px;
+        width: var(--ln-tags);
       }
       .tags .t {
         box-sizing: border-box;
@@ -646,15 +656,44 @@
       .tags .tm {
         width: 84px;
       }
+      .id {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        min-width: 0;
+        flex: 0 1 auto;
+      }
       .n {
-        flex: 1 1 0;
+        flex: 0 1 auto;
         min-width: 0;
       }
-      /* hide in order as the screen gets narrower */
+      .nums {
+        margin-left: auto;
+        display: grid;
+        grid-template-columns: var(--ln-r1) var(--ln-v1) var(--ln-r2) var(--ln-est) var(--ln-mv);
+        column-gap: var(--ln-gap);
+        align-items: center;
+        flex: none;
+        text-align: right;
+        font-variant-numeric: tabular-nums;
+      }
+      .nums .col {
+        width: 100%;
+        min-width: 0;
+        text-align: right;
+        font-variant-numeric: tabular-nums;
+      }
+      .gh .tags:empty {
+        display: none;
+      }
+      /* hide in order as the screen gets narrower; templates stay shared */
       @media (max-width: 1200px) {
         .r1c,
         .r2c {
           display: none;
+        }
+        .nums {
+          grid-template-columns: var(--ln-v1) var(--ln-est) var(--ln-mv);
         }
       }
       @media (max-width: 1000px) {
@@ -662,22 +701,22 @@
         .tags .tm {
           display: none;
         }
-        .tags {
-          width: 44px;
+        :root {
+          --ln-tags: 44px;
         }
       }
       @media (max-width: 850px) {
         .est small {
           display: none;
         }
+        :root {
+          --ln-est: 90px;
+        }
         .col.est {
           width: 90px;
         }
       }
       @media (max-width: 700px) {
-        .n {
-          display: none;
-        }
         .b {
           gap: 8px;
           padding: 0 8px;
@@ -686,6 +725,9 @@
       @media (max-width: 560px) {
         .mvc {
           display: none;
+        }
+        .nums {
+          grid-template-columns: var(--ln-v1) var(--ln-est);
         }
       }
       /* group header rows (Senbatsu / Under Girls / Next Girls / Not Qualified); same height in both modes */
@@ -897,6 +939,20 @@
           padding: 0 8px;
           gap: 6px;
         }
+        .id {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 1px;
+        }
+        :root {
+          --ln-r1: 52px;
+          --ln-v1: 52px;
+          --ln-r2: 52px;
+          --ln-est: 72px;
+          --ln-mv: 52px;
+          --ln-tags: 44px;
+          --ln-gap: 6px;
+        }
         .t {
           font-size: 10px;
           padding: 1px 4px;
@@ -1081,6 +1137,14 @@
         .b {
           padding: 0 6px;
           gap: 4px;
+        }
+        :root {
+          --ln-r1: 48px;
+          --ln-v1: 48px;
+          --ln-r2: 48px;
+          --ln-est: 66px;
+          --ln-mv: 48px;
+          --ln-gap: 4px;
         }
         .t {
           font-size: 9px;
@@ -1561,8 +1625,7 @@
         } else if (x.r2) mv = '<span class="up">New</span>';
         else if (x.r1) mv = '<span class="dn">Out</span>';
         const gLab = x.group === "BNK48" ? "BNK" : x.group === "CGM48" ? "CGM" : x.group;
-        return `<div class="c${x[key] ? "" : " out"}"><div class="rk">${rank}</div><img loading="lazy" src="${x.img}" alt="${x.name}"><div class="b"><div class="n">${x.name}</div><div class="tags"><span class="t ${x.group}">${gLab}</span><span class="t g gn">Gen ${x.gen}</span>${x.team ? `<span class="t g tm">Team ${x.team}</span>` : ""}</div>
-  <div class="col r1c${x.v1 ? " p1" : " e1t"}">${x.r1 || "—"}</div><div class="col v1${x.v1 ? " p1" : " e1t"}">${x.v1 ? fmt0(x.v1) : "≈" + fmt0(x.ev1)}</div><div class="col r2c" style="color:var(--c2)">${x.r2 || "—"}</div><div class="col est ${x.e2 ? "e2" : "e2t"}">${"≈" + fmt0(x.e2 || x.e2t)}<small>${est(x)}</small></div><div class="col mvc">${mv}<small>move</small></div></div></div>`;
+        return `<div class="c${x[key] ? "" : " out"}"><div class="rk">${rank}</div><img loading="lazy" src="${x.img}" alt="${x.name}"><div class="b"><div class="id"><div class="n">${x.name}</div><div class="tags"><span class="t ${x.group}">${gLab}</span><span class="t g gn">Gen ${x.gen}</span>${x.team ? `<span class="t g tm">Team ${x.team}</span>` : ""}</div></div><div class="nums"><div class="col r1c${x.v1 ? " p1" : " e1t"}">${x.r1 || "—"}</div><div class="col v1${x.v1 ? " p1" : " e1t"}">${x.v1 ? fmt0(x.v1) : "≈" + fmt0(x.ev1)}</div><div class="col r2c" style="color:var(--c2)">${x.r2 || "—"}</div><div class="col est ${x.e2 ? "e2" : "e2t"}">${"≈" + fmt0(x.e2 || x.e2t)}<small>${est(x)}</small></div><div class="col mvc">${mv}<small>move</small></div></div></div></div>`;
       }
       // entry is locked to order: 36 first, then 35, 34 … — only the next line and the last entered line can be edited
       const lastEnt = () => {
@@ -1646,7 +1709,7 @@
           tot2 = lines.reduce((s, [x]) => s + (x.e2 || x.e2t || 0), 0),
           ghRow = (n, s1, s2, sf, style) => {
             const tot = n === "Total";
-            return `<div class="ln gh"${style ? ` style="${style}"` : ""}><div class="c"><div class="b"><div class="n">${n}</div><div class="tags"></div><div class="col r1c${tot ? "" : " p1"}">${tot ? "" : pc(s1, T1)}</div><div class="col v1 p1">${fmt0(s1)}</div><div class="col r2c"${tot ? "" : ' style="color:var(--c2)"'}>${tot ? "" : pc(s2, T2)}</div><div class="col est e2">≈${fmt0(s2)}</div><div class="col mvc"></div></div></div><div class="fv"><b>≈${fmt0(sf)}</b></div></div>`;
+            return `<div class="ln gh"${style ? ` style="${style}"` : ""}><div class="c"><div class="b"><div class="id"><div class="n">${n}</div><div class="tags"></div></div><div class="nums"><div class="col r1c${tot ? "" : " p1"}">${tot ? "" : pc(s1, T1)}</div><div class="col v1 p1">${fmt0(s1)}</div><div class="col r2c"${tot ? "" : ' style="color:var(--c2)"'}>${tot ? "" : pc(s2, T2)}</div><div class="col est e2">≈${fmt0(s2)}</div><div class="col mvc"></div></div></div></div><div class="fv"><b>≈${fmt0(sf)}</b></div></div>`;
           };
         let h;
         if (mode == "zone") {
