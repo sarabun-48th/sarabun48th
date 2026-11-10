@@ -10,10 +10,16 @@ import geHtml from "../public/ge2026/index.html";
 import geMembers from "../public/ge2026/members.js";
 import ogLandingB64 from "./og-landing.js";
 import ogGeB64 from "./og-ge2026.js";
+import { faviconIco, favicon32, appleTouch, icon512, logoWebp } from "./brand.js";
 
 const b64ToBytes = (s) => Uint8Array.from(atob(s), (c) => c.charCodeAt(0));
 const ogLanding = b64ToBytes(ogLandingB64);
 const ogGe = b64ToBytes(ogGeB64);
+const ico = b64ToBytes(faviconIco);
+const fav32 = b64ToBytes(favicon32);
+const apple = b64ToBytes(appleTouch);
+const ic512 = b64ToBytes(icon512);
+const logo = b64ToBytes(logoWebp);
 
 const TOOL_IDS = new Set([...TOOLS.map((t) => t.id), "general"]);
 const LIMITS = { message: 2000, idea: 2000, name: 80, contact: 120 };
@@ -31,6 +37,11 @@ const FILES = {
   "/ge2026/members.js": [geMembers, "text/javascript; charset=utf-8"],
   "/og.png": [ogLanding, "image/png"],
   "/ge2026/og.png": [ogGe, "image/png"],
+  "/favicon.ico": [ico, "image/x-icon"],
+  "/favicon-32.png": [fav32, "image/png"],
+  "/apple-touch-icon.png": [apple, "image/png"],
+  "/icon-512.webp": [ic512, "image/webp"],
+  "/logo.webp": [logo, "image/webp"],
 };
 
 const json = (data, status = 200) =>

@@ -17,6 +17,10 @@
     <meta name="twitter:title" content="สารบัญ48th · GE2026 Final Projection" />
     <meta name="twitter:description" content="เครื่องมือประมาณการผลเลือกตั้ง GE2026 สำหรับโอชิ BNK48 / CGM48" />
     <meta name="twitter:image" content="https://sarabun48th.space/ge2026/og.png" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/webp" sizes="512x512" href="/icon-512.webp" />
     <style>
       :root {
         --bg: #faf8fb;
@@ -69,6 +73,40 @@
       h1 {
         margin: 0 0 4px;
         font-size: 24px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      h1 .logo {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+        flex: none;
+        background: #f7e5cd;
+      }
+      .site-foot {
+        max-width: 1500px;
+        margin: 8px auto 0;
+        padding: 16px 16px 28px;
+        border-top: 1px solid var(--line);
+        color: var(--mut);
+        font-size: 13px;
+      }
+      .site-foot a {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        color: var(--mut);
+        text-decoration: none;
+      }
+      .site-foot a:hover {
+        color: var(--fg);
+      }
+      .site-foot svg {
+        width: 14px;
+        height: 14px;
+        flex: none;
       }
       .back {
         margin: 0 0 10px;
@@ -914,6 +952,13 @@
         h1 {
           font-size: 21px;
         }
+        h1 .logo {
+          width: 32px;
+          height: 32px;
+        }
+        .site-foot {
+          padding: 12px 10px 20px;
+        }
         p.sub {
           margin: 0 0 12px;
           font-size: 13px;
@@ -1131,6 +1176,13 @@
         h1 {
           font-size: 19px;
         }
+        h1 .logo {
+          width: 28px;
+          height: 28px;
+        }
+        .site-foot {
+          padding: 10px 8px 18px;
+        }
         p.sub {
           margin: 0 0 10px;
           font-size: 12px;
@@ -1239,7 +1291,7 @@
   <body>
     <main>
       <p class="back"><a href="/">← หน้าหลัก</a></p>
-      <h1>GE2026 Final Projection</h1>
+      <h1><img class="logo" src="/logo.webp" width="40" height="40" alt="" />GE2026 Final Projection</h1>
       <p class="sub">
         1st prelim cut-off 3 Oct · 2nd prelim cut-off 31 Oct · final cut-off 12
         Nov<br />
@@ -1392,6 +1444,26 @@
       </div>
       <div class="grid" id="g"></div>
     </main>
+    <footer class="site-foot">
+      <a
+        href="https://x.com/sarabun48th"
+        target="_blank"
+        rel="noopener"
+        aria-label="sarabun48th on X"
+        ><svg
+          viewBox="0 0 24 24"
+          width="14"
+          height="14"
+          fill="currentColor"
+          aria-hidden="true"
+        >
+          <path
+            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.727-8.835L1.254 2.25H8.08l4.253 5.622L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z"
+          />
+        </svg>
+        @sarabun48th</a
+      >
+    </footer>
     <script src="members.js"></script>
     <script>
       const M = MEMBERS,

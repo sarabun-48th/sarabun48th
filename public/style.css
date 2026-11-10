@@ -5,8 +5,13 @@ body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-app
 a{color:inherit}
 .wrap{max-width:960px;margin:0 auto;padding:0 20px}
 .top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:18px;padding-bottom:18px}
-.brand{font-weight:800;font-size:1.15rem;text-decoration:none;letter-spacing:-.01em}
+.brand{display:inline-flex;align-items:center;gap:8px;font-weight:800;font-size:1.15rem;text-decoration:none;letter-spacing:-.01em}
 .brand span{color:var(--accent)}
+.logo,.hero-logo{border-radius:50%;object-fit:cover;flex:none;background:#f7e5cd}
+.logo{width:32px;height:32px}
+.hero h1{display:flex;align-items:center;gap:16px}
+.hero h1 span{min-width:0}
+.hero-logo{width:56px;height:56px}
 nav{display:flex;gap:18px;font-size:.92rem}
 nav a{text-decoration:none;color:var(--muted)}
 nav a:hover{color:var(--ink)}
@@ -58,7 +63,9 @@ input:focus,select:focus,textarea:focus{outline:3px solid var(--accent-soft);bor
 .foot p{margin:4px 0}
 .social{display:flex;gap:16px;margin-bottom:8px}
 .social:empty{display:none}
-.social a{color:var(--ink);font-weight:600}
+.social a{display:inline-flex;align-items:center;gap:6px;color:var(--ink);font-weight:600;text-decoration:none}
+.social a:hover{color:var(--accent)}
+.social svg{width:14px;height:14px;flex:none}
 .muted{opacity:.8}
 @media (max-width:720px){
   .forms{grid-template-columns:1fr}
@@ -66,4 +73,13 @@ input:focus,select:focus,textarea:focus{outline:3px solid var(--accent-soft);bor
   .hero{padding-top:24px;padding-bottom:36px}
   nav{gap:12px;font-size:.85rem}
   nav a:first-child{display:none}
+  .logo{width:28px;height:28px}
+  .hero-logo{width:44px;height:44px}
+  .hero h1{gap:10px}
+}
+@media (max-width:360px){
+  .brand{font-size:1.05rem;gap:6px}
+  .logo{width:26px;height:26px}
+  .hero-logo{width:36px;height:36px}
+  nav{gap:10px}
 }
