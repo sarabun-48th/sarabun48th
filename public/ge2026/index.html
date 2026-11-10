@@ -74,6 +74,7 @@
         margin: 0 0 4px;
         font-size: 24px;
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         gap: 10px;
       }
@@ -84,6 +85,25 @@
         object-fit: cover;
         flex: none;
         background: #f7e5cd;
+      }
+      h1 .hline {
+        display: inline-flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        gap: 0 0.45em;
+        min-width: 0;
+      }
+      .byline {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 1.2;
+        color: var(--mut);
+        text-decoration: none;
+        white-space: nowrap;
+      }
+      .byline:hover,
+      .byline:focus-visible {
+        color: var(--bnk);
       }
       .site-foot {
         max-width: 1500px;
@@ -956,6 +976,9 @@
           width: 32px;
           height: 32px;
         }
+        .byline {
+          font-size: 12px;
+        }
         .site-foot {
           padding: 12px 10px 20px;
         }
@@ -1180,6 +1203,9 @@
           width: 28px;
           height: 28px;
         }
+        .byline {
+          font-size: 11px;
+        }
         .site-foot {
           padding: 10px 8px 18px;
         }
@@ -1291,7 +1317,7 @@
   <body>
     <main>
       <p class="back"><a href="/">← หน้าหลัก</a></p>
-      <h1><img class="logo" src="/logo.webp" width="40" height="40" alt="" />GE2026 Final Projection</h1>
+      <h1><img class="logo" src="/logo.webp" width="40" height="40" alt="" /><span class="hline">GE2026 Final Projection<a class="byline" href="https://x.com/sarabun48th" target="_blank" rel="noopener" aria-label="by @sarabun48th on X">by @sarabun48th</a></span></h1>
       <p class="sub">
         1st prelim cut-off 3 Oct · 2nd prelim cut-off 31 Oct · final cut-off 12
         Nov<br />
