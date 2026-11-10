@@ -1,15 +1,13 @@
-# sarabun48th-demo
+# sarabun48th
 
-Combined demo site: the landing page at `/` and the GE2026 Final Projection tool at `/ge2026/`, served by one Cloudflare Worker (`sarabun48th-demo`).
+Fan-made web tools for BNK48 / CGM48 oshi. One Cloudflare Worker (`sarabun48th-demo`) serves the landing page at `/` and the GE2026 Final Projection tool at `/ge2026/`.
 
-Feedback and ideas go to the existing D1 database `sarabun48th-feedback`.
+Feedback and feature/new-site ideas go to a single D1 database, `sarabun48th-feedback`. Demo and production share that database.
 
 ## URLs
-- Demo: https://demo.sarabun48th.space/
-- Tool: https://demo.sarabun48th.space/ge2026/
+- Production: https://sarabun48th.space/ and https://sarabun48th.space/ge2026/
+- Demo: https://demo.sarabun48th.space/ and https://demo.sarabun48th.space/ge2026/
 - workers.dev: https://sarabun48th-demo.sarabun48th.workers.dev/
-
-Do not attach this Worker to the production apex (`sarabun48th.space`).
 
 ## Layout
 - `public/index.html`, `style.css`, `app.js`, `tools.js`, `config.js` — landing
@@ -21,9 +19,15 @@ Do not attach this Worker to the production apex (`sarabun48th.space`).
 - `deploy-gen.js` — writes `/workspace/sarabun48th-demo-deploy.js` for the Cloudflare API upload
 
 ## Deploy
+The same Worker is attached to both hosts. After changing files:
+
 ```sh
 node deploy-gen.js
 # then upload via Cloudflare API (embedded text modules; asset upload returns 401)
 ```
 
-Route `demo.sarabun48th.space/*` should point at `sarabun48th-demo`. Enable `workers.dev`.
+Routes (set in the Cloudflare dashboard / API, not in wrangler):
+- `demo.sarabun48th.space/*` → `sarabun48th-demo`
+- `sarabun48th.space/*` → `sarabun48th-demo`
+
+Enable `workers.dev`. Apex and demo DNS are proxied AAAA records to `100::`.
