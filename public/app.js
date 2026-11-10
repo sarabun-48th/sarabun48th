@@ -3,13 +3,13 @@ import { SITE } from "/config.js";
 
 const $ = (s) => document.querySelector(s);
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
-const BADGE = { demo: "ทดลอง · Demo", prod: "พร้อมใช้ · Live" };
+const BADGE = { prod: "พร้อมใช้ · Live" };
 const loadedAt = Date.now();
 
-// Tool cards
+// Tool cards (no "ทดลอง · Demo" badge)
 $("#cards").innerHTML = TOOLS.map((t) => `
   <a class="card tool" href="${esc(t.href)}">
-    <span class="badge ${t.status === "prod" ? "prod" : "demo"}">${BADGE[t.status] || BADGE.demo}</span>
+    ${t.status === "prod" ? `<span class="badge prod">${BADGE.prod}</span>` : ""}
     <h3>${esc(t.name)}</h3>
     <p>${esc(t.desc)}</p>
     <span class="go">เปิดใช้ →</span>
