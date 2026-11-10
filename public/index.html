@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>sarabun48th · เครื่องมือแฟนคลับฟรี</title>
+  <meta name="description" content="เครื่องมือฟรีสำหรับแฟนคลับ BNK48 / CGM48 ทดลองใช้และส่งความเห็นได้เลย">
+  <meta name="theme-color" content="#0c0a0b">
+  <meta name="color-scheme" content="dark">
+  <link rel="stylesheet" href="/style.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <header class="wrap top">
+    <a class="brand" href="/">sarabun<span>48th</span></a>
+    <nav><a href="#tools">เครื่องมือ</a><a href="#feedback">ฟีดแบ็ก</a><a href="#suggest">เสนอไอเดีย</a></nav>
+  </header>
+
+  <main>
+    <section class="wrap hero">
+      <h1>เครื่องมือฟรี<br>สำหรับแฟนคลับ</h1>
+      <p>เว็บเครื่องมือเล็กๆ สำหรับโอชิ BNK48 / CGM48 ทุกตัวยังอยู่ในช่วงทดลอง ลองใช้แล้วบอกเราได้เลยว่าควรปรับอะไร</p>
+      <div class="cta"><a class="btn" href="#tools">ดูเครื่องมือ</a><a class="btn ghost" href="#feedback">ส่งฟีดแบ็ก</a></div>
+    </section>
+
+    <section class="wrap" id="tools">
+      <h2>เครื่องมือ <small>Tools</small></h2>
+      <div class="cards" id="cards"></div>
+    </section>
+
+    <section class="wrap forms">
+      <form class="card form" id="feedback" data-api="/api/feedback" novalidate>
+        <h2>ส่งฟีดแบ็ก <small>Feedback</small></h2>
+        <p class="hint">เจอบั๊ก ใช้ยาก หรืออยากให้ปรับตรงไหน บอกเราได้</p>
+        <label>เครื่องมือ<select name="tool" id="tool-select" required></select></label>
+        <label>ข้อความ<textarea name="message" rows="4" maxlength="2000" required placeholder="เล่าให้ฟังหน่อย…"></textarea></label>
+        <div class="row">
+          <label><span>ชื่อเล่น <em>(ไม่บังคับ)</em></span><input name="name" maxlength="80" autocomplete="nickname"></label>
+          <label><span>ช่องทางติดต่อ <em>(ไม่บังคับ)</em></span><input name="contact" maxlength="120" placeholder="X / IG / อีเมล"></label>
+        </div>
+        <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button class="btn" type="submit">ส่งฟีดแบ็ก</button>
+        <p class="status" role="status" aria-live="polite"></p>
+      </form>
+
+      <form class="card form" id="suggest" data-api="/api/suggest" novalidate>
+        <h2>เสนอไอเดีย <small>Suggest</small></h2>
+        <p class="hint">อยากได้ฟีเจอร์ใหม่ หรือเว็บเครื่องมือตัวใหม่? เสนอมาได้เลย</p>
+        <div class="seg" role="radiogroup">
+          <label><input type="radio" name="kind" value="feature" checked><span>ฟีเจอร์ใหม่</span></label>
+          <label><input type="radio" name="kind" value="new_site"><span>เว็บใหม่</span></label>
+        </div>
+        <label>ไอเดีย<textarea name="idea" rows="4" maxlength="2000" required placeholder="เช่น เครื่องมือนับโหวตงานเลือกตั้งครั้งหน้า…"></textarea></label>
+        <label><span>ช่องทางติดต่อ <em>(ไม่บังคับ)</em></span><input name="contact" maxlength="120" placeholder="X / IG / อีเมล"></label>
+        <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button class="btn" type="submit">ส่งไอเดีย</button>
+        <p class="status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="wrap foot">
+    <div class="social" id="social"></div>
+    <p>ทำโดยแฟนคลับ เพื่อแฟนคลับ · ไม่ใช่เว็บทางการของวง</p>
+    <p class="muted">© <span id="year"></span> sarabun48th</p>
+  </footer>
+</body>
+</html>

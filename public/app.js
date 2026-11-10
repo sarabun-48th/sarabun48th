@@ -1,0 +1,61 @@
+import { TOOLS } from "/tools.js";
+import { SITE } from "/config.js";
+
+const $ = (s) => document.querySelector(s);
+const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
+const BADGE = { demo: "ทดลอง · Demo", prod: "พร้อมใช้ · Live" };
+const loadedAt = Date.now();
+
+// Tool cards
+$("#cards").innerHTML = TOOLS.map((t) => `
+  <a class="card tool" href="${esc(t.href)}">
+    <span class="badge ${t.status === "prod" ? "prod" : "demo"}">${BADGE[t.status] || BADGE.demo}</span>
+    <h3>${esc(t.name)}</h3>
+    <p>${esc(t.desc)}</p>
+    <span class="go">เปิดใช้ →</span>
+  </a>`).join("") + `
+  <a class="card tool soon" href="#suggest">
+    <h3>เครื่องมือถัดไป?</h3>
+    <p>กำลังทำอีกเรื่อยๆ อยากได้อะไร เสนอมาได้</p>
+    <span class="go">เสนอไอเดีย →</span>
+  </a>`;
+
+// Feedback tool dropdown
+$("#tool-select").innerHTML = TOOLS.map((t) => `<option value="${esc(t.id)}">${esc(t.name)}</option>`).join("") +
+  `<option value="general">เว็บนี้ / เรื่องทั่วไป</option>`;
+const pre = new URLSearchParams(location.search).get("tool");
+if (pre && TOOLS.some((t) => t.id === pre)) $("#tool-select").value = pre;
+
+// Footer social links (empty values are hidden)
+const ICON = { x: "X", facebook: "Facebook", email: "อีเมล" };
+$("#social").innerHTML = Object.entries(SITE.social)
+  .filter(([, v]) => v)
+  .map(([k, v]) => `<a href="${esc(k === "email" && !v.startsWith("mailto:") ? "mailto:" + v : v)}" target="_blank" rel="noopener">${ICON[k] || k}</a>`)
+  .join("");
+$("#year").textContent = new Date().getFullYear();
+
+// Forms
+const ERR = {
+  message_required: "กรุณาพิมพ์ข้อความก่อนส่ง", idea_required: "กรุณาพิมพ์ไอเดียก่อนส่ง",
+  message_too_long: "ข้อความยาวเกินไป", idea_too_long: "ข้อความยาวเกินไป",
+  name_too_long: "ชื่อยาวเกินไป", contact_too_long: "ช่องทางติดต่อยาวเกินไป",
+};
+for (const form of document.querySelectorAll("form[data-api]")) {
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const st = form.querySelector(".status"), btn = form.querySelector("button");
+    const data = Object.fromEntries(new FormData(form));
+    const text = (data.message ?? data.idea ?? "").trim();
+    if (text.length < 3) { st.className = "status err"; st.textContent = ERR[form.id === "feedback" ? "message_required" : "idea_required"]; return; }
+    data.t = loadedAt;
+    btn.disabled = true; st.className = "status"; st.textContent = "กำลังส่ง…";
+    try {
+      const r = await fetch(form.dataset.api, { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(data) });
+      const j = await r.json().catch(() => ({}));
+      if (!r.ok || !j.ok) throw new Error(j.error || "server_error");
+      form.reset(); st.className = "status ok"; st.textContent = "ขอบคุณมาก! ได้รับแล้ว 💌";
+    } catch (err) {
+      st.className = "status err"; st.textContent = ERR[err.message] || "ส่งไม่สำเร็จ ลองใหม่อีกครั้งนะ";
+    } finally { btn.disabled = false; }
+  });
+}

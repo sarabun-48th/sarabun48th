@@ -1,0 +1,607 @@
+// BNK48 & CGM48 members. gen, team = Wikipedia (Oct 2026); no team = trainee. r1/v1 = GE2026 1st prelim (3 Oct 2026), r2 = 2nd prelim (31 Oct 2026) from withmywish.com/ge2026
+const MEMBERS=[
+{
+"id": "bnk-81",
+"name": "Fame",
+"group": "BNK48",
+"gen": 3,
+"birthday": "2004-10-15",
+"img": "https://storage.miwoori.com/bnk48_images/81.png?v4",
+"r2": 24,
+"team": "BIII"
+},
+{
+"id": "bnk-83",
+"name": "Hoop",
+"group": "BNK48",
+"gen": 3,
+"birthday": "2002-09-18",
+"img": "https://storage.miwoori.com/bnk48_images/83.png?v4",
+"r1": 2,
+"v1": 14745.83,
+"r2": 3,
+"team": "BIII"
+},
+{
+"id": "bnk-88",
+"name": "Monet",
+"group": "BNK48",
+"gen": 3,
+"birthday": "2008-08-04",
+"img": "https://storage.miwoori.com/bnk48_images/88.png?v4",
+"r1": 7,
+"v1": 5953.7,
+"r2": 10,
+"team": "BIII"
+},
+{
+"id": "bnk-91",
+"name": "Pancake",
+"group": "BNK48",
+"gen": 3,
+"birthday": "2007-02-06",
+"img": "https://storage.miwoori.com/bnk48_images/91.png?v4",
+"r1": 20,
+"v1": 3528.34,
+"r2": 14,
+"team": "NV"
+},
+{
+"id": "bnk-96",
+"name": "Yoghurt",
+"group": "BNK48",
+"gen": 3,
+"birthday": "2004-11-10",
+"img": "https://storage.miwoori.com/bnk48_images/96.png?v4",
+"r1": 36,
+"v1": 1724.28,
+"team": "NV"
+},
+{
+"id": "bnk-97",
+"name": "Wawa",
+"group": "BNK48",
+"gen": 4,
+"birthday": "2009-08-11",
+"img": "https://storage.miwoori.com/bnk48_images/97.png?v4",
+"r1": 18,
+"v1": 3828.93,
+"r2": 26,
+"team": "BIII"
+},
+{
+"id": "bnk-98",
+"name": "Berry",
+"group": "BNK48",
+"gen": 4,
+"birthday": "2005-07-23",
+"img": "https://storage.miwoori.com/bnk48_images/98.png?v4",
+"team": "NV"
+},
+{
+"id": "bnk-99",
+"name": "Emmy",
+"group": "BNK48",
+"gen": 4,
+"birthday": "2007-09-13",
+"img": "https://storage.miwoori.com/bnk48_images/99.png?v4",
+"r1": 21,
+"v1": 3193.23,
+"r2": 30,
+"team": "NV"
+},
+{
+"id": "bnk-100",
+"name": "Janry",
+"group": "BNK48",
+"gen": 4,
+"birthday": "2008-01-03",
+"img": "https://storage.miwoori.com/bnk48_images/100.png?v4",
+"r1": 26,
+"v1": 2413.74,
+"r2": 21,
+"team": "BIII"
+},
+{
+"id": "bnk-101",
+"name": "L",
+"group": "BNK48",
+"gen": 4,
+"birthday": "2003-02-13",
+"img": "https://storage.miwoori.com/bnk48_images/101.png?v4",
+"r2": 22,
+"team": "NV"
+},
+{
+"id": "bnk-102",
+"name": "Marine",
+"group": "BNK48",
+"gen": 4,
+"birthday": "2006-04-29",
+"img": "https://storage.miwoori.com/bnk48_images/102.png?v4",
+"r1": 8,
+"v1": 5874.18,
+"r2": 4,
+"team": "BIII"
+},
+{
+"id": "bnk-103",
+"name": "Micha",
+"group": "BNK48",
+"gen": 4,
+"birthday": "2007-06-12",
+"img": "https://storage.miwoori.com/bnk48_images/103.png?v4",
+"r1": 15,
+"v1": 4397.66,
+"r2": 12,
+"team": "BIII"
+},
+{
+"id": "bnk-105",
+"name": "Palmmy",
+"group": "BNK48",
+"gen": 4,
+"birthday": "2003-10-28",
+"img": "https://storage.miwoori.com/bnk48_images/105.png?v4",
+"r2": 23,
+"team": "NV"
+},
+{
+"id": "bnk-106",
+"name": "Patt",
+"group": "BNK48",
+"gen": 4,
+"birthday": "2008-06-17",
+"img": "https://storage.miwoori.com/bnk48_images/106.png?v4",
+"r1": 22,
+"v1": 3154.93,
+"r2": 29,
+"team": "BIII"
+},
+{
+"id": "bnk-107",
+"name": "Sindy",
+"group": "BNK48",
+"gen": 4,
+"birthday": "2009-04-03",
+"img": "https://storage.miwoori.com/bnk48_images/107.png?v4",
+"r1": 19,
+"v1": 3720.7,
+"r2": 32,
+"team": "NV"
+},
+{
+"id": "bnk-108",
+"name": "Arlee",
+"group": "BNK48",
+"gen": 5,
+"birthday": "2004-03-26",
+"img": "https://storage.miwoori.com/bnk48_images/108.png?v4",
+"r1": 11,
+"v1": 4972.75,
+"r2": 9,
+"team": "NV"
+},
+{
+"id": "bnk-109",
+"name": "Galeya",
+"group": "BNK48",
+"gen": 5,
+"birthday": "2008-12-24",
+"img": "https://storage.miwoori.com/bnk48_images/109.png?v4",
+"r1": 13,
+"v1": 4744.17,
+"r2": 20
+},
+{
+"id": "bnk-110",
+"name": "Jew",
+"group": "BNK48",
+"gen": 5,
+"birthday": "2003-11-28",
+"img": "https://storage.miwoori.com/bnk48_images/110.png?v4",
+"r1": 6,
+"v1": 6089.16,
+"r2": 6,
+"team": "NV"
+},
+{
+"id": "bnk-111",
+"name": "Khaimook",
+"group": "BNK48",
+"gen": 5,
+"birthday": "2004-01-05",
+"img": "https://storage.miwoori.com/bnk48_images/111.png?v4"
+},
+{
+"id": "bnk-112",
+"name": "Nall",
+"group": "BNK48",
+"gen": 5,
+"birthday": "2001-08-25",
+"img": "https://storage.miwoori.com/bnk48_images/112.png?v4",
+"r1": 5,
+"v1": 6206.24,
+"r2": 7
+},
+{
+"id": "bnk-113",
+"name": "Nammonn",
+"group": "BNK48",
+"gen": 5,
+"birthday": "2003-08-10",
+"img": "https://storage.miwoori.com/bnk48_images/113.png?v4",
+"r1": 17,
+"v1": 3951.53,
+"r2": 25
+},
+{
+"id": "bnk-114",
+"name": "Neen",
+"group": "BNK48",
+"gen": 5,
+"birthday": "2002-04-14",
+"img": "https://storage.miwoori.com/bnk48_images/114.png?v4",
+"r1": 10,
+"v1": 5222.06,
+"r2": 13
+},
+{
+"id": "bnk-115",
+"name": "Niya",
+"group": "BNK48",
+"gen": 5,
+"birthday": "2009-02-14",
+"img": "https://storage.miwoori.com/bnk48_images/115.png?v4",
+"r1": 9,
+"v1": 5225.2,
+"r2": 5
+},
+{
+"id": "bnk-116",
+"name": "Proud",
+"group": "BNK48",
+"gen": 5,
+"birthday": "2002-11-14",
+"img": "https://storage.miwoori.com/bnk48_images/116.png?v4",
+"team": "NV"
+},
+{
+"id": "bnk-117",
+"name": "Saonoi",
+"group": "BNK48",
+"gen": 5,
+"birthday": "2005-11-09",
+"img": "https://storage.miwoori.com/bnk48_images/117.png?v4",
+"r1": 35,
+"v1": 1812.25,
+"r2": 31,
+"team": "NV"
+},
+{
+"id": "bnk-118",
+"name": "Mayji",
+"group": "BNK48",
+"gen": 5,
+"birthday": "2005-05-05",
+"img": "https://storage.miwoori.com/bnk48_images/118.png?v4"
+},
+{
+"id": "bnk-121",
+"name": "Rose",
+"group": "BNK48",
+"gen": 6,
+"birthday": "2007-11-01",
+"img": "https://storage.miwoori.com/bnk48_images/121.png?v4",
+"r1": 1,
+"v1": 23107.77,
+"r2": 1
+},
+{
+"id": "bnk-122",
+"name": "Mint",
+"group": "BNK48",
+"gen": 6,
+"birthday": "2010-02-04",
+"img": "https://storage.miwoori.com/bnk48_images/122.png?v4",
+"r1": 33,
+"v1": 1969.43
+},
+{
+"id": "bnk-123",
+"name": "Inkcha",
+"group": "BNK48",
+"gen": 6,
+"birthday": "2007-07-31",
+"img": "https://storage.miwoori.com/bnk48_images/123.png?v4"
+},
+{
+"id": "bnk-124",
+"name": "Cartoon",
+"group": "BNK48",
+"gen": 6,
+"birthday": "2009-08-26",
+"img": "https://storage.miwoori.com/bnk48_images/124.png?v4",
+"r1": 32,
+"v1": 2063.53,
+"r2": 34
+},
+{
+"id": "bnk-125",
+"name": "Mail",
+"group": "BNK48",
+"gen": 6,
+"birthday": "2010-07-17",
+"img": "https://storage.miwoori.com/bnk48_images/125.png?v4",
+"r1": 28,
+"v1": 2196.85,
+"team": "BIII"
+},
+{
+"id": "bnk-126",
+"name": "Praew",
+"group": "BNK48",
+"gen": 6,
+"birthday": "2008-05-23",
+"img": "https://storage.miwoori.com/bnk48_images/126.png?v4",
+"r1": 16,
+"v1": 4217.66,
+"r2": 15,
+"team": "BIII"
+},
+{
+"id": "bnk-127",
+"name": "Grape",
+"group": "BNK48",
+"gen": 6,
+"birthday": "2011-04-08",
+"img": "https://storage.miwoori.com/bnk48_images/127.png?v4",
+"r1": 29,
+"v1": 2154.41,
+"r2": 35
+},
+{
+"id": "bnk-128",
+"name": "Blythe",
+"group": "BNK48",
+"gen": 6,
+"birthday": "2010-07-22",
+"img": "https://storage.miwoori.com/bnk48_images/128.png?v4",
+"r1": 25,
+"v1": 2450.03,
+"r2": 17
+},
+{
+"id": "bnk-129",
+"name": "Khowjow",
+"group": "BNK48",
+"gen": 6,
+"birthday": "2007-02-23",
+"img": "https://storage.miwoori.com/bnk48_images/129.png?v4",
+"r1": 34,
+"v1": 1857.64,
+"r2": 36
+},
+{
+"id": "bnk-130",
+"name": "Mirin",
+"group": "BNK48",
+"gen": 6,
+"birthday": "2010-05-28",
+"img": "https://storage.miwoori.com/bnk48_images/130.png?v4"
+},
+{
+"id": "bnk-131",
+"name": "Luksorn",
+"group": "BNK48",
+"gen": 6,
+"birthday": "2005-06-27",
+"img": "https://storage.miwoori.com/bnk48_images/131.png?v4",
+"r1": 12,
+"v1": 4938.29,
+"r2": 8,
+"team": "BIII"
+},
+{
+"id": "cgm-jingjing",
+"name": "Jingjing",
+"group": "CGM48",
+"gen": 2,
+"birthday": "2002-01-30",
+"img": "https://storage.miwoori.com/cgm48_images/jingjing.png?v5",
+"r1": 24,
+"v1": 2538.61,
+"team": "C"
+},
+{
+"id": "cgm-lookked",
+"name": "Lookked",
+"group": "CGM48",
+"gen": 2,
+"birthday": "2000-07-06",
+"img": "https://storage.miwoori.com/cgm48_images/lookked.png?v5",
+"r2": 18,
+"team": "C"
+},
+{
+"id": "cgm-nana",
+"name": "Nana",
+"group": "CGM48",
+"gen": 2,
+"birthday": "2003-02-27",
+"img": "https://storage.miwoori.com/cgm48_images/nana.png?v5",
+"r1": 27,
+"v1": 2201.06,
+"r2": 16,
+"team": "C"
+},
+{
+"id": "cgm-emma",
+"name": "Emma",
+"group": "CGM48",
+"gen": 2,
+"birthday": "2004-02-12",
+"img": "https://storage.miwoori.com/cgm48_images/emma.png?v5",
+"r1": 3,
+"v1": 8659.56,
+"r2": 2
+},
+{
+"id": "cgm-ginna",
+"name": "Ginna",
+"group": "CGM48",
+"gen": 2,
+"birthday": "2006-12-10",
+"img": "https://storage.miwoori.com/cgm48_images/ginna.png?v5",
+"team": "C"
+},
+{
+"id": "cgm-kwan",
+"name": "Kwan",
+"group": "CGM48",
+"gen": 3,
+"birthday": "2008-03-04",
+"img": "https://storage.miwoori.com/cgm48_images/kwan.png?v5",
+"r2": 33,
+"team": "C"
+},
+{
+"id": "cgm-prae",
+"name": "Prae",
+"group": "CGM48",
+"gen": 3,
+"birthday": "2005-01-03",
+"img": "https://storage.miwoori.com/cgm48_images/prae.png?v5",
+"r1": 4,
+"v1": 6615.33,
+"r2": 11,
+"team": "C"
+},
+{
+"id": "cgm-lingling",
+"name": "Lingling",
+"group": "CGM48",
+"gen": 3,
+"birthday": "2002-07-20",
+"img": "https://storage.miwoori.com/cgm48_images/lingling.png?v5",
+"r1": 23,
+"v1": 3009.23,
+"r2": 27,
+"team": "C"
+},
+{
+"id": "cgm-ploen",
+"name": "Ploen",
+"group": "CGM48",
+"gen": 3,
+"birthday": "2008-02-26",
+"img": "https://storage.miwoori.com/cgm48_images/ploen.png?v5",
+"r1": 14,
+"v1": 4520.12,
+"r2": 19,
+"team": "C"
+},
+{
+"id": "cgm-else",
+"name": "Else",
+"group": "CGM48",
+"gen": 4,
+"birthday": "2003-08-12",
+"img": "https://storage.miwoori.com/cgm48_images/else.png?v5",
+"team": "C"
+},
+{
+"id": "cgm-hongyok",
+"name": "Hongyok",
+"group": "CGM48",
+"gen": 4,
+"birthday": "2004-01-27",
+"img": "https://storage.miwoori.com/cgm48_images/hongyok.png?v5"
+},
+{
+"id": "cgm-nisha",
+"name": "Nisha",
+"group": "CGM48",
+"gen": 4,
+"birthday": "2009-09-04",
+"img": "https://storage.miwoori.com/cgm48_images/nisha.png?v5",
+"r1": 30,
+"v1": 2117.06,
+"team": "C"
+},
+{
+"id": "cgm-praifa",
+"name": "Praifa",
+"group": "CGM48",
+"gen": 4,
+"birthday": "2012-01-04",
+"img": "https://storage.miwoori.com/cgm48_images/praifa.png?v5"
+},
+{
+"id": "cgm-satangpound",
+"name": "Satangpound",
+"group": "CGM48",
+"gen": 4,
+"birthday": "2007-10-26",
+"img": "https://storage.miwoori.com/cgm48_images/satangpound.png?v5"
+},
+{
+"id": "cgm-shenae",
+"name": "Shenae",
+"group": "CGM48",
+"gen": 4,
+"birthday": "2006-11-07",
+"img": "https://storage.miwoori.com/cgm48_images/shenae.png?v5",
+"r1": 31,
+"v1": 2078.6,
+"r2": 28
+},
+{
+"id": "cgm-valentine",
+"name": "Valentine",
+"group": "CGM48",
+"gen": 4,
+"birthday": "2008-02-14",
+"img": "https://storage.miwoori.com/cgm48_images/valentine.png?v5"
+},
+{
+"id": "cgm-chifa",
+"name": "Chifa",
+"group": "CGM48",
+"gen": 5,
+"birthday": "2008-10-17",
+"img": "https://storage.miwoori.com/cgm48_images/chifa.png?v5"
+},
+{
+"id": "cgm-lewlew",
+"name": "Lewlew",
+"group": "CGM48",
+"gen": 5,
+"birthday": "2006-12-24",
+"img": "https://storage.miwoori.com/cgm48_images/lewlew.png?v5"
+},
+{
+"id": "cgm-namphet",
+"name": "Namphet",
+"group": "CGM48",
+"gen": 5,
+"birthday": "2008-02-24",
+"img": "https://storage.miwoori.com/cgm48_images/namphet.png?v5"
+},
+{
+"id": "cgm-punpon",
+"name": "Punpon",
+"group": "CGM48",
+"gen": 5,
+"birthday": "2009-01-12",
+"img": "https://storage.miwoori.com/cgm48_images/punpon.png?v5"
+},
+{
+"id": "cgm-tara",
+"name": "Tara",
+"group": "CGM48",
+"gen": 5,
+"birthday": "2013-06-05",
+"img": "https://storage.miwoori.com/cgm48_images/tara.png?v5"
+}
+];

@@ -1,0 +1,1765 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>GE2026 Final Projection</title>
+    <style>
+      :root {
+        --bg: #faf8fb;
+        --card: #fff;
+        --fg: #1d1a20;
+        --mut: #6b6570;
+        --line: #e7e2ea;
+        --bnk: #c391c1;
+        --cgm: #49c5a8;
+        --up: #1f9d55;
+        --dn: #d64545;
+        --c1: #d9822b;
+        --c2: #3b7ddd;
+        --c3: #9b59d0;
+        --c4: #1f9d55;
+        --c0: #c99a00;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root:not([data-theme="light"]) {
+          --bg: #151317;
+          --card: #1f1c22;
+          --fg: #f1edf3;
+          --mut: #a59fab;
+          --line: #2f2a33;
+        }
+      }
+      :root[data-theme="dark"] {
+        --bg: #151317;
+        --card: #1f1c22;
+        --fg: #f1edf3;
+        --mut: #a59fab;
+        --line: #2f2a33;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--fg);
+        font:
+          15px/1.4 system-ui,
+          sans-serif;
+      }
+      main {
+        max-width: 1500px;
+        margin: auto;
+        padding: 24px 16px;
+      }
+      h1 {
+        margin: 0 0 4px;
+        font-size: 24px;
+      }
+      p.sub {
+        margin: 0 0 16px;
+        color: var(--mut);
+      }
+      a {
+        color: inherit;
+      }
+      .bar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 18px;
+      }
+      select,
+      input {
+        font: inherit;
+        padding: 7px 10px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--card);
+        color: var(--fg);
+      }
+      input {
+        flex: 1;
+        min-width: 140px;
+      }
+      .grid {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+      }
+      .sep {
+        font-variant-numeric: tabular-nums;
+        margin: 18px 0 6px;
+        font-weight: 600;
+        color: var(--mut);
+        border-top: 1px dashed var(--line);
+        padding-top: 12px;
+      }
+      .c {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        height: 56px;
+      }
+      .c.out {
+        opacity: 0.6;
+      }
+      .rk {
+        width: 48px;
+        flex: none;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 700;
+        font-variant-numeric: tabular-nums;
+      }
+      .c img {
+        width: 56px;
+        height: 56px;
+        flex: none;
+        object-fit: cover;
+        object-position: top;
+        background: var(--line);
+      }
+      .b {
+        flex: 1;
+        min-width: 0;
+        padding: 0 12px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .n small {
+        display: block;
+        font-weight: 400;
+        font-size: 11px;
+        color: var(--mut);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .n {
+        font-weight: 600;
+        flex: 1;
+        min-width: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .tags {
+        display: flex;
+        gap: 4px;
+        flex: none;
+      }
+      .t {
+        font-size: 11px;
+        font-weight: 600;
+        padding: 2px 6px;
+        border-radius: 6px;
+        color: #fff;
+      }
+      .t.BNK48 {
+        background: var(--bnk);
+      }
+      .t.CGM48 {
+        background: var(--cgm);
+      }
+      .t.g {
+        background: transparent;
+        color: var(--mut);
+        border: 1px solid var(--line);
+      }
+      .col {
+        width: 84px;
+        text-align: right;
+        flex: none;
+        font-variant-numeric: tabular-nums;
+        font-size: 13px;
+      }
+      .col small {
+        display: block;
+        color: var(--mut);
+        font-size: 11px;
+      }
+      .e1t {
+        color: var(--c1);
+      }
+      .est.e2 {
+        color: var(--c2);
+      }
+      .col.r1c.p1,
+      .col.v1.p1 {
+        color: var(--c0);
+      }
+      .est.e2t {
+        color: var(--c2);
+      }
+      .col.fin {
+        width: 200px;
+        color: var(--c4);
+      }
+      .col.fin small {
+        color: inherit;
+        opacity: 0.8;
+      }
+      .fbar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        align-items: center;
+        margin: -8px 0 18px;
+        padding: 10px;
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        background: var(--card);
+      }
+      .fbar label {
+        font-size: 13px;
+        color: var(--mut);
+      }
+      .fbar input {
+        flex: none;
+        width: 130px;
+      }
+      .zt {
+        max-width: 640px;
+
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 13px;
+        font-variant-numeric: tabular-nums;
+        margin-top: 6px;
+      }
+      .zt td,
+      .zt th {
+        padding: 4px 8px;
+        border-bottom: 1px solid var(--line);
+        text-align: right;
+      }
+      .zt td:first-child,
+      .zt th:first-child {
+        text-align: left;
+      }
+      .zt th {
+        color: var(--mut);
+        font-weight: 600;
+      }
+      .zt td {
+        color: var(--c4);
+      }
+      .zt td:first-child {
+        color: var(--fg);
+      }
+      details summary {
+        cursor: pointer;
+        color: var(--mut);
+        font-size: 13px;
+        margin-top: 8px;
+      }
+      .est small {
+        color: inherit;
+        opacity: 0.8;
+      }
+      .lg span {
+        font-weight: 600;
+      }
+      .tgset {
+        font: inherit;
+        font-size: 14px;
+        line-height: 1;
+        width: 24px;
+        height: 24px;
+        padding: 0;
+        border: 0;
+        border-radius: 999px;
+        background: #1f9d55;
+        color: #fff;
+        cursor: pointer;
+      }
+      .tgset {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        vertical-align: middle;
+      }
+      .tgset .sl {
+        display: none;
+      }
+      .tgset.off .sl {
+        display: inline;
+      }
+      .tgset.off {
+        background: #d64545;
+      }
+      .set.hid {
+        display: none;
+      }
+      .set {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 12px;
+        margin-bottom: 14px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+      }
+      .set .row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        align-items: center;
+      }
+      .set label {
+        font-size: 13px;
+        color: var(--mut);
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+      .set label input {
+        width: 130px;
+        flex: none;
+      }
+      .note {
+        font-size: 12px;
+        color: var(--mut);
+        margin: 0;
+      }
+      .two {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+      }
+      details summary {
+        margin-top: 0;
+      }
+      .hd {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 130px;
+        gap: 8px;
+        font-size: 12px;
+        color: var(--mut);
+        margin: 0 0 4px;
+      }
+      .ln {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 130px;
+        gap: 8px;
+      }
+      .grid.zg {
+        --zg-rk: 60px;
+        --zg-fv: 130px;
+        display: grid;
+        grid-template-columns: var(--zg-rk) minmax(0, 1fr) var(--zg-fv);
+        gap: 6px 8px;
+        grid-auto-rows: minmax(56px, auto);
+      }
+      /* Zone headers use the same columns as body rows at every width */
+      .grid.zg > .ln.gh {
+        display: grid;
+        grid-column: 1 / -1;
+        grid-template-columns: subgrid;
+        column-gap: inherit;
+        row-gap: 0;
+      }
+      .grid.zg > .ln.gh > .c {
+        grid-column: 1 / 3;
+      }
+      .grid.zg > .ln.gh > .fv {
+        grid-column: 3;
+        width: auto;
+        max-width: none;
+      }
+      .zr {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        font-weight: 700;
+        font-variant-numeric: tabular-nums;
+      }
+      .zc {
+        grid-column: 2;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        padding: 10px 14px;
+        display: flex;
+        display: grid;
+        grid-template-columns: var(--zcols);
+        align-items: start;
+        padding: 0;
+        color: var(--c4);
+        font-variant-numeric: tabular-nums;
+      }
+      :root {
+        --zcols: 1fr 90px;
+      }
+      .zc > div {
+        padding: 10px 14px;
+        text-align: right;
+        font-size: 15px;
+        font-weight: 600;
+        border-left: 1px solid var(--line);
+        height: 100%;
+      }
+      .zc > div:first-child {
+        border-left: 0;
+      }
+      .zth {
+        display: grid;
+        grid-template-columns: var(--zg-rk) 8px var(--zcols);
+      }
+      .zth span {
+        padding: 0 14px;
+        text-align: right;
+      }
+      .zth span:first-child {
+        text-align: center;
+        padding: 0;
+      }
+      .zc > .zn {
+        font-weight: 700;
+        font-size: 20px;
+        text-align: center;
+        color: var(--fg);
+        font-variant-numeric: tabular-nums;
+        padding: 14px 8px;
+      }
+      .zc b {
+        font-size: 16px;
+      }
+      .zc small {
+        display: block;
+        font-size: 11px;
+        opacity: 0.8;
+      }
+      .zc {
+        align-content: start;
+      }
+      .zc > .zch {
+        color: var(--mut);
+        font-size: 11px;
+        font-weight: 600;
+        height: auto;
+        padding: 8px 14px 0;
+        align-self: start;
+      }
+      .zc > div:nth-child(2n + 1) {
+        border-left: 0;
+      }
+      .zc > div:not(.zch) {
+        height: auto;
+        align-self: start;
+        padding-top: 4px;
+        padding-bottom: 10px;
+      }
+      .fv {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 0 14px;
+        color: var(--c4);
+        font-variant-numeric: tabular-nums;
+      }
+      .fv b {
+        font-size: 18px;
+      }
+      .fv small {
+        display: block;
+        font-size: 11px;
+        opacity: 0.8;
+        text-align: right;
+      }
+      .fv .z {
+        color: var(--mut);
+        font-size: 12px;
+      }
+      @media (max-width: 900px) {
+        .two {
+          grid-template-columns: 1fr;
+        }
+        .ln,
+        .hd {
+          grid-template-columns: minmax(0, 1fr) 110px;
+        }
+        .fv {
+          padding: 0 8px;
+        }
+        .fv .z {
+          display: none;
+        }
+        .fv b {
+          font-size: 15px;
+        }
+      }
+      .up {
+        color: var(--up);
+      }
+      .dn {
+        color: var(--dn);
+      }
+      .mut {
+        color: var(--mut);
+      }
+      .col.est {
+        width: 240px;
+      }
+      .c {
+        height: auto;
+        min-height: 56px;
+      }
+      @media (max-width: 560px) {
+        .col.fin {
+          width: 100px;
+        }
+        .col.est {
+          width: 110px;
+        }
+        .col {
+          width: 62px;
+        }
+      }
+      .rg {
+        border: 0;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        align-items: center;
+      }
+      .rg legend {
+        float: left;
+        font-size: 13px;
+        color: var(--mut);
+        margin-right: 4px;
+        padding: 0;
+      }
+      .set .rg label {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        padding: 6px 16px;
+        border-radius: 999px;
+        background: var(--chip);
+        color: var(--chipfg);
+        font-size: 14px;
+        cursor: pointer;
+        user-select: none;
+        transition:
+          background 0.15s,
+          color 0.15s;
+      }
+      .set .rg label:hover {
+        filter: brightness(0.97);
+      }
+      .rg input[type="radio"] {
+        position: absolute;
+        opacity: 0;
+        pointer-events: none;
+      }
+      .set .rg label:has(input:checked) {
+        background: var(--chipon);
+        color: var(--chiponfg);
+        font-weight: 500;
+      }
+      .set .rg label:has(input:focus-visible) {
+        outline: 2px solid var(--chiponfg);
+        outline-offset: 2px;
+      }
+      .set .rg input[type="number"] {
+        width: 120px;
+        padding: 6px 14px;
+        border-radius: 999px;
+        border: 1px solid var(--line);
+        background: var(--card);
+        font-size: 14px;
+      }
+      .set .rg input[type="number"]:focus {
+        outline: none;
+        border-color: var(--chiponfg);
+      }
+      .set .row {
+        gap: 14px 20px;
+      }
+      :root {
+        --chip: #ececec;
+        --chipfg: #6b6b6b;
+        --chipon: #ddd0fb;
+        --chiponfg: #5b21d6;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root:not([data-theme="light"]) {
+          --chip: #2c2930;
+          --chipfg: #b3adb8;
+          --chipon: #3e2f6b;
+          --chiponfg: #cdb8ff;
+        }
+      }
+      :root[data-theme="dark"] {
+        --chip: #2c2930;
+        --chipfg: #b3adb8;
+        --chipon: #3e2f6b;
+        --chiponfg: #cdb8ff;
+      }
+      /* fixed width for every part so all lines line up at any screen width */
+      .tags {
+        width: 202px;
+      }
+      .tags .t {
+        box-sizing: border-box;
+        text-align: center;
+        flex: none;
+      }
+      .tags .t.BNK48,
+      .tags .t.CGM48 {
+        width: 44px;
+      }
+      .tags .gn {
+        width: 52px;
+      }
+      .tags .tm {
+        width: 84px;
+      }
+      .n {
+        flex: 1 1 0;
+        min-width: 0;
+      }
+      /* hide in order as the screen gets narrower */
+      @media (max-width: 1200px) {
+        .r1c,
+        .r2c {
+          display: none;
+        }
+      }
+      @media (max-width: 1000px) {
+        .tags .gn,
+        .tags .tm {
+          display: none;
+        }
+        .tags {
+          width: 44px;
+        }
+      }
+      @media (max-width: 850px) {
+        .est small {
+          display: none;
+        }
+        .col.est {
+          width: 90px;
+        }
+      }
+      @media (max-width: 700px) {
+        .n {
+          display: none;
+        }
+        .b {
+          gap: 8px;
+          padding: 0 8px;
+        }
+      }
+      @media (max-width: 560px) {
+        .mvc {
+          display: none;
+        }
+      }
+      /* group header rows (Senbatsu / Under Girls / Next Girls / Not Qualified); same height in both modes */
+      .gh .c,
+      .gh .fv,
+      .gz {
+        height: 40px;
+        min-height: 40px;
+      }
+      .gh .c,
+      .gh .fv,
+      .gz {
+        background: var(--chip);
+      }
+      .gh .n {
+        display: block !important;
+        font-weight: 700;
+        font-size: 15px;
+      }
+      .gh .col {
+        font-weight: 700;
+      }
+      .gh .fv b {
+        font-size: 15px;
+      }
+      .gz {
+        display: grid;
+        grid-template-columns: var(--zg-rk) 8px var(--zcols) 8px var(--zg-fv);
+        align-items: center;
+        border-radius: 10px;
+        font-size: 12px;
+        font-weight: 600;
+        color: var(--mut);
+      }
+      .gz > span {
+        padding: 0 14px;
+        text-align: right;
+      }
+      .gz .gzf {
+        color: var(--c4);
+        font-size: 15px;
+        font-weight: 700;
+        font-variant-numeric: tabular-nums;
+      }
+      .gz .gzn {
+        text-align: left;
+        white-space: nowrap;
+        overflow: visible;
+        font-size: 15px;
+        font-weight: 700;
+        color: var(--fg);
+      }
+      .grid.zg {
+        grid-auto-rows: auto !important;
+        min-width: 0;
+      }
+      .grid.zg > .ln,
+      .grid.zg > .zc,
+      .grid.zg > .zr {
+        min-width: 0;
+      }
+      .grid.zg > .zr {
+        min-height: 56px;
+      }
+      .fin {
+        width: 100%;
+        min-width: 0;
+        border: 0;
+        background: transparent;
+        text-align: right;
+        font: inherit;
+        font-size: 17px;
+        font-weight: 700;
+        color: var(--c4);
+        font-variant-numeric: tabular-nums;
+        padding: 0;
+        outline: none;
+      }
+      /* Zone mode wraps each .fv in a display:grid cell; don't let input min-width blow the column */
+      .grid.zg > div {
+        min-width: 0;
+        max-width: 100%;
+      }
+      .fin::placeholder {
+        color: var(--c4);
+        opacity: 0.75;
+        font-weight: 600;
+      }
+      .fv:focus-within {
+        border-color: var(--c4);
+      }
+      .fv.ent {
+        background: color-mix(in srgb, var(--c4) 14%, var(--card));
+      }
+      #fclr {
+        font: inherit;
+        font-size: 13px;
+        padding: 5px 14px;
+        border-radius: 999px;
+        border: 1px solid var(--line);
+        background: var(--chip);
+        color: var(--chipfg);
+        cursor: pointer;
+      }
+      .fv {
+        position: relative;
+      }
+      .fv.lock .fin {
+        cursor: default;
+      }
+      .fv.lock .fin::placeholder {
+        opacity: 0.55;
+      }
+      .fdel {
+        position: absolute;
+        left: 6px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        border: 0;
+        background: #d64545;
+        color: #fff;
+        font-size: 12px;
+        line-height: 22px;
+        padding: 0;
+        cursor: pointer;
+      }
+      .fdel:hover {
+        background: #b83232;
+      }
+      .fedit {
+        position: absolute;
+        left: 6px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        background: var(--c4);
+        color: #fff;
+        font-size: 13px;
+        line-height: 22px;
+        text-align: center;
+        pointer-events: none;
+      }
+      .rg.locked label {
+        opacity: 0.45;
+        cursor: not-allowed;
+      }
+      .rg.locked input[type="number"] {
+        border-color: var(--c4);
+        color: var(--c4);
+        font-weight: 700;
+      }
+      /* Small screens: shrink typography, spacing, cards and totals so the grid fits. Desktop unchanged. */
+      @media (max-width: 600px) {
+        html,
+        body {
+          max-width: 100%;
+          overflow-x: hidden;
+        }
+        body {
+          font-size: 14px;
+        }
+        main {
+          padding: 16px 10px;
+          max-width: 100%;
+        }
+        h1 {
+          font-size: 21px;
+        }
+        p.sub {
+          margin: 0 0 12px;
+          font-size: 13px;
+          overflow-wrap: anywhere;
+        }
+        .bar,
+        .fbar {
+          gap: 6px;
+          margin-bottom: 12px;
+        }
+        .fbar {
+          padding: 8px;
+          margin-top: -6px;
+        }
+        select,
+        input {
+          padding: 5px 8px;
+          min-width: 0;
+        }
+        .grid {
+          gap: 4px;
+        }
+        .c {
+          min-height: 48px;
+          border-radius: 8px;
+        }
+        .rk {
+          width: 38px;
+          font-size: 17px;
+        }
+        .c img {
+          width: 46px;
+          height: 46px;
+        }
+        .b {
+          padding: 0 8px;
+          gap: 6px;
+        }
+        .t {
+          font-size: 10px;
+          padding: 1px 4px;
+          border-radius: 5px;
+        }
+        .tags {
+          width: 44px;
+        }
+        .tags .t.BNK48,
+        .tags .t.CGM48 {
+          width: 44px;
+        }
+        .col {
+          width: 52px;
+          font-size: 12px;
+        }
+        .col small {
+          font-size: 10px;
+        }
+        .col.est {
+          width: 72px;
+        }
+        .col.fin {
+          width: 88px;
+        }
+        .ln,
+        .hd {
+          grid-template-columns: minmax(0, 1fr) 96px;
+          gap: 6px;
+        }
+        .fv {
+          padding: 0 6px;
+          border-radius: 8px;
+        }
+        .fv b,
+        .gh .fv b {
+          font-size: 14px;
+        }
+        .fin {
+          font-size: 15px;
+        }
+        .gh .c,
+        .gh .fv,
+        .gz {
+          height: 36px;
+          min-height: 36px;
+        }
+        .gh .n,
+        .gz .gzn,
+        .gz .gzf {
+          font-size: 14px;
+        }
+        .set {
+          padding: 8px;
+          margin-bottom: 10px;
+          border-radius: 10px;
+          gap: 6px;
+        }
+        .set .row {
+          gap: 8px 12px;
+          max-width: 100%;
+        }
+        /* fieldset flex items can shrink below their contents and overflow the page */
+        .set .rg {
+          max-width: 100%;
+          min-width: min-content;
+          flex: 0 1 auto;
+        }
+        .set label,
+        .fbar label,
+        .rg legend,
+        .note,
+        .hd,
+        details summary {
+          font-size: 12px;
+        }
+        .set .rg label {
+          padding: 4px 10px;
+          font-size: 12px;
+        }
+        .set .rg input[type="number"],
+        .set label input,
+        .fbar input {
+          width: 96px;
+          max-width: 100%;
+          flex: 0 1 96px;
+          padding: 4px 10px;
+          font-size: 12px;
+        }
+        .tgset {
+          width: 22px;
+          height: 22px;
+          font-size: 12px;
+        }
+        .grid.zg {
+          --zg-rk: 44px;
+          --zg-fv: 96px;
+          gap: 4px 6px;
+        }
+        .grid.zg > .zr,
+        .zr {
+          min-height: 48px;
+          font-size: 17px;
+        }
+        :root {
+          --zcols: minmax(0, 1fr) 58px;
+        }
+        .zc > div:not(.zch) {
+          white-space: nowrap;
+        }
+        .gz {
+          grid-template-columns: var(--zg-rk) 6px var(--zcols) 6px var(--zg-fv);
+        }
+        .zth {
+          grid-template-columns: var(--zg-rk) 6px var(--zcols);
+        }
+        .zth span,
+        .gz > span {
+          padding: 0 10px;
+        }
+        .zc > .zch {
+          font-size: 10px;
+          padding: 6px 8px 0;
+        }
+        .zc > div:not(.zch) {
+          font-size: 13px;
+          font-weight: 600;
+          padding: 4px 8px 8px;
+        }
+        .zc b {
+          font-size: 14px;
+        }
+        .zc > .zn {
+          font-size: 16px;
+          padding: 10px 6px;
+        }
+        .fdel,
+        .fedit {
+          width: 18px;
+          height: 18px;
+          font-size: 11px;
+          line-height: 18px;
+          left: 4px;
+        }
+        #fclr {
+          font-size: 12px;
+          padding: 4px 10px;
+        }
+        .sep {
+          margin: 12px 0 4px;
+          padding-top: 8px;
+        }
+      }
+
+      /* Tighter step + hide per-member BNK48 / CGM48 group badges (gen/team already hidden). */
+      @media (max-width: 360px) {
+        body {
+          font-size: 13px;
+        }
+        main {
+          padding: 12px 8px;
+        }
+        h1 {
+          font-size: 19px;
+        }
+        p.sub {
+          margin: 0 0 10px;
+          font-size: 12px;
+        }
+        .c {
+          min-height: 40px;
+          border-radius: 7px;
+        }
+        .rk {
+          width: 32px;
+          font-size: 15px;
+        }
+        .c img {
+          width: 40px;
+          height: 40px;
+        }
+        .b {
+          padding: 0 6px;
+          gap: 4px;
+        }
+        .t {
+          font-size: 9px;
+          padding: 1px 3px;
+        }
+        .col {
+          width: 48px;
+          font-size: 11px;
+        }
+        .col.est {
+          width: 66px;
+        }
+        .col.fin {
+          width: 80px;
+        }
+        .ln,
+        .hd {
+          grid-template-columns: minmax(0, 1fr) 88px;
+          gap: 4px;
+        }
+        .fv b,
+        .gh .fv b {
+          font-size: 13px;
+        }
+        .fin {
+          font-size: 14px;
+        }
+        .gh .c,
+        .gh .fv,
+        .gz {
+          height: 32px;
+          min-height: 32px;
+        }
+        .gh .n,
+        .gz .gzn,
+        .gz .gzf {
+          font-size: 13px;
+        }
+        .set {
+          padding: 6px;
+          gap: 5px;
+        }
+        .set .rg label {
+          padding: 3px 8px;
+          font-size: 11px;
+        }
+        .set .rg input[type="number"],
+        .set label input,
+        .fbar input {
+          width: 84px;
+          font-size: 11px;
+        }
+        .grid.zg {
+          --zg-rk: 36px;
+          --zg-fv: 88px;
+        }
+        .grid.zg > .zr,
+        .zr {
+          min-height: 40px;
+          font-size: 15px;
+        }
+        :root {
+          --zcols: minmax(0, 1fr) 52px;
+        }
+        .gz {
+          grid-template-columns: var(--zg-rk) 4px var(--zcols) 4px var(--zg-fv);
+        }
+        .zth {
+          grid-template-columns: var(--zg-rk) 4px var(--zcols);
+        }
+        .tags .t.BNK48,
+        .tags .t.CGM48,
+        .tags {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>GE2026 Final Projection</h1>
+      <p class="sub">
+        1st prelim cut-off 3 Oct · 2nd prelim cut-off 31 Oct · final cut-off 12
+        Nov<br />
+        Sources:
+        <a
+          href="https://withmywish.com/ge2026/#first-pre-result"
+          target="_blank"
+          rel="noopener"
+          >withmywish.com/ge2026</a
+        >
+        ·
+        <a
+          href="https://cyber-statistic-48.vercel.app/ge"
+          target="_blank"
+          rel="noopener"
+          >cyber-statistic-48.vercel.app/ge</a
+        >
+        ·
+        <a href="https://48thdb.com/ge2026" target="_blank" rel="noopener"
+          >48thdb.com/ge2026</a
+        >
+        · Inspired:
+        <a
+          href="https://www.youtube.com/@worlor2chor"
+          target="_blank"
+          rel="noopener"
+          >@worlor2chor</a
+        >
+        ·
+        <button
+          type="button"
+          id="tgset"
+          class="tgset"
+          title="Hide settings"
+          aria-label="Hide settings"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            width="16"
+            height="16"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z" />
+            <circle cx="12" cy="12" r="3" />
+            <line class="sl" x1="3" y1="3" x2="21" y2="21" />
+          </svg>
+        </button>
+      </p>
+      <div class="set">
+        <div class="row">
+          <fieldset class="rg">
+            <legend>Total token</legend>
+            <label
+              ><input
+                type="radio"
+                name="ftr"
+                value="1500000"
+                checked
+              />GE2026-est</label
+            >
+            <label
+              ><input type="radio" name="ftr" value="1161494" />GE2025</label
+            >
+            <label
+              ><input type="radio" name="ftr" value="1239679" />16th
+              single</label
+            >
+            <label
+              ><input type="radio" name="ftr" value="1090119" />12th
+              single</label
+            >
+            <input id="ft" type="number" min="0" step="1000" value="1500000" />
+          </fieldset>
+          <fieldset class="rg">
+            <legend>#36 tokens</legend>
+            <label><input type="radio" name="fpr" value="0.004" />0.4%</label>
+            <label
+              ><input
+                type="radio"
+                name="fpr"
+                value="0.005"
+                checked
+              />0.5%</label
+            >
+            <label><input type="radio" name="fpr" value="0.006" />0.6%</label>
+            <input id="fn" type="number" min="0" step="100" value="5451" />
+          </fieldset>
+          <fieldset class="rg">
+            <legend>Spread</legend>
+            <label
+              ><input type="radio" name="fi" value="16th single" />Narrow (16th
+              single)</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="fi"
+                value="12th single"
+                checked
+              />Medium (12th single)</label
+            >
+            <label
+              ><input type="radio" name="fi" value="GE2025" />Wide
+              (GE2025)</label
+            >
+          </fieldset>
+          <fieldset class="rg">
+            <legend>Order by</legend>
+            <label
+              ><input type="radio" name="sort" value="r2" checked />2nd
+              result</label
+            >
+            <label
+              ><input type="radio" name="sort" value="r1" />1st result</label
+            >
+          </fieldset>
+          <fieldset class="rg">
+            <legend>Mode</legend>
+            <label
+              ><input
+                type="radio"
+                name="mode"
+                value="line"
+                checked
+              />Line</label
+            >
+            <label><input type="radio" name="mode" value="zone" />Zone</label>
+          </fieldset>
+        </div>
+        <div id="fs" class="note"></div>
+        <p class="note lg">
+          Colours:
+          <span style="color: var(--c0)">1st-published</span> ·
+          <span class="e1t">1st-est.</span> ·
+          <span style="color: var(--c2)">2nd</span> ·
+          <span style="color: var(--c4)">final</span> |
+          <span class="note"
+            >Type real final tokens into Final in order: line 36 first, then 35,
+            34 … ✕ clears the last one. The rest is re-projected.</span
+          ><button id="fclr" type="button">Clear entered</button>
+        </p>
+      </div>
+      <div class="hd" id="hd">
+        <div id="hd1"></div>
+        <div id="hd2">Final tokens</div>
+      </div>
+      <div class="grid" id="g"></div>
+    </main>
+    <script src="members.js"></script>
+    <script>
+      const M = MEMBERS,
+        $ = (id) => document.getElementById(id);
+      // ---- 2nd-result estimate: 2nd = 1st + x ----
+      const T1 = 184589.89,
+        T2 = 472865.22,
+        K = T2 / T1,
+        fmt = (v) =>
+          v.toLocaleString("en", {
+            minimumFractionDigits: 2,
+            maximumFractionDigits: 2,
+          }),
+        fmt0 = (v) => Math.round(v).toLocaleString("en");
+      // fit power law v = a*r^-b on the 1st result (log-log least squares)
+      (() => {
+        const P = M.filter((x) => x.r1).map((x) => [
+            Math.log(x.r1),
+            Math.log(x.v1),
+          ]),
+          n = P.length,
+          sx = P.reduce((s, p) => s + p[0], 0),
+          sy = P.reduce((s, p) => s + p[1], 0),
+          sxx = P.reduce((s, p) => s + p[0] * p[0], 0),
+          sxy = P.reduce((s, p) => s + p[0] * p[1], 0),
+          b = (n * sxy - sx * sy) / (n * sxx - sx * sx),
+          a = (sy - b * sx) / n;
+        window.B1 = b;
+        const R2 = M.filter((x) => x.r2).sort((p, q) => p.r2 - q.r2);
+        // minimum: votes are cumulative, and ranks in 2nd are ordered -> at least the max 1st-result votes of self and everyone ranked below
+        // members outside the 2nd top 36 rank below #36, so their 1st-result votes also bound everyone in the top 36
+        let floor = Math.max(
+          0,
+          ...M.filter((x) => !x.r2).map((x) => x.v1 || 0),
+        );
+        for (let i = R2.length - 1; i >= 0; i--) {
+          floor = Math.max(floor, R2[i].v1 || 0);
+          R2[i].min2 = floor;
+        }
+        // estimate: curve value at 2nd rank, scaled by total growth, never below the minimum; keep it non-increasing by rank
+        let prev = Infinity;
+        R2.forEach((x) => {
+          let e = Math.max(Math.exp(a) * Math.pow(x.r2, b) * K, x.min2);
+          e = Math.min(e, prev);
+          x.e2 = e;
+          prev = e;
+        });
+        const f = (r) => Math.exp(a) * Math.pow(r, b),
+          sum = (L, k) => L.reduce((s, x) => s + x[k], 0);
+        // spread a remaining total over ranks 37..; members whose order is unknown share the average of their rank slots
+        function tail(L, key, left, lo) {
+          const v = L.map((x, i) => f(37 + i));
+          let i = 0;
+          while (i < L.length) {
+            let j = i;
+            while (
+              j + 1 < L.length &&
+              key(L[j + 1]) === key(L[i]) &&
+              key(L[i]) !== null
+            )
+              j++;
+            const avg =
+              v.slice(i, j + 1).reduce((s, y) => s + y, 0) / (j - i + 1);
+            for (let t = i; t <= j; t++) v[t] = avg;
+            i = j + 1;
+          }
+          let s0 = 0,
+            s1 = 1e3;
+          for (let n = 0; n < 60; n++) {
+            const s = (s0 + s1) / 2;
+            v.reduce((t, y, i) => t + Math.max(s * y, lo(L[i])), 0) > left
+              ? (s1 = s)
+              : (s0 = s);
+          }
+          return v.map((y, i) => Math.max(s0 * y, lo(L[i])));
+        }
+        // 1st-result #37–58: order by 2nd rank when known, rest unknown (equal share); each below #36's 1,724.28
+        const Q1 = M.filter((x) => !x.r1).sort(
+          (p, q) => (p.r2 || 99) - (q.r2 || 99) || p.name.localeCompare(q.name),
+        );
+        tail(
+          Q1,
+          (x) => (x.r2 ? null : "u"),
+          T1 -
+            sum(
+              M.filter((x) => x.r1),
+              "v1",
+            ),
+          () => 0,
+        ).forEach((e, i) => (Q1[i].ev1 = Math.min(e, 1724.27)));
+        // 2nd-result #37–58: order by 1st tally (known or estimated); each at least her own 1st tally
+        const Q2 = M.filter((x) => !x.r2).sort(
+          (p, q) => (q.v1 || q.ev1) - (p.v1 || p.ev1),
+        );
+        {
+          const s =
+              (T2 - sum(R2, "e2")) /
+              Q2.reduce((t, x) => t + (x.v1 || x.ev1), 0),
+            cap = R2[R2.length - 1].e2 - 1; // same growth factor for all of #37–58
+          Q2.forEach((x) => {
+            x.e2t = Math.min((x.v1 || x.ev1) * s, cap);
+            x.min2 = x.v1 || 0;
+          });
+        }
+      })();
+      function est(x) {
+        const e = x.e2 || x.e2t,
+          f1 = x.v1 || x.ev1;
+        if (!e) return "";
+        const base = x.v1 ? fmt0(x.v1) : "≈" + fmt0(x.ev1),
+          add = " + " + fmt0(e - f1);
+        return `= ${base}${add}${x.min2 ? " · min " + fmt0(x.min2) : ""}`;
+      }
+      // final per LINE (rank), not per member: ratio to #36 from a past election's real results (cyber-statistic-48.vercel.app/ge)
+      const TOPSHARE = {
+          "16th single": 0.907,
+          "12th single": 0.934,
+          GE2025: 0.98,
+        },
+        SHAPE = {
+          GE2025: [
+            47.8161, 35.3129, 13.9752, 9.4333, 6.7576, 6.418, 6.1095, 4.619,
+            4.5011, 4.2206, 4.1448, 3.9058, 3.7801, 3.0743, 2.9935, 2.8413,
+            2.7676, 2.7519, 2.4674, 2.3464, 2.2418, 2.1317, 2.0307, 2.0298,
+            1.7597, 1.7365, 1.7011, 1.6707, 1.5815, 1.5258, 1.5082, 1.3257,
+            1.2586, 1.1715, 1.0118, 1.0, 0.8858, 0.6646, 0.6074, 0.3444, 0.3135,
+            0.289, 0.2106, 0.1833, 0.1828, 0.1343, 0.1327, 0.1257, 0.119,
+            0.1127, 0.1067, 0.101, 0.0957, 0.0906, 0.0858, 0.0812, 0.0769,
+            0.0728,
+          ],
+          "16th single": [
+            17.7947, 14.6492, 13.1996, 9.6771, 6.9894, 6.0732, 5.8851, 5.566,
+            5.3424, 3.9999, 3.9589, 3.7471, 3.7184, 3.5939, 3.5834, 3.534,
+            3.1964, 3.0735, 3.052, 3.038, 2.9065, 2.5603, 2.1634, 2.0947,
+            2.0304, 1.7063, 1.6187, 1.47, 1.4617, 1.1732, 1.152, 1.1306, 1.1137,
+            1.0839, 1.0597, 1.0, 0.9623, 0.9466, 0.9457, 0.8865, 0.8091, 0.794,
+            0.7934, 0.7777, 0.7572, 0.7553, 0.7382, 0.7159, 0.7084, 0.6811,
+            0.6757, 0.6589, 0.6132, 0.4867, 0.4048, 0.2982, 0.2578, 0.1956,
+          ],
+          "12th single": [
+            24.4636, 23.6583, 22.7231, 17.6062, 11.7125, 10.4908, 10.2098,
+            8.0076, 7.9501, 7.1146, 4.4679, 3.876, 3.8679, 3.3808, 3.2673,
+            3.2381, 3.0319, 2.6943, 2.6661, 2.3225, 2.1262, 1.9466, 1.927,
+            1.922, 1.8623, 1.6961, 1.4568, 1.4514, 1.3762, 1.3323, 1.2785,
+            1.2016, 1.1361, 1.1346, 1.0986, 1.0, 0.987, 0.9594, 0.9538, 0.9326,
+            0.9007, 0.7724, 0.7227, 0.7188, 0.7111, 0.6541, 0.6318, 0.6125,
+            0.5967, 0.5365, 0.508, 0.506, 0.4828, 0.4168, 0.3983, 0.355, 0.2891,
+            0.2089,
+          ],
+        };
+      const ZONES = [
+        ["#1", 1, 1],
+        ["#2–3", 2, 3],
+        ["#4–7", 4, 7],
+        ["#8–12", 8, 12],
+        ["#13–24", 13, 24],
+        ["#25–36", 25, 36],
+        ["#37–58", 37, 58],
+      ];
+      let V = [];
+      const zone = (r) => ZONES.find((z) => r >= z[1] && r <= z[2])[0];
+      function finals() {
+        const T = +$("ft").value || 0,
+          v36 = +$("fn").value || 0,
+          sh = SHAPE[document.querySelector('input[name="fi"]:checked').value];
+        V = [0];
+        const v36s = v36;
+        // lines 36–58 = #36 tokens × that rank's ratio to #36 in the chosen past election
+        for (let r = 1; r <= 58; r++) V[r] = v36 * sh[r - 1];
+        // lines 1–35: keep the election's shape of the part ABOVE #36, scaled so all 58 lines = Total token
+        const tail = V.slice(37).reduce((s, v) => s + v, 0),
+          above = V.slice(1, 36).reduce((s, v) => s + (v - v36), 0),
+          k = above ? (T - tail - 36 * v36) / above : 0;
+        if (T && k > 0)
+          for (let r = 1; r <= 35; r++) V[r] = v36 + (V[r] - v36) * k;
+        // ---- entered (real) finals: fixed; remaining lines re-projected ----
+        const ent = Object.keys(E)
+          .map(Number)
+          .filter((r) => r >= 1 && r <= 36);
+        if (ent.length) {
+          const known = (r) => E[r] != null,
+            b36 = known(36) ? E[36] : v36s;
+          for (let r = 36; r <= 58; r++) V[r] = r == 36 ? b36 : b36 * sh[r - 1];
+          const tl = V.slice(37).reduce((s, v) => s + v, 0);
+          const U = [],
+            fl = {},
+            gp = {},
+            cap = {};
+          for (let r = 35; r >= 1; r--) {
+            if (known(r)) {
+              V[r] = E[r];
+              continue;
+            }
+            let a = r + 1;
+            while (a < 36 && !known(a)) a++; // nearest entered line below (or #36)
+            let u = r - 1;
+            while (u >= 1 && !known(u)) u--; // nearest entered line above
+            const fa = a == 36 ? b36 : E[a];
+            fl[r] = fa;
+            gp[r] = Math.max(0, (fa * sh[r - 1]) / sh[a - 1] - fa);
+            cap[r] = u >= 1 ? E[u] : Infinity;
+            U.push(r);
+          }
+          const kn = ent.reduce((s, r) => s + (r == 36 ? 0 : E[r]), 0) + b36,
+            rem = T - kn - tl;
+          // scale the gaps so the not-entered lines add up to what's left; a line can't pass the entered line above it,
+          // so capped lines are fixed and the rest is shared again among the others
+          let free = U.slice(),
+            fixed = 0;
+          for (let it = 0; it < 40 && free.length; it++) {
+            const sg = free.reduce((s, r) => s + gp[r], 0),
+              sf = free.reduce((s, r) => s + fl[r], 0),
+              kk = sg ? Math.max(0, (rem - fixed - sf) / sg) : 0,
+              hit = free.filter((r) => fl[r] + gp[r] * kk > cap[r]);
+            free.forEach((r) => (V[r] = Math.min(fl[r] + gp[r] * kk, cap[r])));
+            if (!hit.length) break;
+            hit.forEach((r) => (fixed += cap[r]));
+            free = free.filter((r) => !hit.includes(r));
+          }
+          finNote =
+            `Entered ${ent.length} line${ent.length > 1 ? "s" : ""} = ${fmt0(kn)} · lines 37–58 ≈ ${fmt0(tl)} · remaining ${fmt0(rem)} projected over ${U.length} line${U.length == 1 ? "" : "s"} not entered (avg ${fmt0(U.length ? rem / U.length : 0)})` +
+            (rem < 0 ? " ⚠ entered lines already exceed Total token" : "");
+        } else finNote = "";
+        const top = V.slice(1, 37).reduce((s, v) => s + v, 0),
+          all = top + tail,
+          pct = (v) => ((v / all) * 100).toFixed(1) + "%";
+        $("fs").textContent =
+          finNote ||
+          (T && k <= 0
+            ? ` ⚠ Total token ${fmt0(T)} is too small for #36 = ${fmt0(v36)} — lower #36`
+            : "");
+      }
+      function row(x, rank, key) {
+        const other = key == "r2" ? "r1" : "r2";
+        let mv = "";
+        if (x.r1 && x.r2) {
+          const d = x.r1 - x.r2;
+          mv =
+            d > 0
+              ? `<span class="up">▲${d}</span>`
+              : d < 0
+                ? `<span class="dn">▼${-d}</span>`
+                : '<span class="mut">–</span>';
+        } else if (x.r2) mv = '<span class="up">New</span>';
+        else if (x.r1) mv = '<span class="dn">Out</span>';
+        const gLab = x.group === "BNK48" ? "BNK" : x.group === "CGM48" ? "CGM" : x.group;
+        return `<div class="c${x[key] ? "" : " out"}"><div class="rk">${rank}</div><img loading="lazy" src="${x.img}" alt="${x.name}"><div class="b"><div class="n">${x.name}</div><div class="tags"><span class="t ${x.group}">${gLab}</span><span class="t g gn">Gen ${x.gen}</span>${x.team ? `<span class="t g tm">Team ${x.team}</span>` : ""}</div>
+  <div class="col r1c${x.v1 ? " p1" : " e1t"}">${x.r1 || "—"}</div><div class="col v1${x.v1 ? " p1" : " e1t"}">${x.v1 ? fmt0(x.v1) : "≈" + fmt0(x.ev1)}</div><div class="col r2c" style="color:var(--c2)">${x.r2 || "—"}</div><div class="col est ${x.e2 ? "e2" : "e2t"}">${"≈" + fmt0(x.e2 || x.e2t)}<small>${est(x)}</small></div><div class="col mvc">${mv}<small>move</small></div></div></div>`;
+      }
+      // entry is locked to order: 36 first, then 35, 34 … — only the next line and the last entered line can be edited
+      const lastEnt = () => {
+        let r = 37;
+        while (r > 1 && E[r - 1] != null) r--;
+        return r <= 36 ? r : null;
+      };
+      const fvCell = (rank) => {
+        if (rank > 36)
+          return `<div class="fv"><b>${V[rank] ? "≈" + fmt0(V[rank]) : "—"}</b></div>`;
+        const last = lastEnt(),
+          next = (last || 37) - 1,
+          has = E[rank] != null,
+          open = rank == next || rank == last;
+        return `<div class="fv${has ? " ent" : ""}${open ? "" : " lock"}"><input class="fin" data-r="${rank}" inputmode="numeric" value="${has ? E[rank] : ""}" placeholder="≈${fmt0(V[rank])}" aria-label="Final tokens line ${rank}"${open ? "" : ' readonly tabindex="-1"'} />${rank == next ? `<span class="fedit" aria-hidden="true">✎</span>` : ""}${rank == last ? `<button class="fdel" data-r="${rank}" type="button" title="Clear line ${rank}" aria-label="Clear line ${rank}">✕</button>` : ""}</div>`;
+      };
+      // zone mode: one merged cell per zone, spanning its lines, values at the top
+      function zoneCell([n, a, b], row0) {
+        const z = V.slice(a, b + 1).reduce((s, v) => s + v, 0),
+          all = V.slice(1).reduce((s, v) => s + v, 0);
+        return `<div class="zc" style="grid-row:${row0} / span ${b - a + 1}"><div class="zch">Zone total</div><div class="zch">%</div><div>${fmt0(z)}</div><div>${((z / all) * 100).toFixed(1)}%</div></div>`;
+      }
+      // real final tokens typed per line (kept in this browser)
+      let E = {},
+        finNote = "";
+      try {
+        E = JSON.parse(localStorage.getItem("ge2026-finals") || "{}");
+      } catch (e) {}
+      {
+        const K = {};
+        for (let r = 36; r >= 1 && E[r] != null; r--) K[r] = E[r];
+        E = K;
+      }
+      const saveE = () => {
+        try {
+          localStorage.setItem("ge2026-finals", JSON.stringify(E));
+        } catch (e) {}
+      };
+      const GROUPS = [
+        ["Senbatsu", 1, 12],
+        ["Under Girls", 13, 24],
+        ["Next Girls", 25, 36],
+        ["Not Qualified", 37, 58],
+      ];
+      const gIdx = (r) => GROUPS.findIndex((g) => r >= g[1] && r <= g[2]);
+      // when line 36 is entered, it becomes the #36 tokens setting (locked until line 36 is cleared)
+      function lock36() {
+        const on = E[36] != null;
+        if (on) $("fn").value = E[36];
+        $("fn").readOnly = on;
+        document.querySelectorAll('input[name="fpr"]').forEach((el) => {
+          el.disabled = on;
+          if (on) el.checked = false;
+        });
+        $("fn").closest("fieldset").classList.toggle("locked", on);
+      }
+      function render() {
+        lock36();
+        finals();
+        const mode = document.querySelector('input[name="mode"]:checked').value;
+        $("hd").style.display = "none";
+        $("hd1").innerHTML =
+          '<div class="zth"><span>#</span><span></span><span>Zone total</span><span>%</span></div>';
+        const k = document.querySelector('input[name="sort"]:checked').value,
+          o = k == "r2" ? "r1" : "r2";
+        const ranked = M.filter((x) => x[k])
+          .sort((a, b) => a[k] - b[k])
+          .map((x) => [x, x[k]]);
+        // below #36: numbered 37–58, ordered by the other result, then by name
+        const rest = M.filter((x) => !x[k])
+          .sort(
+            (a, b) =>
+              (a[o] || 99) - (b[o] || 99) || a.name.localeCompare(b.name),
+          )
+          .map((x, i) => [x, 37 + i]);
+        const lines = ranked.concat(rest),
+          rowOf = (r) => r + gIdx(r) + 2, // row 1 = Total, then one group-header row before each group
+          allF = V.slice(1, 59).reduce((s, v) => s + v, 0);
+        const pc = (v, t) => ((v / t) * 100).toFixed(1) + "%",
+          tot1 = lines.reduce((s, [x]) => s + (x.v1 || x.ev1 || 0), 0),
+          tot2 = lines.reduce((s, [x]) => s + (x.e2 || x.e2t || 0), 0),
+          ghRow = (n, s1, s2, sf, style) => {
+            const tot = n === "Total";
+            return `<div class="ln gh"${style ? ` style="${style}"` : ""}><div class="c"><div class="b"><div class="n">${n}</div><div class="tags"></div><div class="col r1c${tot ? "" : " p1"}">${tot ? "" : pc(s1, T1)}</div><div class="col v1 p1">${fmt0(s1)}</div><div class="col r2c"${tot ? "" : ' style="color:var(--c2)"'}>${tot ? "" : pc(s2, T2)}</div><div class="col est e2">≈${fmt0(s2)}</div><div class="col mvc"></div></div></div><div class="fv"><b>≈${fmt0(sf)}</b></div></div>`;
+          };
+        let h;
+        if (mode == "zone") {
+          h =
+            ghRow("Total", tot1, tot2, allF, "grid-column:1 / -1;grid-row:1") +
+            GROUPS.map(([n, a, b], i) => {
+              const L = lines.filter(([, r]) => r >= a && r <= b),
+                s1 = L.reduce((s, [x]) => s + (x.v1 || x.ev1 || 0), 0),
+                s2 = L.reduce((s, [x]) => s + (x.e2 || x.e2t || 0), 0),
+                sf = V.slice(a, b + 1).reduce((s, v) => s + v, 0);
+              return ghRow(n, s1, s2, sf, `grid-column:1 / -1;grid-row:${a + i + 1}`);
+            }).join("") +
+            lines
+              .map(
+                ([x, r]) =>
+                  `<div class="zr" style="grid-column:1;grid-row:${rowOf(r)}">${r}</div><div style="grid-column:3;grid-row:${rowOf(r)};display:grid;min-width:0;max-width:100%">${fvCell(r)}</div>`,
+              )
+              .join("") +
+            ZONES.map((z) => zoneCell(z, rowOf(z[1]))).join("");
+          $("g").className = "grid zg";
+        } else {
+          const ln = ([x, r]) =>
+            `<div class="ln">${row(x, r, k)}${fvCell(r)}</div>`;
+          h =
+            ghRow("Total", tot1, tot2, allF) +
+            GROUPS.map(([n, a, b]) => {
+              const L = lines.filter(([, r]) => r >= a && r <= b),
+                s1 = L.reduce((s, [x]) => s + (x.v1 || x.ev1 || 0), 0),
+                s2 = L.reduce((s, [x]) => s + (x.e2 || x.e2t || 0), 0),
+                sf = V.slice(a, b + 1).reduce((s, v) => s + v, 0);
+              return ghRow(n, s1, s2, sf) + L.map(ln).join("");
+            }).join("");
+          $("g").className = "grid";
+        }
+        $("g").innerHTML = h;
+      }
+      // radio sets the number box; typing a number clears that group's radios
+      // #36 % radio = % of the total, so #36 follows the total while a % is selected
+      const radios = (n) => document.querySelectorAll(`input[name="${n}"]`),
+        sync36 = () => {
+          const r = document.querySelector('input[name="fpr"]:checked');
+          if (r) $("fn").value = Math.round((+$("ft").value || 0) * r.value);
+        };
+      radios("ftr").forEach((el) =>
+        el.addEventListener("change", () => {
+          $("ft").value = el.value;
+          sync36();
+          render();
+        }),
+      );
+      $("ft").addEventListener("input", () => {
+        radios("ftr").forEach((el) => (el.checked = false));
+        sync36();
+        render();
+      });
+      radios("fpr").forEach((el) =>
+        el.addEventListener("change", () => {
+          sync36();
+          render();
+        }),
+      );
+      $("fn").addEventListener("input", () => {
+        radios("fpr").forEach((el) => (el.checked = false));
+        render();
+      });
+      document
+        .querySelectorAll('input[name="fi"]')
+        .forEach((el) => el.addEventListener("change", render));
+      document
+        .querySelectorAll('input[name="sort"], input[name="mode"]')
+        .forEach((el) => el.addEventListener("change", render));
+      $("g").addEventListener("input", (ev) => {
+        const t = ev.target;
+        if (!t.classList.contains("fin") || t.readOnly) return;
+        const r = +t.dataset.r,
+          v = parseFloat(t.value.replace(/,/g, ""));
+        if (isNaN(v)) delete E[r];
+        else E[r] = v;
+        saveE();
+        render();
+        const n = document.querySelector(`.fin[data-r="${r}"]`);
+        if (n) {
+          n.focus();
+          n.setSelectionRange(n.value.length, n.value.length);
+        }
+      });
+      $("g").addEventListener("click", (ev) => {
+        const b = ev.target.closest(".fdel");
+        if (!b) return;
+        delete E[+b.dataset.r];
+        saveE();
+        render();
+        const n = document.querySelector(`.fin[data-r="${b.dataset.r}"]`);
+        if (n) n.focus();
+      });
+      $("fclr").addEventListener("click", () => {
+        E = {};
+        saveE();
+        render();
+      });
+      render();
+    </script>
+    <script>
+      (() => {
+        const b = document.getElementById("tgset"),
+          st = document.querySelector(".set");
+        const ap = (h) => {
+          st.classList.toggle("hid", h);
+          b.classList.toggle("off", h);
+          b.title = h ? "Show settings" : "Hide settings";
+          b.setAttribute("aria-label", b.title);
+        };
+        let h = false;
+        try {
+          h = localStorage.getItem("ge2026-sethid") === "1";
+        } catch (e) {}
+        ap(h);
+        b.onclick = () => {
+          h = !h;
+          ap(h);
+          try {
+            localStorage.setItem("ge2026-sethid", h ? "1" : "0");
+          } catch (e) {}
+        };
+      })();
+    </script>
+  </body>
+</html>

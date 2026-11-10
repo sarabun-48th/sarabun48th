@@ -1,0 +1,35 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "sarabun48th-demo",
+  "main": "src/index.js",
+  "compatibility_date": "2026-11-01",
+  "workers_dev": true,
+  "find_additional_modules": false,
+  // Bundle the static files into the Worker as text modules.
+  // public/tools.js stays a JS module (imported for TOOL_IDS); its source is
+  // also copied to src/tools.source.js and served at /tools.js.
+  "rules": [
+    {
+      "type": "Text",
+      "globs": [
+        "**/*.html",
+        "**/*.css",
+        "**/public/app.js",
+        "**/public/config.js",
+        "**/public/ge2026/members.js",
+        "**/src/tools.source.js"
+      ],
+      "fallthrough": false
+    }
+  ],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "sarabun48th-feedback",
+      "database_id": "451f5cc5-762f-4e48-913c-34465eb03c04",
+      "migrations_dir": "migrations"
+    }
+  ]
+  // Demo route (set in the dashboard / API, not here): demo.sarabun48th.space/*
+  // Do not attach this Worker to the production apex.
+}
