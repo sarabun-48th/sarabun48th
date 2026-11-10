@@ -1329,7 +1329,7 @@
               />0.5%</label
             >
             <label><input type="radio" name="fpr" value="0.006" />0.6%</label>
-            <input id="fn" type="number" min="0" step="100" value="5451" />
+            <input id="fn" type="number" min="0" step="100" value="7500" />
           </fieldset>
           <fieldset class="rg">
             <legend>Spread</legend>
@@ -1823,6 +1823,7 @@
         saveE();
         render();
       });
+      sync36();
       render();
     </script>
     <script>
@@ -1849,5 +1850,8 @@
         };
       })();
     </script>
+    <!-- Cloudflare Web Analytics -->
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "1652b090f2434ea888c572dae8dbba6f"}'></script>
+    <!-- End Cloudflare Web Analytics -->
   </body>
 </html>
