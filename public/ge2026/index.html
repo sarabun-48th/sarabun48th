@@ -873,15 +873,20 @@
       .fv.ent {
         background: color-mix(in srgb, var(--c4) 14%, var(--card));
       }
-      #fclr {
+      .fclr-rem {
+        margin-left: auto;
+        flex: none;
         font: inherit;
-        font-size: 13px;
-        padding: 5px 14px;
+        font-size: 12px;
+        padding: 3px 10px;
         border-radius: 999px;
         border: 1px solid var(--line);
         background: var(--chip);
         color: var(--chipfg);
         cursor: pointer;
+      }
+      #fs:empty {
+        display: none;
       }
       .fv {
         position: relative;
@@ -929,11 +934,6 @@
       .rg.locked label {
         opacity: 0.45;
         cursor: not-allowed;
-      }
-      .rg.locked input[type="number"] {
-        border-color: var(--c4);
-        color: var(--c4);
-        font-weight: 700;
       }
       /* Small screens: shrink typography, spacing, cards and totals so the grid fits. Desktop unchanged. */
       @media (max-width: 600px) {
@@ -1155,9 +1155,9 @@
           line-height: 18px;
           left: 4px;
         }
-        #fclr {
-          font-size: 12px;
-          padding: 4px 10px;
+        .fclr-rem {
+          font-size: 11px;
+          padding: 2px 8px;
         }
         .sep {
           margin: 12px 0 4px;
@@ -1381,7 +1381,6 @@
               />0.5%</label
             >
             <label><input type="radio" name="fpr" value="0.006" />0.6%</label>
-            <input id="fn" type="number" min="0" step="100" value="7500" />
           </fieldset>
           <fieldset class="rg">
             <legend>Spread</legend>
@@ -1431,11 +1430,7 @@
           <span style="color: var(--c0)">1st-published</span> ·
           <span class="e1t">1st-est.</span> ·
           <span style="color: var(--c2)">2nd</span> ·
-          <span style="color: var(--c4)">final</span> |
-          <span class="note"
-            >Type real final tokens into Final in order: line 36 first, then 35,
-            34 … ✕ clears the last one. The rest is re-projected.</span
-          ><button id="fclr" type="button">Clear entered</button>
+          <span style="color: var(--c4)">final</span>
         </p>
       </div>
       <div class="hd" id="hd">
@@ -1625,9 +1620,14 @@
       ];
       let V = [];
       const zone = (r) => ZONES.find((z) => r >= z[1] && r <= z[2])[0];
+      function v36Value() {
+        if (E[36] != null) return E[36];
+        const r = document.querySelector('input[name="fpr"]:checked');
+        return Math.round((+$("ft").value || 0) * (r ? +r.value : 0.005));
+      }
       function finals() {
         const T = +$("ft").value || 0,
-          v36 = +$("fn").value || 0,
+          v36 = v36Value(),
           sh = SHAPE[document.querySelector('input[name="fi"]:checked').value];
         V = [0];
         const v36s = v36;
@@ -1683,18 +1683,12 @@
             hit.forEach((r) => (fixed += cap[r]));
             free = free.filter((r) => !hit.includes(r));
           }
-          finNote =
-            `Entered ${ent.length} line${ent.length > 1 ? "s" : ""} = ${fmt0(kn)} · lines 37–58 ≈ ${fmt0(tl)} · remaining ${fmt0(rem)} projected over ${U.length} line${U.length == 1 ? "" : "s"} not entered (avg ${fmt0(U.length ? rem / U.length : 0)})` +
-            (rem < 0 ? " ⚠ entered lines already exceed Total token" : "");
-        } else finNote = "";
-        const top = V.slice(1, 37).reduce((s, v) => s + v, 0),
-          all = top + tail,
-          pct = (v) => ((v / all) * 100).toFixed(1) + "%";
+          remVal = rem;
+        } else remVal = null;
         $("fs").textContent =
-          finNote ||
-          (T && k <= 0
+          T && k <= 0
             ? ` ⚠ Total token ${fmt0(T)} is too small for #36 = ${fmt0(v36)} — lower #36`
-            : "");
+            : "";
       }
       function row(x, rank, key) {
         const other = key == "r2" ? "r1" : "r2";
@@ -1735,7 +1729,7 @@
       }
       // real final tokens typed per line (kept in this browser)
       let E = {},
-        finNote = "";
+        remVal = null;
       try {
         E = JSON.parse(localStorage.getItem("ge2026-finals") || "{}");
       } catch (e) {}
@@ -1759,13 +1753,10 @@
       // when line 36 is entered, it becomes the #36 tokens setting (locked until line 36 is cleared)
       function lock36() {
         const on = E[36] != null;
-        if (on) $("fn").value = E[36];
-        $("fn").readOnly = on;
-        document.querySelectorAll('input[name="fpr"]').forEach((el) => {
-          el.disabled = on;
-          if (on) el.checked = false;
-        });
-        $("fn").closest("fieldset").classList.toggle("locked", on);
+        const chips = document.querySelectorAll('input[name="fpr"]');
+        chips.forEach((el) => (el.disabled = on));
+        const fs36 = chips[0] && chips[0].closest("fieldset");
+        if (fs36) fs36.classList.toggle("locked", on);
       }
       function render() {
         lock36();
@@ -1787,7 +1778,9 @@
           )
           .map((x, i) => [x, 37 + i]);
         const lines = ranked.concat(rest),
-          rowOf = (r) => r + gIdx(r) + 2, // row 1 = Total, then one group-header row before each group
+          showRem = remVal != null,
+          remShift = showRem ? 1 : 0,
+          rowOf = (r) => r + gIdx(r) + 2 + remShift, // row 1 = Total, optional Remaining, then one group-header row before each group
           allF = V.slice(1, 59).reduce((s, v) => s + v, 0);
         const pc = (v, t) => ((v / t) * 100).toFixed(1) + "%",
           tot1 = lines.reduce((s, [x]) => s + (x.v1 || x.ev1 || 0), 0),
@@ -1795,17 +1788,20 @@
           ghRow = (n, s1, s2, sf, style) => {
             const tot = n === "Total";
             return `<div class="ln gh"${style ? ` style="${style}"` : ""}><div class="c"><div class="b"><div class="id"><div class="n">${n}</div><div class="tags"></div></div><div class="nums"><div class="col r1c${tot ? "" : " p1"}">${tot ? "" : pc(s1, T1)}</div><div class="col v1 p1">${fmt0(s1)}</div><div class="col r2c"${tot ? "" : ' style="color:var(--c2)"'}>${tot ? "" : pc(s2, T2)}</div><div class="col est e2">≈${fmt0(s2)}</div><div class="col mvc"></div></div></div></div><div class="fv"><b>≈${fmt0(sf)}</b></div></div>`;
-          };
+          },
+          remRow = (style) =>
+            `<div class="ln gh"${style ? ` style="${style}"` : ""}><div class="c"><div class="b"><div class="id"><div class="n">Remaining</div></div><button type="button" class="fclr-rem">Clear entered</button></div></div><div class="fv"><b>≈${fmt0(remVal)}</b></div></div>`;
         let h;
         if (mode == "zone") {
           h =
             ghRow("Total", tot1, tot2, allF, "grid-column:1 / -1;grid-row:1") +
+            (showRem ? remRow("grid-column:1 / -1;grid-row:2") : "") +
             GROUPS.map(([n, a, b], i) => {
               const L = lines.filter(([, r]) => r >= a && r <= b),
                 s1 = L.reduce((s, [x]) => s + (x.v1 || x.ev1 || 0), 0),
                 s2 = L.reduce((s, [x]) => s + (x.e2 || x.e2t || 0), 0),
                 sf = V.slice(a, b + 1).reduce((s, v) => s + v, 0);
-              return ghRow(n, s1, s2, sf, `grid-column:1 / -1;grid-row:${a + i + 1}`);
+              return ghRow(n, s1, s2, sf, `grid-column:1 / -1;grid-row:${a + i + 1 + remShift}`);
             }).join("") +
             lines
               .map(
@@ -1820,6 +1816,7 @@
             `<div class="ln">${row(x, r, k)}${fvCell(r)}</div>`;
           h =
             ghRow("Total", tot1, tot2, allF) +
+            (showRem ? remRow() : "") +
             GROUPS.map(([n, a, b]) => {
               const L = lines.filter(([, r]) => r >= a && r <= b),
                 s1 = L.reduce((s, [x]) => s + (x.v1 || x.ev1 || 0), 0),
@@ -1831,35 +1828,21 @@
         }
         $("g").innerHTML = h;
       }
-      // radio sets the number box; typing a number clears that group's radios
       // #36 % radio = % of the total, so #36 follows the total while a % is selected
-      const radios = (n) => document.querySelectorAll(`input[name="${n}"]`),
-        sync36 = () => {
-          const r = document.querySelector('input[name="fpr"]:checked');
-          if (r) $("fn").value = Math.round((+$("ft").value || 0) * r.value);
-        };
+      const radios = (n) => document.querySelectorAll(`input[name="${n}"]`);
       radios("ftr").forEach((el) =>
         el.addEventListener("change", () => {
           $("ft").value = el.value;
-          sync36();
           render();
         }),
       );
       $("ft").addEventListener("input", () => {
         radios("ftr").forEach((el) => (el.checked = false));
-        sync36();
         render();
       });
       radios("fpr").forEach((el) =>
-        el.addEventListener("change", () => {
-          sync36();
-          render();
-        }),
+        el.addEventListener("change", render),
       );
-      $("fn").addEventListener("input", () => {
-        radios("fpr").forEach((el) => (el.checked = false));
-        render();
-      });
       document
         .querySelectorAll('input[name="fi"]')
         .forEach((el) => el.addEventListener("change", render));
@@ -1881,7 +1864,16 @@
           n.setSelectionRange(n.value.length, n.value.length);
         }
       });
+      const clearEntered = () => {
+        E = {};
+        saveE();
+        render();
+      };
       $("g").addEventListener("click", (ev) => {
+        if (ev.target.closest(".fclr-rem")) {
+          clearEntered();
+          return;
+        }
         const b = ev.target.closest(".fdel");
         if (!b) return;
         delete E[+b.dataset.r];
@@ -1890,12 +1882,6 @@
         const n = document.querySelector(`.fin[data-r="${b.dataset.r}"]`);
         if (n) n.focus();
       });
-      $("fclr").addEventListener("click", () => {
-        E = {};
-        saveE();
-        render();
-      });
-      sync36();
       render();
     </script>
     <script>
