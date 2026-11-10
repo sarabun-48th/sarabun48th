@@ -8,6 +8,12 @@ import configJs from "../public/config.js";
 import toolsJs from "./tools.source.js";
 import geHtml from "../public/ge2026/index.html";
 import geMembers from "../public/ge2026/members.js";
+import ogLandingB64 from "./og-landing.js";
+import ogGeB64 from "./og-ge2026.js";
+
+const b64ToBytes = (s) => Uint8Array.from(atob(s), (c) => c.charCodeAt(0));
+const ogLanding = b64ToBytes(ogLandingB64);
+const ogGe = b64ToBytes(ogGeB64);
 
 const TOOL_IDS = new Set([...TOOLS.map((t) => t.id), "general"]);
 const LIMITS = { message: 2000, idea: 2000, name: 80, contact: 120 };
@@ -23,6 +29,8 @@ const FILES = {
   "/ge2026/": [geHtml, "text/html; charset=utf-8"],
   "/ge2026/index.html": [geHtml, "text/html; charset=utf-8"],
   "/ge2026/members.js": [geMembers, "text/javascript; charset=utf-8"],
+  "/og.png": [ogLanding, "image/png"],
+  "/ge2026/og.png": [ogGe, "image/png"],
 };
 
 const json = (data, status = 200) =>
@@ -105,8 +113,10 @@ export default {
     if (pathname.startsWith("/api/")) return json({ ok: false, error: "not_found" }, 404);
     const file = FILES[pathname];
     if (!file) return new Response("Not found", { status: 404 });
-    return new Response(file[0], {
-      headers: { "content-type": file[1], "cache-control": "public, max-age=300" },
+    const [body, type] = file;
+    const cache = type.startsWith("image/") ? "public, max-age=86400" : "public, max-age=300";
+    return new Response(body, {
+      headers: { "content-type": type, "cache-control": cache },
     });
   },
 };

@@ -17,6 +17,8 @@ const modules = [
   ["src/tools.source.js", read("src/tools.source.js"), "text/plain"],
   ["public/ge2026/index.html", read("public/ge2026/index.html"), "text/plain"],
   ["public/ge2026/members.js", read("public/ge2026/members.js"), "text/plain"],
+  ["src/og-landing.js", read("src/og-landing.js"), "application/javascript+module"],
+  ["src/og-ge2026.js", read("src/og-ge2026.js"), "application/javascript+module"],
 ];
 
 const appends = modules

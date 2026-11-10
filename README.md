@@ -12,6 +12,8 @@ Feedback and feature/new-site ideas go to a single D1 database, `sarabun48th-fee
 ## Layout
 - `public/index.html`, `style.css`, `app.js`, `tools.js`, `config.js` — landing
 - `public/ge2026/index.html`, `public/ge2026/members.js` — GE2026 tool
+- `public/og.png`, `public/ge2026/og.png` — Open Graph / X preview images (1200×630)
+- `src/og-landing.js`, `src/og-ge2026.js` — base64 embeds of those images for the Worker
 - `src/index.js` — Worker: static files plus `POST /api/feedback` and `POST /api/suggest`
 - `src/tools.source.js` — text copy of the tool list, served at `/tools.js`
 - `migrations/0001_init.sql` — D1 schema (already applied on `sarabun48th-feedback`)
