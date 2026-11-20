@@ -1,0 +1,945 @@
+{
+  "meta": {
+    "election": "BNK48 & CGM48 Senbatsu General Election 2026",
+    "short": "GE6",
+    "totalTokens": 1672642.55,
+    "announcedOn": "2026-11-14",
+    "venue": "MCC Hall, The Mall Lifestore Bangkapi",
+    "groups": [
+      {
+        "id": "kami7",
+        "name": "KAMI 7",
+        "nameTh": "คามิ 7",
+        "ranks": [
+          1,
+          7
+        ],
+        "alsoSenbatsu": true
+      },
+      {
+        "id": "senbatsu",
+        "name": "Senbatsu",
+        "nameTh": "เซ็มบัตสึ",
+        "ranks": [
+          1,
+          12
+        ]
+      },
+      {
+        "id": "under",
+        "name": "Under Girls",
+        "nameTh": "อันเดอร์เกิลส์",
+        "ranks": [
+          13,
+          24
+        ]
+      },
+      {
+        "id": "next",
+        "name": "Next Girls",
+        "nameTh": "เน็กซ์เกิลส์",
+        "ranks": [
+          25,
+          36
+        ]
+      }
+    ],
+    "concertRerun": {
+      "labelTh": "บัตรรับชมรอบ Rerun คอนเสิร์ต BNK48 & CGM48 Concert 2026: JOURNEY OF DREAMS",
+      "start": "2026-11-20T18:00:00+07:00",
+      "end": "2026-11-26T23:00:00+07:00",
+      "url": "https://x.com/kojimapoppop48/status/2123585116056543661"
+    },
+    "sources": [
+      {
+        "label": "บัญชีทางการ BNK48 บน X — สรุป Senbatsu อันดับ 1–12",
+        "url": "https://x.com/bnk48official/status/2121630940661461260"
+      },
+      {
+        "label": "บัญชีทางการ BNK48 บน X — สรุป Under Girls อันดับ 13–24",
+        "url": "https://x.com/bnk48official/status/2121629991272366105"
+      },
+      {
+        "label": "บัญชีทางการ BNK48 บน X — สรุป Next Girls อันดับ 25–36",
+        "url": "https://x.com/bnk48official/status/2121628542517858314"
+      },
+      {
+        "label": "บัญชีทางการ BNK48 บน X — รายชื่อ KAMI 7",
+        "url": "https://x.com/bnk48official/status/2121632909102854190"
+      },
+      {
+        "label": "บัญชีทางการ BNK48 บน Facebook — ผล GE5 (อันดับ 1–36)",
+        "url": "https://www.facebook.com/bnk48official/posts/1229757951842182/"
+      },
+      {
+        "label": "โพสต์ต้นทางช่วงขายบัตร Rerun",
+        "url": "https://x.com/kojimapoppop48/status/2123585116056543661"
+      }
+    ],
+    "notes": [
+      "โทเคนอันดับ 1–36 ใช้จากโพสต์สรุปทางการ @bnk48official วันที่ 14 พ.ย. 2026 ไม่ใช่จากข่าวหรือแฟนไซต์",
+      "อันดับ 16 นีย่า 42,788.29 / อันดับ 28 วาว่า 21,110.07 / อันดับ 31 ปาล์มมี่ 16,211.34 ตามข้อความทางการ (ต่างจากตัวเลขที่ถอดจากภาพบางชุดเล็กน้อย)",
+      "โพสต์รายบุคคลของโยเกิร์ต (@bnk48official/status/2121585856758829355) พิมพ์คะแนน 44,980.98 ซึ่งซ้ำกับแอลอันดับ 13 — ใช้คะแนนจากโพสต์สรุปทางการ 45,371.69",
+      "อันดับและโทเคนของสมาชิกนอก 36 อันดับแรก (22 คน) ยังไม่พบการประกาศบนบัญชีทางการ X จึงใส่ไว้เป็นรอตรวจสอบ ไม่ใช้ตัวเลขจากข่าว",
+      "ป้ายเซ็มบัตสึครั้งแรก: โพสต์สรุปทางการของ GE6 ไม่ได้ติดเครื่องหมาย First Time เหมือน GE5 จึงแสดงป้ายในตารางเฉพาะโรส ซึ่งเป็นครั้งแรกที่ลงเลือกตั้ง (ยืนยันได้จากประวัติการสมัคร). สมาชิก Senbatsu ที่ยังรอตรวจสอบสถานะครั้งแรก ได้แก่ โมเน่ต์, แนล, เฟม, มิชา, เอมม่า และมารีน — รายละเอียดอยู่ในหมายเหตุนี้ ไม่ใส่ป้ายเหลืองในตารางหรือการ์ดแชร์",
+      "โมเน่ต์ไม่ได้ลง GE5; ใน GE4 (ซิงเกิลที่ 16) มีข้อมูลจากแฟนวิกิ/สื่อว่าได้อันดับ 13 ซึ่งปีนั้น Senbatsu อาจเป็น 16 อันดับแรก จึงยังไม่สรุปป้ายเซ็มบัตสึครั้งแรก",
+      {
+        "id": "fn-total",
+        "text": "ยอดรวม 1,672,642.55 เป็นยอดปิดโหวตที่ใช้ในเครื่องมือ GE2026 ของเว็บนี้ และสอดคล้องกับแหล่งข่าวหลายแห่ง ยังไม่พบตัวเลขนี้ในโพสต์สรุปอันดับทางการบน X"
+      }
+    ]
+  },
+  "members": [
+    {
+      "rank": 1,
+      "name": "Pancake",
+      "band": "BNK48",
+      "group": "kami7",
+      "tokens": 244170.46,
+      "ge5Rank": 1,
+      "change": "same",
+      "firstSenbatsu": false,
+      "nicknamesTh": [
+        "แพนเค้ก"
+      ]
+    },
+    {
+      "rank": 2,
+      "name": "Rose",
+      "band": "BNK48",
+      "group": "kami7",
+      "tokens": 95547.25,
+      "ge5Rank": null,
+      "change": "new",
+      "firstSenbatsu": true,
+      "nicknamesTh": [
+        "โรส"
+      ]
+    },
+    {
+      "rank": 3,
+      "name": "Monet",
+      "band": "BNK48",
+      "group": "kami7",
+      "tokens": 92174.7,
+      "ge5Rank": null,
+      "change": "new",
+      "firstSenbatsu": null,
+      "ge5Note": "ไม่ได้ลงสมัคร GE5",
+      "firstSenbatsuUnconfirmed": true,
+      "nicknamesTh": [
+        "โมเน่ต์",
+        "โมเน"
+      ]
+    },
+    {
+      "rank": 4,
+      "name": "Nall",
+      "band": "BNK48",
+      "group": "kami7",
+      "tokens": 79585.97,
+      "ge5Rank": 28,
+      "change": "up",
+      "firstSenbatsu": null,
+      "firstSenbatsuUnconfirmed": true,
+      "nicknamesTh": [
+        "แนล"
+      ]
+    },
+    {
+      "rank": 5,
+      "name": "Hoop",
+      "band": "BNK48",
+      "group": "kami7",
+      "tokens": 71358.29,
+      "ge5Rank": 4,
+      "change": "down",
+      "firstSenbatsu": false,
+      "nicknamesTh": [
+        "ฮูพ"
+      ]
+    },
+    {
+      "rank": 6,
+      "name": "Fame",
+      "band": "BNK48",
+      "group": "kami7",
+      "tokens": 55487.07,
+      "ge5Rank": null,
+      "change": "new",
+      "firstSenbatsu": null,
+      "ge5Note": "ไม่ได้ลงสมัคร GE5",
+      "firstSenbatsuUnconfirmed": true,
+      "nicknamesTh": [
+        "เฟม"
+      ]
+    },
+    {
+      "rank": 7,
+      "name": "Neen",
+      "band": "BNK48",
+      "group": "kami7",
+      "tokens": 54251.53,
+      "ge5Rank": 12,
+      "change": "up",
+      "firstSenbatsu": false,
+      "nicknamesTh": [
+        "นีน"
+      ]
+    },
+    {
+      "rank": 8,
+      "name": "Micha",
+      "band": "BNK48",
+      "group": "senbatsu",
+      "tokens": 52783.31,
+      "ge5Rank": 23,
+      "change": "up",
+      "firstSenbatsu": null,
+      "firstSenbatsuUnconfirmed": true,
+      "nicknamesTh": [
+        "มิชา"
+      ]
+    },
+    {
+      "rank": 9,
+      "name": "Emma",
+      "band": "CGM48",
+      "group": "senbatsu",
+      "tokens": 50647.64,
+      "ge5Rank": null,
+      "change": "new",
+      "firstSenbatsu": null,
+      "firstSenbatsuUnconfirmed": true,
+      "nicknamesTh": [
+        "เอมม่า"
+      ]
+    },
+    {
+      "rank": 10,
+      "name": "Marine",
+      "band": "BNK48",
+      "group": "senbatsu",
+      "tokens": 48116.63,
+      "ge5Rank": 27,
+      "change": "up",
+      "firstSenbatsu": null,
+      "firstSenbatsuUnconfirmed": true,
+      "nicknamesTh": [
+        "มารีน"
+      ]
+    },
+    {
+      "rank": 11,
+      "name": "Jew",
+      "band": "BNK48",
+      "group": "senbatsu",
+      "tokens": 46298.47,
+      "ge5Rank": 10,
+      "change": "down",
+      "firstSenbatsu": false,
+      "nicknamesTh": [
+        "จิว"
+      ]
+    },
+    {
+      "rank": 12,
+      "name": "Yoghurt",
+      "band": "BNK48",
+      "group": "senbatsu",
+      "tokens": 45371.69,
+      "ge5Rank": 8,
+      "change": "down",
+      "firstSenbatsu": false,
+      "nicknamesTh": [
+        "โยเกิร์ต"
+      ]
+    },
+    {
+      "rank": 13,
+      "name": "L",
+      "band": "BNK48",
+      "group": "under",
+      "tokens": 44980.98,
+      "ge5Rank": 9,
+      "change": "down",
+      "firstSenbatsu": false,
+      "nicknamesTh": [
+        "แอล"
+      ]
+    },
+    {
+      "rank": 14,
+      "name": "Nana",
+      "band": "CGM48",
+      "group": "under",
+      "tokens": 44751.95,
+      "ge5Rank": 14,
+      "change": "same",
+      "firstSenbatsu": false,
+      "nicknamesTh": [
+        "นานา"
+      ]
+    },
+    {
+      "rank": 15,
+      "name": "Arlee",
+      "band": "BNK48",
+      "group": "under",
+      "tokens": 44468.83,
+      "ge5Rank": 19,
+      "change": "up",
+      "firstSenbatsu": false,
+      "nicknamesTh": [
+        "อาหลี"
+      ]
+    },
+    {
+      "rank": 16,
+      "name": "Niya",
+      "band": "BNK48",
+      "group": "under",
+      "tokens": 42788.29,
+      "ge5Rank": 24,
+      "change": "up",
+      "firstSenbatsu": false,
+      "nicknamesTh": [
+        "นีย่า"
+      ]
+    },
+    {
+      "rank": 17,
+      "name": "Prae",
+      "band": "CGM48",
+      "group": "under",
+      "tokens": 41290.39,
+      "ge5Rank": null,
+      "change": "new",
+      "firstSenbatsu": false,
+      "nicknamesTh": [
+        "แพร"
+      ]
+    },
+    {
+      "rank": 18,
+      "name": "Luksorn",
+      "band": "BNK48",
+      "group": "under",
+      "tokens": 40650.58,
+      "ge5Rank": null,
+      "change": "new",
+      "firstSenbatsu": false,
+      "nicknamesTh": [
+        "ลูกศร"
+      ]
+    },
+    {
+      "rank": 19,
+      "name": "Emmy",
+      "band": "BNK48",
+      "group": "under",
+      "tokens": 36692.73,
+      "ge5Rank": 20,
+      "change": "up",
+      "firstSenbatsu": false,
+      "nicknamesTh": [
+        "เอ็มมี่"
+      ]
+    },
+    {
+      "rank": 20,
+      "name": "Janry",
+      "band": "BNK48",
+      "group": "under",
+      "tokens": 30289.36,
+      "ge5Rank": 16,
+      "change": "down",
+      "firstSenbatsu": false,
+      "nicknamesTh": [
+        "แจนรี่"
+      ]
+    },
+    {
+      "rank": 21,
+      "name": "Galeya",
+      "band": "BNK48",
+      "group": "under",
+      "tokens": 28692.66,
+      "ge5Rank": 34,
+      "change": "up",
+      "firstSenbatsu": false,
+      "nicknamesTh": [
+        "เกลญ่า"
+      ]
+    },
+    {
+      "rank": 22,
+      "name": "Praew",
+      "band": "BNK48",
+      "group": "under",
+      "tokens": 28319.84,
+      "ge5Rank": null,
+      "change": "new",
+      "firstSenbatsu": false,
+      "nicknamesTh": [
+        "แพรว"
+      ]
+    },
+    {
+      "rank": 23,
+      "name": "Lingling",
+      "band": "CGM48",
+      "group": "under",
+      "tokens": 24990.54,
+      "ge5Rank": null,
+      "change": "new",
+      "firstSenbatsu": false,
+      "nicknamesTh": [
+        "หลิงหลิง"
+      ]
+    },
+    {
+      "rank": 24,
+      "name": "Blythe",
+      "band": "BNK48",
+      "group": "under",
+      "tokens": 24826.17,
+      "ge5Rank": null,
+      "change": "new",
+      "firstSenbatsu": false,
+      "nicknamesTh": [
+        "บลายธ์"
+      ]
+    },
+    {
+      "rank": 25,
+      "name": "Lookked",
+      "band": "CGM48",
+      "group": "next",
+      "tokens": 22765.12,
+      "ge5Rank": 30,
+      "change": "up",
+      "firstSenbatsu": false,
+      "nicknamesTh": [
+        "ลูกเกด"
+      ]
+    },
+    {
+      "rank": 26,
+      "name": "Saonoi",
+      "band": "BNK48",
+      "group": "next",
+      "tokens": 22317.81,
+      "ge5Rank": 22,
+      "change": "down",
+      "firstSenbatsu": false,
+      "nicknamesTh": [
+        "สาวน้อย"
+      ]
+    },
+    {
+      "rank": 27,
+      "name": "Nammonn",
+      "band": "BNK48",
+      "group": "next",
+      "tokens": 21525.99,
+      "ge5Rank": 25,
+      "change": "down",
+      "firstSenbatsu": false,
+      "nicknamesTh": [
+        "น้ำมนต์"
+      ]
+    },
+    {
+      "rank": 28,
+      "name": "Wawa",
+      "band": "BNK48",
+      "group": "next",
+      "tokens": 21110.07,
+      "ge5Rank": 21,
+      "change": "down",
+      "firstSenbatsu": false,
+      "nicknamesTh": [
+        "วาว่า"
+      ]
+    },
+    {
+      "rank": 29,
+      "name": "Patt",
+      "band": "BNK48",
+      "group": "next",
+      "tokens": 20444.63,
+      "ge5Rank": 29,
+      "change": "same",
+      "firstSenbatsu": false,
+      "nicknamesTh": [
+        "แพท"
+      ]
+    },
+    {
+      "rank": 30,
+      "name": "Khowjow",
+      "band": "BNK48",
+      "group": "next",
+      "tokens": 16334.74,
+      "ge5Rank": null,
+      "change": "new",
+      "firstSenbatsu": false,
+      "nicknamesTh": [
+        "ข้าวจ้าว"
+      ]
+    },
+    {
+      "rank": 31,
+      "name": "Palmmy",
+      "band": "BNK48",
+      "group": "next",
+      "tokens": 16211.34,
+      "ge5Rank": 31,
+      "change": "same",
+      "firstSenbatsu": false,
+      "nicknamesTh": [
+        "ปาล์มมี่"
+      ]
+    },
+    {
+      "rank": 32,
+      "name": "Ploen",
+      "band": "CGM48",
+      "group": "next",
+      "tokens": 15863.2,
+      "ge5Rank": 35,
+      "change": "up",
+      "firstSenbatsu": false,
+      "nicknamesTh": [
+        "เพลิน"
+      ]
+    },
+    {
+      "rank": 33,
+      "name": "Sindy",
+      "band": "BNK48",
+      "group": "next",
+      "tokens": 14857.78,
+      "ge5Rank": 33,
+      "change": "same",
+      "firstSenbatsu": false,
+      "nicknamesTh": [
+        "ซินดี้"
+      ]
+    },
+    {
+      "rank": 34,
+      "name": "Nisha",
+      "band": "CGM48",
+      "group": "next",
+      "tokens": 13667.28,
+      "ge5Rank": null,
+      "change": "new",
+      "firstSenbatsu": false,
+      "nicknamesTh": [
+        "นิชา"
+      ]
+    },
+    {
+      "rank": 35,
+      "name": "Jingjing",
+      "band": "CGM48",
+      "group": "next",
+      "tokens": 13608.73,
+      "ge5Rank": 26,
+      "change": "down",
+      "firstSenbatsu": false,
+      "nicknamesTh": [
+        "จิงจิง"
+      ]
+    },
+    {
+      "rank": 36,
+      "name": "Grape",
+      "band": "BNK48",
+      "group": "next",
+      "tokens": 12875.77,
+      "ge5Rank": null,
+      "change": "new",
+      "firstSenbatsu": false,
+      "nicknamesTh": [
+        "เกรฟ"
+      ]
+    },
+    {
+      "rank": null,
+      "name": "Berry",
+      "band": "BNK48",
+      "group": null,
+      "tokens": null,
+      "ge5Rank": null,
+      "change": "new",
+      "firstSenbatsu": false,
+      "unconfirmed": [
+        "rank",
+        "tokens"
+      ],
+      "nicknamesTh": [
+        "เบอร์รี่"
+      ]
+    },
+    {
+      "rank": null,
+      "name": "Khaimook",
+      "band": "BNK48",
+      "group": null,
+      "tokens": null,
+      "ge5Rank": 36,
+      "change": "down",
+      "firstSenbatsu": false,
+      "unconfirmed": [
+        "rank",
+        "tokens"
+      ],
+      "nicknamesTh": [
+        "ไข่มุก"
+      ]
+    },
+    {
+      "rank": null,
+      "name": "Proud",
+      "band": "BNK48",
+      "group": null,
+      "tokens": null,
+      "ge5Rank": 32,
+      "change": "down",
+      "firstSenbatsu": false,
+      "unconfirmed": [
+        "rank",
+        "tokens"
+      ],
+      "nicknamesTh": [
+        "พราวด์"
+      ]
+    },
+    {
+      "rank": null,
+      "name": "Mayji",
+      "band": "BNK48",
+      "group": null,
+      "tokens": null,
+      "ge5Rank": null,
+      "change": "new",
+      "firstSenbatsu": false,
+      "unconfirmed": [
+        "rank",
+        "tokens"
+      ],
+      "nicknamesTh": [
+        "เมย์จิ"
+      ]
+    },
+    {
+      "rank": null,
+      "name": "Mint",
+      "band": "BNK48",
+      "group": null,
+      "tokens": null,
+      "ge5Rank": null,
+      "change": "new",
+      "firstSenbatsu": false,
+      "unconfirmed": [
+        "rank",
+        "tokens"
+      ],
+      "nicknamesTh": [
+        "มิ้นท์"
+      ]
+    },
+    {
+      "rank": null,
+      "name": "Inkcha",
+      "band": "BNK48",
+      "group": null,
+      "tokens": null,
+      "ge5Rank": null,
+      "change": "new",
+      "firstSenbatsu": false,
+      "unconfirmed": [
+        "rank",
+        "tokens"
+      ],
+      "nicknamesTh": [
+        "อิ๊งชา"
+      ]
+    },
+    {
+      "rank": null,
+      "name": "Cartoon",
+      "band": "BNK48",
+      "group": null,
+      "tokens": null,
+      "ge5Rank": null,
+      "change": "new",
+      "firstSenbatsu": false,
+      "unconfirmed": [
+        "rank",
+        "tokens"
+      ],
+      "nicknamesTh": [
+        "การ์ตูน"
+      ]
+    },
+    {
+      "rank": null,
+      "name": "Mail",
+      "band": "BNK48",
+      "group": null,
+      "tokens": null,
+      "ge5Rank": null,
+      "change": "new",
+      "firstSenbatsu": false,
+      "unconfirmed": [
+        "rank",
+        "tokens"
+      ],
+      "nicknamesTh": [
+        "เมล"
+      ]
+    },
+    {
+      "rank": null,
+      "name": "Mirin",
+      "band": "BNK48",
+      "group": null,
+      "tokens": null,
+      "ge5Rank": null,
+      "change": "new",
+      "firstSenbatsu": false,
+      "unconfirmed": [
+        "rank",
+        "tokens"
+      ],
+      "nicknamesTh": [
+        "มิริน"
+      ]
+    },
+    {
+      "rank": null,
+      "name": "Ginna",
+      "band": "CGM48",
+      "group": null,
+      "tokens": null,
+      "ge5Rank": null,
+      "change": "new",
+      "firstSenbatsu": false,
+      "unconfirmed": [
+        "rank",
+        "tokens"
+      ],
+      "nicknamesTh": [
+        "จีนน่า"
+      ]
+    },
+    {
+      "rank": null,
+      "name": "Kwan",
+      "band": "CGM48",
+      "group": null,
+      "tokens": null,
+      "ge5Rank": null,
+      "change": "new",
+      "firstSenbatsu": false,
+      "unconfirmed": [
+        "rank",
+        "tokens"
+      ],
+      "nicknamesTh": [
+        "ขวัญ"
+      ]
+    },
+    {
+      "rank": null,
+      "name": "Else",
+      "band": "CGM48",
+      "group": null,
+      "tokens": null,
+      "ge5Rank": null,
+      "change": "new",
+      "firstSenbatsu": false,
+      "unconfirmed": [
+        "rank",
+        "tokens"
+      ],
+      "nicknamesTh": [
+        "เอลส์"
+      ]
+    },
+    {
+      "rank": null,
+      "name": "Hongyok",
+      "band": "CGM48",
+      "group": null,
+      "tokens": null,
+      "ge5Rank": null,
+      "change": "new",
+      "firstSenbatsu": false,
+      "unconfirmed": [
+        "rank",
+        "tokens"
+      ],
+      "nicknamesTh": [
+        "หงษ์หยก"
+      ]
+    },
+    {
+      "rank": null,
+      "name": "Praifa",
+      "band": "CGM48",
+      "group": null,
+      "tokens": null,
+      "ge5Rank": null,
+      "change": "new",
+      "firstSenbatsu": false,
+      "unconfirmed": [
+        "rank",
+        "tokens"
+      ],
+      "nicknamesTh": [
+        "ไปรฟ้า"
+      ]
+    },
+    {
+      "rank": null,
+      "name": "Satangpound",
+      "band": "CGM48",
+      "group": null,
+      "tokens": null,
+      "ge5Rank": null,
+      "change": "new",
+      "firstSenbatsu": false,
+      "unconfirmed": [
+        "rank",
+        "tokens"
+      ],
+      "nicknamesTh": [
+        "สตางค์ปอนด์"
+      ]
+    },
+    {
+      "rank": null,
+      "name": "Shenae",
+      "band": "CGM48",
+      "group": null,
+      "tokens": null,
+      "ge5Rank": null,
+      "change": "new",
+      "firstSenbatsu": false,
+      "unconfirmed": [
+        "rank",
+        "tokens"
+      ],
+      "nicknamesTh": [
+        "ชีเน่"
+      ]
+    },
+    {
+      "rank": null,
+      "name": "Valentine",
+      "band": "CGM48",
+      "group": null,
+      "tokens": null,
+      "ge5Rank": null,
+      "change": "new",
+      "firstSenbatsu": false,
+      "unconfirmed": [
+        "rank",
+        "tokens"
+      ],
+      "nicknamesTh": [
+        "วาเลนไทน์"
+      ]
+    },
+    {
+      "rank": null,
+      "name": "Chifa",
+      "band": "CGM48",
+      "group": null,
+      "tokens": null,
+      "ge5Rank": null,
+      "change": "new",
+      "firstSenbatsu": false,
+      "unconfirmed": [
+        "rank",
+        "tokens"
+      ],
+      "nicknamesTh": [
+        "ชิฟา"
+      ]
+    },
+    {
+      "rank": null,
+      "name": "Lewlew",
+      "band": "CGM48",
+      "group": null,
+      "tokens": null,
+      "ge5Rank": null,
+      "change": "new",
+      "firstSenbatsu": false,
+      "unconfirmed": [
+        "rank",
+        "tokens"
+      ],
+      "nicknamesTh": [
+        "หลิวหลิว"
+      ]
+    },
+    {
+      "rank": null,
+      "name": "Namphet",
+      "band": "CGM48",
+      "group": null,
+      "tokens": null,
+      "ge5Rank": null,
+      "change": "new",
+      "firstSenbatsu": false,
+      "unconfirmed": [
+        "rank",
+        "tokens"
+      ],
+      "nicknamesTh": [
+        "น้ำเพชร"
+      ]
+    },
+    {
+      "rank": null,
+      "name": "Punpon",
+      "band": "CGM48",
+      "group": null,
+      "tokens": null,
+      "ge5Rank": null,
+      "change": "new",
+      "firstSenbatsu": false,
+      "unconfirmed": [
+        "rank",
+        "tokens"
+      ],
+      "nicknamesTh": [
+        "ปันผล"
+      ]
+    },
+    {
+      "rank": null,
+      "name": "Tara",
+      "band": "CGM48",
+      "group": null,
+      "tokens": null,
+      "ge5Rank": null,
+      "change": "new",
+      "firstSenbatsu": false,
+      "unconfirmed": [
+        "rank",
+        "tokens"
+      ],
+      "nicknamesTh": [
+        "ธารา"
+      ]
+    }
+  ]
+}

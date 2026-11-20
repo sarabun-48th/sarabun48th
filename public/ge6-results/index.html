@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>สารบัญ48th · ผล GE6</title>
+  <meta name="description" content="สารบัญ48th รวบรวมผล BNK48 &amp; CGM48 Senbatsu General Election 2026 อันดับ คะแนน และการเปลี่ยนแปลงเทียบ GE5">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="th_TH">
+  <meta property="og:title" content="สารบัญ48th · ผล GE6">
+  <meta property="og:description" content="ผล BNK48 &amp; CGM48 Senbatsu General Election 2026 อันดับ คะแนน และการเปลี่ยนแปลงเทียบ GE5">
+  <meta property="og:url" content="https://demo.sarabun48th.space/ge6-results/">
+  <meta property="og:image" content="https://demo.sarabun48th.space/ge6-results/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
+  <meta property="og:image:alt" content="สารบัญ48th · ผล GE6 คามิ 7">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="สารบัญ48th · ผล GE6">
+  <meta name="twitter:description" content="ผล BNK48 &amp; CGM48 Senbatsu General Election 2026 อันดับ คะแนน และการเปลี่ยนแปลงเทียบ GE5">
+  <meta name="twitter:image" content="https://demo.sarabun48th.space/ge6-results/og.png">
+  <meta name="theme-color" content="#0c0a0b">
+  <meta name="color-scheme" content="dark">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/webp" sizes="512x512" href="/icon-512.webp">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/ge6-results/style.css">
+</head>
+<body>
+  <header class="wrap top">
+    <a class="brand" href="/"><img class="logo" src="/logo.webp" width="32" height="32" alt="">sarabun<span>48th</span></a>
+    <nav>
+      <a href="/">หน้าแรก</a>
+      <a href="#results">ผลเลือกตั้ง</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="wrap hero ge6-hero">
+      <p class="back"><a href="/">← กลับหน้าแรก</a></p>
+      <h1>ผล GE6</h1>
+      <p class="hero-date">BNK48 &amp; CGM48 Senbatsu General Election 2026 · ประกาศผล 14 พ.ย. 2026</p>
+      <p class="meta-line" id="totals"></p>
+    </section>
+
+    <section class="wrap hook" id="hook" hidden></section>
+
+    <section class="wrap" id="results">
+      <h2>อันดับทั้งหมด <small>Results</small></h2>
+      <div class="toolbar">
+        <label class="sr-only" for="q">ค้นหาชื่อ</label>
+        <input id="q" type="search" placeholder="ค้นหาชื่อ…" autocomplete="off">
+        <label class="sr-only" for="band">กรองตามวง</label>
+        <select id="band">
+          <option value="">ทุกวง</option>
+          <option value="BNK48">BNK48</option>
+          <option value="CGM48">CGM48</option>
+        </select>
+        <label class="sr-only" for="group">กรองตามกลุ่ม</label>
+        <select id="group">
+          <option value="">ทุกกลุ่ม</option>
+          <option value="kami7">คามิ 7</option>
+          <option value="senbatsu">เซ็มบัตสึ (1–12)</option>
+          <option value="under">อันเดอร์เกิลส์</option>
+          <option value="next">เน็กซ์เกิลส์</option>
+          <option value="unranked">ยังไม่ประกาศอันดับ</option>
+        </select>
+        <label class="sr-only" for="sort">เรียงลำดับ</label>
+        <select id="sort">
+          <option value="rank">เรียงตามอันดับ</option>
+          <option value="name">เรียงตามชื่อ</option>
+          <option value="tokens">เรียงตามโทเคน</option>
+          <option value="change">เรียงตามการเปลี่ยนจาก GE5</option>
+        </select>
+      </div>
+      <p class="hint count" id="count"></p>
+
+      <div class="table-wrap" id="ranked-wrap">
+        <table class="rank-table" id="table">
+          <thead>
+            <tr>
+              <th scope="col">อันดับ</th>
+              <th scope="col">ชื่อ</th>
+              <th scope="col">วง</th>
+              <th scope="col">กลุ่ม</th>
+              <th scope="col" class="num">โทเคน</th>
+              <th scope="col">เทียบ GE5</th>
+              <th scope="col"><span class="sr-only">แชร์</span></th>
+            </tr>
+          </thead>
+          <tbody id="rows"></tbody>
+        </table>
+      </div>
+
+      <div class="unranked" id="unranked-wrap" hidden>
+        <h2>ยังไม่ประกาศอันดับ / รอตรวจสอบ</h2>
+        <p class="unranked-note">อันดับและโทเคนของสมาชิก 22 คนนี้ยังไม่พบการประกาศบนช่องทางทางการ จึงระบุรวมเป็นรอตรวจสอบ ไม่ใส่ป้ายซ้ำทีละแถว</p>
+        <div class="table-wrap">
+          <table class="rank-table unranked-table" id="unranked-table">
+            <thead>
+              <tr>
+                <th scope="col">ชื่อ</th>
+                <th scope="col">วง</th>
+                <th scope="col">เทียบ GE5</th>
+                <th scope="col"><span class="sr-only">แชร์</span></th>
+              </tr>
+            </thead>
+            <tbody id="unranked-rows"></tbody>
+          </table>
+        </div>
+      </div>
+      <p class="empty" id="empty" hidden>ไม่พบชื่อที่ตรงกับคำค้น</p>
+    </section>
+
+    <aside class="wrap concert-slim" id="concert" hidden>
+      <p><strong>Rerun คอนเสิร์ต</strong> · <span id="concert-text"></span> · <a id="concert-link" href="https://x.com/kojimapoppop48/status/2123585116056543661" target="_blank" rel="noopener">โพสต์ต้นทางบน X →</a></p>
+    </aside>
+
+    <section class="wrap notes" id="notes">
+      <h2>ที่มาและหมายเหตุ <small>Sources</small></h2>
+      <ul id="sources"></ul>
+      <ul id="footnotes" class="footnotes"></ul>
+    </section>
+  </main>
+
+  <dialog class="share-dialog" id="share-dialog" aria-labelledby="share-title">
+    <form method="dialog" class="share-panel">
+      <h2 id="share-title">การ์ดแชร์</h2>
+      <canvas id="share-canvas" width="1200" height="675" hidden></canvas>
+      <img id="share-preview" alt="ตัวอย่างการ์ดแชร์">
+      <div class="share-actions">
+        <a class="btn" id="share-download" download="ge6-card.png">ดาวน์โหลด PNG</a>
+        <button class="btn ghost" type="button" id="share-share">แชร์</button>
+        <button class="btn ghost" value="close">ปิด</button>
+      </div>
+    </form>
+  </dialog>
+
+  <footer class="wrap foot">
+    <div class="social" id="social"></div>
+    <p>ทำโดยแฟนคลับ เพื่อแฟนคลับ · ไม่ใช่เว็บทางการของวง</p>
+    <p class="muted">© <span id="year"></span> sarabun48th</p>
+  </footer>
+  <!-- Cloudflare Web Analytics -->
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "1652b090f2434ea888c572dae8dbba6f","version":"2024.11.0","send":{"to":"/cdn-cgi/rum"}}'></script>
+  <!-- End Cloudflare Web Analytics -->
+  <script type="module" src="/ge6-results/app.js"></script>
+</body>
+</html>

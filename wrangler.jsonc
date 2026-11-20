@@ -17,6 +17,8 @@
         "**/public/app.js",
         "**/public/config.js",
         "**/public/ge2026/members.js",
+        "**/public/ge6-results/app.js",
+        "**/public/ge6-results/data.json",
         "**/src/tools.source.js"
       ],
       "fallthrough": false

@@ -7,9 +7,24 @@ const BADGE = { prod: "พร้อมใช้ · Live" };
 const loadedAt = Date.now();
 
 // Tool cards (no "ทดลอง · Demo" badge)
+const host = location.hostname.toLowerCase();
+const isProdHost = host === "sarabun48th.space" || host === "www.sarabun48th.space";
+const demoOnlyTools = isProdHost ? [] : [
+  {
+    name: "ผล GE6",
+    desc: "ตารางอันดับ BNK48 & CGM48 Senbatsu General Election 2026 เทียบกับ GE5",
+    href: "/ge6-results/",
+  },
+];
+
 $("#cards").innerHTML = TOOLS.map((t) => `
   <a class="card tool" href="${esc(t.href)}">
     ${t.status === "prod" ? `<span class="badge prod">${BADGE.prod}</span>` : ""}
+    <h3>${esc(t.name)}</h3>
+    <p>${esc(t.desc)}</p>
+    <span class="go">เปิดใช้ →</span>
+  </a>`).join("") + demoOnlyTools.map((t) => `
+  <a class="card tool" href="${esc(t.href)}">
     <h3>${esc(t.name)}</h3>
     <p>${esc(t.desc)}</p>
     <span class="go">เปิดใช้ →</span>

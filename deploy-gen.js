@@ -7,6 +7,13 @@ const path = require("path");
 const root = __dirname;
 const read = (p) => fs.readFileSync(path.join(root, p), "utf8");
 
+// Keep the Worker PNG module in sync with the static file (binary-safe base64).
+(function writeOgModule() {
+  const png = fs.readFileSync(path.join(root, "public/ge6-results/og.png"));
+  const body = "// base64 of public/ge6-results/og.png\nexport default '" + png.toString("base64") + "';\n";
+  fs.writeFileSync(path.join(root, "src/og-ge6-results.js"), body);
+})();
+
 const modules = [
   ["src/index.js", read("src/index.js"), "application/javascript+module"],
   ["public/tools.js", read("public/tools.js"), "application/javascript+module"],
@@ -17,8 +24,13 @@ const modules = [
   ["src/tools.source.js", read("src/tools.source.js"), "text/plain"],
   ["public/ge2026/index.html", read("public/ge2026/index.html"), "text/plain"],
   ["public/ge2026/members.js", read("public/ge2026/members.js"), "text/plain"],
+  ["public/ge6-results/index.html", read("public/ge6-results/index.html"), "text/plain"],
+  ["public/ge6-results/style.css", read("public/ge6-results/style.css"), "text/plain"],
+  ["public/ge6-results/app.js", read("public/ge6-results/app.js"), "text/plain"],
+  ["public/ge6-results/data.json", read("public/ge6-results/data.json"), "text/plain"],
   ["src/og-landing.js", read("src/og-landing.js"), "application/javascript+module"],
   ["src/og-ge2026.js", read("src/og-ge2026.js"), "application/javascript+module"],
+  ["src/og-ge6-results.js", read("src/og-ge6-results.js"), "application/javascript+module"],
   ["src/brand.js", read("src/brand.js"), "application/javascript+module"],
 ];
 

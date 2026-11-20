@@ -1,4 +1,5 @@
-// sarabun48th-demo: landing at / plus GE2026 at /ge2026/, with two
+// sarabun48th-demo: landing at / plus GE2026 at /ge2026/, GE6 results
+// at /ge6-results/ (demo host only), with two
 // small form APIs backed by D1 (sarabun48th-feedback).
 import { TOOLS } from "../public/tools.js";
 import html from "../public/index.html";
@@ -8,13 +9,19 @@ import configJs from "../public/config.js";
 import toolsJs from "./tools.source.js";
 import geHtml from "../public/ge2026/index.html";
 import geMembers from "../public/ge2026/members.js";
+import ge6Html from "../public/ge6-results/index.html";
+import ge6Css from "../public/ge6-results/style.css";
+import ge6Js from "../public/ge6-results/app.js";
+import ge6Data from "../public/ge6-results/data.json";
 import ogLandingB64 from "./og-landing.js";
 import ogGeB64 from "./og-ge2026.js";
+import ogGe6B64 from "./og-ge6-results.js";
 import { faviconIco, favicon32, appleTouch, icon512, logoWebp } from "./brand.js";
 
 const b64ToBytes = (s) => Uint8Array.from(atob(s), (c) => c.charCodeAt(0));
 const ogLanding = b64ToBytes(ogLandingB64);
 const ogGe = b64ToBytes(ogGeB64);
+const ogGe6 = b64ToBytes(ogGe6B64);
 const ico = b64ToBytes(faviconIco);
 const fav32 = b64ToBytes(favicon32);
 const apple = b64ToBytes(appleTouch);
@@ -35,6 +42,12 @@ const FILES = {
   "/ge2026/": [geHtml, "text/html; charset=utf-8"],
   "/ge2026/index.html": [geHtml, "text/html; charset=utf-8"],
   "/ge2026/members.js": [geMembers, "text/javascript; charset=utf-8"],
+  "/ge6-results/": [ge6Html, "text/html; charset=utf-8"],
+  "/ge6-results/index.html": [ge6Html, "text/html; charset=utf-8"],
+  "/ge6-results/style.css": [ge6Css, "text/css; charset=utf-8"],
+  "/ge6-results/app.js": [ge6Js, "text/javascript; charset=utf-8"],
+  "/ge6-results/data.json": [ge6Data, "application/json; charset=utf-8"],
+  "/ge6-results/og.png": [ogGe6, "image/png"],
   "/og.png": [ogLanding, "image/png"],
   "/ge2026/og.png": [ogGe, "image/png"],
   "/favicon.ico": [ico, "image/x-icon"],
@@ -108,9 +121,19 @@ export default {
   async fetch(request, env) {
     const url = new URL(request.url);
     const { pathname } = url;
+    const host = url.hostname.toLowerCase();
+    const isProdHost = host === "sarabun48th.space" || host === "www.sarabun48th.space";
     if (pathname === "/ge2026") {
       url.pathname = "/ge2026/";
       return Response.redirect(url.toString(), 301);
+    }
+    if (pathname === "/ge6-results") {
+      url.pathname = "/ge6-results/";
+      return Response.redirect(url.toString(), 301);
+    }
+    // Demo-only page: one Worker serves both hosts, so hide this path on prod.
+    if (pathname === "/ge6-results/" || pathname.startsWith("/ge6-results/")) {
+      if (isProdHost) return new Response("Not found", { status: 404 });
     }
     if (pathname === "/api/feedback" || pathname === "/api/suggest") {
       if (request.method !== "POST") return json({ ok: false, error: "method_not_allowed" }, 405);
