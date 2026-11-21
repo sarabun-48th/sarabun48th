@@ -8,10 +8,16 @@ const root = __dirname;
 const read = (p) => fs.readFileSync(path.join(root, p), "utf8");
 
 // Keep the Worker PNG module in sync with the static file (binary-safe base64).
-(function writeOgModule() {
-  const png = fs.readFileSync(path.join(root, "public/ge6-results/og.png"));
-  const body = "// base64 of public/ge6-results/og.png\nexport default '" + png.toString("base64") + "';\n";
-  fs.writeFileSync(path.join(root, "src/og-ge6-results.js"), body);
+(function writeOgModules() {
+  const pairs = [
+    ["public/ge6-results/og.png", "src/og-ge6-results.js"],
+    ["public/ge-press-tour/og.png", "src/og-ge-press-tour.js"],
+  ];
+  for (const [src, dest] of pairs) {
+    const png = fs.readFileSync(path.join(root, src));
+    const body = "// base64 of " + src + "\nexport default '" + png.toString("base64") + "';\n";
+    fs.writeFileSync(path.join(root, dest), body);
+  }
 })();
 
 const modules = [
@@ -28,9 +34,14 @@ const modules = [
   ["public/ge6-results/style.css", read("public/ge6-results/style.css"), "text/plain"],
   ["public/ge6-results/app.js", read("public/ge6-results/app.js"), "text/plain"],
   ["public/ge6-results/data.json", read("public/ge6-results/data.json"), "text/plain"],
+  ["public/ge-press-tour/index.html", read("public/ge-press-tour/index.html"), "text/plain"],
+  ["public/ge-press-tour/style.css", read("public/ge-press-tour/style.css"), "text/plain"],
+  ["public/ge-press-tour/app.js", read("public/ge-press-tour/app.js"), "text/plain"],
+  ["public/ge-press-tour/data.json", read("public/ge-press-tour/data.json"), "text/plain"],
   ["src/og-landing.js", read("src/og-landing.js"), "application/javascript+module"],
   ["src/og-ge2026.js", read("src/og-ge2026.js"), "application/javascript+module"],
   ["src/og-ge6-results.js", read("src/og-ge6-results.js"), "application/javascript+module"],
+  ["src/og-ge-press-tour.js", read("src/og-ge-press-tour.js"), "application/javascript+module"],
   ["src/brand.js", read("src/brand.js"), "application/javascript+module"],
 ];
 

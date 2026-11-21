@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>สารบัญ48th · เดินสายสัมภาษณ์ผล GE6</title>
+  <meta name="description" content="สารบัญ48th รวบรวมสายสัมภาษณ์หลังประกาศผล BNK48 &amp; CGM48 Senbatsu General Election 2026 ว่าใครไปรายการไหน วันไหน และดูได้ที่ไหน">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="th_TH">
+  <meta property="og:title" content="สารบัญ48th · เดินสายสัมภาษณ์ผล GE6">
+  <meta property="og:description" content="ใครไปรายการไหน วันไหน และดูได้ที่ไหน หลังประกาศผล BNK48 &amp; CGM48 Senbatsu General Election 2026">
+  <meta property="og:url" content="https://demo.sarabun48th.space/ge-press-tour/">
+  <meta property="og:image" content="https://demo.sarabun48th.space/ge-press-tour/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
+  <meta property="og:image:alt" content="สารบัญ48th · เดินสายสัมภาษณ์ผล GE6">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="สารบัญ48th · เดินสายสัมภาษณ์ผล GE6">
+  <meta name="twitter:description" content="ใครไปรายการไหน วันไหน และดูได้ที่ไหน หลังประกาศผล BNK48 &amp; CGM48 Senbatsu General Election 2026">
+  <meta name="twitter:image" content="https://demo.sarabun48th.space/ge-press-tour/og.png">
+  <meta name="theme-color" content="#0c0a0b">
+  <meta name="color-scheme" content="dark">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/webp" sizes="512x512" href="/icon-512.webp">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/ge-press-tour/style.css">
+</head>
+<body>
+  <header class="wrap top">
+    <a class="brand" href="/"><img class="logo" src="/logo.webp" width="32" height="32" alt="">sarabun<span>48th</span></a>
+    <nav>
+      <a href="/">หน้าแรก</a>
+      <a href="#timeline">สายสัมภาษณ์</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="wrap hero tour-hero">
+      <p class="back"><a href="/">← กลับหน้าแรก</a></p>
+      <h1>เดินสายสัมภาษณ์ผล GE6</h1>
+      <p class="hero-date">BNK48 &amp; CGM48 Senbatsu General Election 2026 · หลังประกาศผล 14 พ.ย. 2026</p>
+      <p class="meta-line">รวบรวมว่าใครไปรายการไหน วันไหน และดูได้ที่ไหน จากประกาศทางการเท่านั้น</p>
+    </section>
+
+    <section class="wrap hook" id="hook" hidden></section>
+
+    <section class="wrap" id="timeline">
+      <h2>สายสัมภาษณ์ <small>PRESS TOUR</small></h2>
+      <div class="toolbar">
+        <div class="toolbar-main">
+          <label class="sr-only" for="q">ค้นหาชื่อ</label>
+          <input id="q" type="search" placeholder="ค้นหาชื่อ…" autocomplete="off">
+          <button type="button" class="filters-toggle" id="filters-toggle" aria-expanded="false" aria-controls="filters">ตัวกรอง</button>
+        </div>
+        <div class="filters" id="filters">
+          <label class="sr-only" for="band">กรองตามวง</label>
+          <select id="band">
+            <option value="">ทุกวง</option>
+            <option value="BNK48">BNK48</option>
+            <option value="CGM48">CGM48</option>
+          </select>
+          <label class="sr-only" for="channel">กรองตามรายการ</label>
+          <select id="channel">
+            <option value="">ทุกรายการ</option>
+          </select>
+          <label class="sr-only" for="sort">เรียงลำดับ</label>
+          <select id="sort">
+            <option value="newest">ใหม่สุดก่อน</option>
+            <option value="oldest">เก่าสุดก่อน</option>
+          </select>
+        </div>
+      </div>
+      <p class="hint count" id="count"></p>
+      <div class="stops" id="stops"></div>
+      <p class="empty" id="empty" hidden>ไม่พบสต็อปที่ตรงกับคำค้น</p>
+    </section>
+
+    <section class="wrap members-share" id="members">
+      <h2>การ์ดแชร์ตามสมาชิก <small>Share</small></h2>
+      <p class="hint">เลือกสมาชิกเพื่อดูสต็อปของคนนั้น หรือกดแชร์เป็นการ์ดภาพ</p>
+      <div class="member-share-row" id="member-share-row"></div>
+    </section>
+
+    <section class="wrap notes" id="notes">
+      <h2>ที่มาและหมายเหตุ <small>Sources</small></h2>
+      <ul id="sources"></ul>
+      <ul id="footnotes" class="footnotes"></ul>
+    </section>
+  </main>
+
+  <dialog class="share-dialog" id="share-dialog" aria-labelledby="share-title">
+    <form method="dialog" class="share-panel">
+      <h2 id="share-title">การ์ดแชร์</h2>
+      <canvas id="share-canvas" width="1200" height="675" hidden></canvas>
+      <img id="share-preview" alt="ตัวอย่างการ์ดแชร์">
+      <div class="share-actions">
+        <a class="btn" id="share-download" download="ge-press-tour-card.png">ดาวน์โหลด PNG</a>
+        <button class="btn ghost" type="button" id="share-share">แชร์</button>
+        <button class="btn ghost" value="close">ปิด</button>
+      </div>
+    </form>
+  </dialog>
+
+  <footer class="wrap foot">
+    <div class="social" id="social"></div>
+    <p>ทำโดยแฟนคลับ เพื่อแฟนคลับ</p>
+    <p class="muted">© <span id="year"></span> sarabun48th</p>
+  </footer>
+  <!-- Cloudflare Web Analytics -->
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "1652b090f2434ea888c572dae8dbba6f","version":"2024.11.0","send":{"to":"/cdn-cgi/rum"}}'></script>
+  <!-- End Cloudflare Web Analytics -->
+  <script type="module" src="/ge-press-tour/app.js"></script>
+</body>
+</html>

@@ -15,6 +15,11 @@ const demoOnlyTools = isProdHost ? [] : [
     desc: "ตารางอันดับ BNK48 & CGM48 Senbatsu General Election 2026 เทียบกับ GE5",
     href: "/ge6-results/",
   },
+  {
+    name: "เดินสายสัมภาษณ์ผล GE6",
+    desc: "ใครไปรายการไหน วันไหน และดูได้ที่ไหน หลังประกาศผล GE2026",
+    href: "/ge-press-tour/",
+  },
 ];
 
 $("#cards").innerHTML = TOOLS.map((t) => `

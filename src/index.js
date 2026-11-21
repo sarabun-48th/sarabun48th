@@ -1,6 +1,6 @@
 // sarabun48th-demo: landing at / plus GE2026 at /ge2026/, GE6 results
-// at /ge6-results/ (demo host only), with two
-// small form APIs backed by D1 (sarabun48th-feedback).
+// at /ge6-results/ and GE6 press tour at /ge-press-tour/ (demo host
+// only), with two small form APIs backed by D1 (sarabun48th-feedback).
 import { TOOLS } from "../public/tools.js";
 import html from "../public/index.html";
 import css from "../public/style.css";
@@ -13,15 +13,21 @@ import ge6Html from "../public/ge6-results/index.html";
 import ge6Css from "../public/ge6-results/style.css";
 import ge6Js from "../public/ge6-results/app.js";
 import ge6Data from "../public/ge6-results/data.json";
+import tourHtml from "../public/ge-press-tour/index.html";
+import tourCss from "../public/ge-press-tour/style.css";
+import tourJs from "../public/ge-press-tour/app.js";
+import tourData from "../public/ge-press-tour/data.json";
 import ogLandingB64 from "./og-landing.js";
 import ogGeB64 from "./og-ge2026.js";
 import ogGe6B64 from "./og-ge6-results.js";
+import ogTourB64 from "./og-ge-press-tour.js";
 import { faviconIco, favicon32, appleTouch, icon512, logoWebp } from "./brand.js";
 
 const b64ToBytes = (s) => Uint8Array.from(atob(s), (c) => c.charCodeAt(0));
 const ogLanding = b64ToBytes(ogLandingB64);
 const ogGe = b64ToBytes(ogGeB64);
 const ogGe6 = b64ToBytes(ogGe6B64);
+const ogTour = b64ToBytes(ogTourB64);
 const ico = b64ToBytes(faviconIco);
 const fav32 = b64ToBytes(favicon32);
 const apple = b64ToBytes(appleTouch);
@@ -48,6 +54,12 @@ const FILES = {
   "/ge6-results/app.js": [ge6Js, "text/javascript; charset=utf-8"],
   "/ge6-results/data.json": [ge6Data, "application/json; charset=utf-8"],
   "/ge6-results/og.png": [ogGe6, "image/png"],
+  "/ge-press-tour/": [tourHtml, "text/html; charset=utf-8"],
+  "/ge-press-tour/index.html": [tourHtml, "text/html; charset=utf-8"],
+  "/ge-press-tour/style.css": [tourCss, "text/css; charset=utf-8"],
+  "/ge-press-tour/app.js": [tourJs, "text/javascript; charset=utf-8"],
+  "/ge-press-tour/data.json": [tourData, "application/json; charset=utf-8"],
+  "/ge-press-tour/og.png": [ogTour, "image/png"],
   "/og.png": [ogLanding, "image/png"],
   "/ge2026/og.png": [ogGe, "image/png"],
   "/favicon.ico": [ico, "image/x-icon"],
@@ -131,10 +143,14 @@ export default {
       url.pathname = "/ge6-results/";
       return Response.redirect(url.toString(), 301);
     }
-    // Demo-only page: one Worker serves both hosts, so hide this path on prod.
-    if (pathname === "/ge6-results/" || pathname.startsWith("/ge6-results/")) {
-      if (isProdHost) return new Response("Not found", { status: 404 });
+    if (pathname === "/ge-press-tour") {
+      url.pathname = "/ge-press-tour/";
+      return Response.redirect(url.toString(), 301);
     }
+    // Demo-only pages: one Worker serves both hosts, so hide these paths on prod.
+    const demoOnly = pathname === "/ge6-results/" || pathname.startsWith("/ge6-results/")
+      || pathname === "/ge-press-tour/" || pathname.startsWith("/ge-press-tour/");
+    if (demoOnly && isProdHost) return new Response("Not found", { status: 404 });
     if (pathname === "/api/feedback" || pathname === "/api/suggest") {
       if (request.method !== "POST") return json({ ok: false, error: "method_not_allowed" }, 405);
       try {
