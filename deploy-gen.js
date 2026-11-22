@@ -12,6 +12,7 @@ const read = (p) => fs.readFileSync(path.join(root, p), "utf8");
   const pairs = [
     ["public/ge6-results/og.png", "src/og-ge6-results.js"],
     ["public/ge-press-tour/og.png", "src/og-ge-press-tour.js"],
+    ["public/48th-songs/og.png", "src/og-48th-songs.js"],
   ];
   for (const [src, dest] of pairs) {
     const png = fs.readFileSync(path.join(root, src));
@@ -38,10 +39,15 @@ const modules = [
   ["public/ge-press-tour/style.css", read("public/ge-press-tour/style.css"), "text/plain"],
   ["public/ge-press-tour/app.js", read("public/ge-press-tour/app.js"), "text/plain"],
   ["public/ge-press-tour/data.json", read("public/ge-press-tour/data.json"), "text/plain"],
+  ["public/48th-songs/index.html", read("public/48th-songs/index.html"), "text/plain"],
+  ["public/48th-songs/style.css", read("public/48th-songs/style.css"), "text/plain"],
+  ["public/48th-songs/app.js", read("public/48th-songs/app.js"), "text/plain"],
+  ["public/48th-songs/data.json", read("public/48th-songs/data.json"), "text/plain"],
   ["src/og-landing.js", read("src/og-landing.js"), "application/javascript+module"],
   ["src/og-ge2026.js", read("src/og-ge2026.js"), "application/javascript+module"],
   ["src/og-ge6-results.js", read("src/og-ge6-results.js"), "application/javascript+module"],
   ["src/og-ge-press-tour.js", read("src/og-ge-press-tour.js"), "application/javascript+module"],
+  ["src/og-48th-songs.js", read("src/og-48th-songs.js"), "application/javascript+module"],
   ["src/brand.js", read("src/brand.js"), "application/javascript+module"],
 ];
 

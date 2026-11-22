@@ -1,0 +1,3075 @@
+{
+  "meta": {
+    "titleTh": "242 เพลง",
+    "subtitleTh": "รวมรายชื่อเพลง BNK48 และ CGM48 ตลอด 9 ปี",
+    "total": 242,
+    "sourceNote": "ข้อมูลรวบรวมโดยแฟนคลับ อาจมีตกหล่น แจ้งแก้ได้",
+    "sources": [
+      {
+        "label": "รายชื่อ 242 เพลง โดย @OTAStory",
+        "url": "https://x.com/OTAStory/status/2124199569621987408"
+      }
+    ],
+    "notes": [
+      "รายชื่อนี้รวบรวมโดยบัญชีแฟนคลับ ไม่ได้คัดลอกจากบัญชีทางการของวง ปีที่ออกและประเภทซิงเกิลจึงเว้นว่างไว้ จนกว่าจะมีแหล่งทางการยืนยัน",
+      "เพลงที่ต้นทางไม่มีวงกำกับ แสดงว่า «รอตรวจสอบ» ไม่ได้เดาวงให้"
+    ],
+    "filters": [
+      {
+        "id": "BNK48",
+        "label": "BNK48"
+      },
+      {
+        "id": "CGM48",
+        "label": "CGM48"
+      },
+      {
+        "id": "BNK48 & CGM48",
+        "label": "BNK48 & CGM48"
+      },
+      {
+        "id": "Team BIII",
+        "label": "Team BIII"
+      },
+      {
+        "id": "Team NV",
+        "label": "Team NV"
+      },
+      {
+        "id": "Team C",
+        "label": "Team C"
+      },
+      {
+        "id": "Mimigumo",
+        "label": "Mimigumo"
+      },
+      {
+        "id": "eRAA",
+        "label": "eRAA"
+      },
+      {
+        "id": "Original Stage",
+        "label": "Original Stage"
+      },
+      {
+        "id": "OST",
+        "label": "OST"
+      },
+      {
+        "id": "คอลแลบ",
+        "label": "คอลแลบ"
+      }
+    ]
+  },
+  "songs": [
+    {
+      "n": 1,
+      "name": "Aitakatta",
+      "nameTh": "อยากจะได้พบเธอ",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 2,
+      "name": "Oogoe Diamond",
+      "nameTh": "ก็ชอบให้รู้ว่าชอบ",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 3,
+      "name": "365-nichi no Kamihikouki",
+      "nameTh": "365 วันกับเครื่องบินกระดาษ",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 4,
+      "name": "Koisuru Fortune Cookie",
+      "nameTh": "คุกกี้เสี่ยงทาย",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 5,
+      "name": "BNK48",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 6,
+      "name": "Skirt, Hirari",
+      "nameTh": "พลิ้ว",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 7,
+      "name": "Shonichi",
+      "nameTh": "วันแรก",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 8,
+      "name": "Sakura no Hanabiratachi",
+      "nameTh": "ความทรงจำและคำอำลา",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 9,
+      "name": "Namida Surprise",
+      "nameTh": "ประกายน้ำตาและรอยยิ้ม",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 10,
+      "name": "Anata to Christmas Eve",
+      "nameTh": "คำสัญญาแห่งคริสต์มาสอีฟ",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 11,
+      "name": "RIVER",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 12,
+      "name": "Kimi wa Melody",
+      "nameTh": "เธอคือ...เมโลดี้",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 13,
+      "name": "Tsugi no Season",
+      "nameTh": "ฤดูใหม่",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 14,
+      "name": "Yume e no Route",
+      "nameTh": "หมื่นเส้นทาง",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 15,
+      "name": "BNK Festival",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 16,
+      "name": "Mata Anata no Koto wo Kangaeteta",
+      "nameTh": "คิดถึง...",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 17,
+      "name": "Temodemo no Namida",
+      "nameTh": "ถึงแม้จะมีน้ำตา",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 18,
+      "name": "overture",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "BNK48 ver.",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 19,
+      "name": "PARTY ga Hajimaru yo",
+      "nameTh": "ปาร์ตี้ในฝัน",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 / Team BIII",
+      "tags": [
+        "BNK48",
+        "Team BIII"
+      ]
+    },
+    {
+      "n": 20,
+      "name": "Dear my teacher",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 / Team BIII",
+      "tags": [
+        "BNK48",
+        "Team BIII"
+      ]
+    },
+    {
+      "n": 21,
+      "name": "Doku Ringo wo Tabesasete",
+      "nameTh": "แอปเปิ้ลอาบยาพิษ",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 / Team BIII",
+      "tags": [
+        "BNK48",
+        "Team BIII"
+      ]
+    },
+    {
+      "n": 22,
+      "name": "Classmate",
+      "nameTh": "เพื่อนคนพิเศษ",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 / Team BIII",
+      "tags": [
+        "BNK48",
+        "Team BIII"
+      ]
+    },
+    {
+      "n": 23,
+      "name": "Kiss wa Dame yo",
+      "nameTh": "จูบ...ไม่ได้นะ",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 / Team BIII",
+      "tags": [
+        "BNK48",
+        "Team BIII"
+      ]
+    },
+    {
+      "n": 24,
+      "name": "Hoshi no Ondo",
+      "nameTh": "อุณหภูมิของดวงดาว",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 / Team BIII",
+      "tags": [
+        "BNK48",
+        "Team BIII"
+      ]
+    },
+    {
+      "n": 25,
+      "name": "Aozora no Soba ni Ite",
+      "nameTh": "ฟ้าสีคราม",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 / Team BIII",
+      "tags": [
+        "BNK48",
+        "Team BIII"
+      ]
+    },
+    {
+      "n": 26,
+      "name": "Beginner",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 27,
+      "name": "Kimi no Koto ga Suki Dakara",
+      "nameTh": "ก็เพราะว่าชอบเธอ",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 28,
+      "name": "LET U GO",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 29,
+      "name": "Jabaja",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 30,
+      "name": "Reborn",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 31,
+      "name": "Bye Bye... นายพลาสติก",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "Kami7 Go Green",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 32,
+      "name": "77 no Suteki na Machi e",
+      "nameTh": "77 ดินแดนแสนวิเศษ",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 33,
+      "name": "It's Life",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 34,
+      "name": "It's Me",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 35,
+      "name": "",
+      "nameTh": "สายซับ",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 36,
+      "name": "",
+      "nameTh": "มปร.",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 37,
+      "name": "Candy",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "Mimigumo / BNK48",
+      "tags": [
+        "BNK48",
+        "Mimigumo"
+      ]
+    },
+    {
+      "n": 38,
+      "name": "Myujikkii",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "Mimigumo / BNK48",
+      "tags": [
+        "BNK48",
+        "Mimigumo"
+      ]
+    },
+    {
+      "n": 39,
+      "name": "Heart Gata Virus",
+      "nameTh": "หัวใจไวรัส",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "Mimigumo / BNK48",
+      "tags": [
+        "BNK48",
+        "Mimigumo"
+      ]
+    },
+    {
+      "n": 40,
+      "name": "Overture",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "Mimigumo ver.",
+      "qualifier": "",
+      "group": "Mimigumo / BNK48",
+      "tags": [
+        "BNK48",
+        "Mimigumo"
+      ]
+    },
+    {
+      "n": 41,
+      "name": "Mammoth",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 / Team BIII",
+      "tags": [
+        "BNK48",
+        "Team BIII"
+      ]
+    },
+    {
+      "n": 42,
+      "name": "Saishuu Bell ga Naru",
+      "nameTh": "เสียงระฆังแห่งความฝัน",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 / Team BIII",
+      "tags": [
+        "BNK48",
+        "Team BIII"
+      ]
+    },
+    {
+      "n": 43,
+      "name": "CHEERS",
+      "nameTh": "เสียงเชียร์",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 44,
+      "name": "Boyfriend no Tsukurikata",
+      "nameTh": "หลักสูตรความรัก",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 / Team BIII",
+      "tags": [
+        "BNK48",
+        "Team BIII"
+      ]
+    },
+    {
+      "n": 45,
+      "name": "Erai Hito ni Naritakunai",
+      "nameTh": "(แค่)ไม่อยากเป็นเด็กดี",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 / Team BIII",
+      "tags": [
+        "BNK48",
+        "Team BIII"
+      ]
+    },
+    {
+      "n": 46,
+      "name": "Return Match",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 / Team BIII",
+      "tags": [
+        "BNK48",
+        "Team BIII"
+      ]
+    },
+    {
+      "n": 47,
+      "name": "Hatsukoi Dorobou",
+      "nameTh": "จอมโจรปล้นรัก",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 / Team BIII",
+      "tags": [
+        "BNK48",
+        "Team BIII"
+      ]
+    },
+    {
+      "n": 48,
+      "name": "Gomen ne Jewel",
+      "nameTh": "Jewel ในดวงใจ",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 / Team BIII",
+      "tags": [
+        "BNK48",
+        "Team BIII"
+      ]
+    },
+    {
+      "n": 49,
+      "name": "Oshibe to Meshibe to Yoru no Chouchou",
+      "nameTh": "ทุ่งดอกไม้ยามรัตติกาล",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 / Team BIII",
+      "tags": [
+        "BNK48",
+        "Team BIII"
+      ]
+    },
+    {
+      "n": 50,
+      "name": "8-nin Shimai no Uta",
+      "nameTh": "8 เสียงของพวกเรา",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 / Team BIII",
+      "tags": [
+        "BNK48",
+        "Team BIII"
+      ]
+    },
+    {
+      "n": 51,
+      "name": "Stand Up",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 / Team BIII",
+      "tags": [
+        "BNK48",
+        "Team BIII"
+      ]
+    },
+    {
+      "n": 52,
+      "name": "Cool Girl",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 / Team BIII",
+      "tags": [
+        "BNK48",
+        "Team BIII"
+      ]
+    },
+    {
+      "n": 53,
+      "name": "Kaiyuugyo no Capacity",
+      "nameTh": "หมดทั้งใจให้เธอ",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 / Team BIII",
+      "tags": [
+        "BNK48",
+        "Team BIII"
+      ]
+    },
+    {
+      "n": 54,
+      "name": "Ai ni Ikou",
+      "nameTh": "ไปกันนะ เจอกันหน่อย",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 / Team BIII",
+      "tags": [
+        "BNK48",
+        "Team BIII"
+      ]
+    },
+    {
+      "n": 55,
+      "name": "Shamu Neko",
+      "nameTh": "แมวสยาม",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 / Team BIII",
+      "tags": [
+        "BNK48",
+        "Team BIII"
+      ]
+    },
+    {
+      "n": 56,
+      "name": "Melos no Michi",
+      "nameTh": "เส้นทางแห่งชีวิต",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 / Team BIII",
+      "tags": [
+        "BNK48",
+        "Team BIII"
+      ]
+    },
+    {
+      "n": 57,
+      "name": "Sasae",
+      "nameTh": "เราจะเดินไปด้วยกัน",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 / Team BIII",
+      "tags": [
+        "BNK48",
+        "Team BIII"
+      ]
+    },
+    {
+      "n": 58,
+      "name": "Romance Kakurenbo",
+      "nameTh": "บันทึกรักจากไดอารี่",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 / Team NV",
+      "tags": [
+        "BNK48",
+        "Team NV"
+      ]
+    },
+    {
+      "n": 59,
+      "name": "Yuuki no Hammer",
+      "nameTh": "ลุยเข้าไป",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 / Team NV",
+      "tags": [
+        "BNK48",
+        "Team NV"
+      ]
+    },
+    {
+      "n": 60,
+      "name": "Inseki no Kakuritsu",
+      "nameTh": "ปรากฏการณ์รัก",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 / Team NV",
+      "tags": [
+        "BNK48",
+        "Team NV"
+      ]
+    },
+    {
+      "n": 61,
+      "name": "Ai no Stripper",
+      "nameTh": "รักที่อยากปลดเปลื้อง",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 / Team NV",
+      "tags": [
+        "BNK48",
+        "Team NV"
+      ]
+    },
+    {
+      "n": 62,
+      "name": "Theater no Megami",
+      "nameTh": "เทพธิดาเธียเตอร์",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 / Team NV",
+      "tags": [
+        "BNK48",
+        "Team NV"
+      ]
+    },
+    {
+      "n": 63,
+      "name": "Hatsukoi yo Konnichiwa",
+      "nameTh": "เสียงหัวใจตึกตัก",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 / Team NV",
+      "tags": [
+        "BNK48",
+        "Team NV"
+      ]
+    },
+    {
+      "n": 64,
+      "name": "Arashi no Yoru ni wa",
+      "nameTh": "ถึงผิดก็ยอม",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 / Team NV",
+      "tags": [
+        "BNK48",
+        "Team NV"
+      ]
+    },
+    {
+      "n": 65,
+      "name": "Locker Room Boy",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 / Team NV",
+      "tags": [
+        "BNK48",
+        "Team NV"
+      ]
+    },
+    {
+      "n": 66,
+      "name": "Yokaze no Shiwaza",
+      "nameTh": "พระจันทร์เสี้ยว",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 / Team NV",
+      "tags": [
+        "BNK48",
+        "Team NV"
+      ]
+    },
+    {
+      "n": 67,
+      "name": "100-Metre Konbini",
+      "nameTh": "ร้านสะดวกซื้อ 100 เมตร",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 / Team NV",
+      "tags": [
+        "BNK48",
+        "Team NV"
+      ]
+    },
+    {
+      "n": 68,
+      "name": "Suki Suki Suki",
+      "nameTh": "ชอบเธอ ชอบเธอ",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 / Team NV",
+      "tags": [
+        "BNK48",
+        "Team NV"
+      ]
+    },
+    {
+      "n": 69,
+      "name": "Sayonara no Kanashibari",
+      "nameTh": "หัวใจคนถูกเท",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 / Team NV",
+      "tags": [
+        "BNK48",
+        "Team NV"
+      ]
+    },
+    {
+      "n": 70,
+      "name": "Shiokaze no Shoutaijou",
+      "nameTh": "อ้อมกอดของยาย",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 / Team NV",
+      "tags": [
+        "BNK48",
+        "Team NV"
+      ]
+    },
+    {
+      "n": 71,
+      "name": "Honest Man",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 / Team NV",
+      "tags": [
+        "BNK48",
+        "Team NV"
+      ]
+    },
+    {
+      "n": 72,
+      "name": "Team NV Oshi",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 / Team NV",
+      "tags": [
+        "BNK48",
+        "Team NV"
+      ]
+    },
+    {
+      "n": 73,
+      "name": "Bokutachi no Kamihikouki",
+      "nameTh": "เราจะบินไปพร้อมกัน",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 / Team NV",
+      "tags": [
+        "BNK48",
+        "Team NV"
+      ]
+    },
+    {
+      "n": 74,
+      "name": "High Tension",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 75,
+      "name": "",
+      "nameTh": "โดดดิด่ง",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 76,
+      "name": "",
+      "nameTh": "จากใจผู้สาวคนนี้",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 77,
+      "name": "Chiang Mai 106",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "CGM48",
+      "tags": [
+        "CGM48"
+      ]
+    },
+    {
+      "n": 78,
+      "name": "Onegai Valentine",
+      "nameTh": "วาเลนไทน์โชคดี",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "CGM48",
+      "tags": [
+        "CGM48"
+      ]
+    },
+    {
+      "n": 79,
+      "name": "CGM48",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "CGM48",
+      "tags": [
+        "CGM48"
+      ]
+    },
+    {
+      "n": 80,
+      "name": "หัวใจใกล้กัน... Touch By Heart",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 & CGM48",
+      "tags": [
+        "BNK48",
+        "CGM48",
+        "BNK48 & CGM48"
+      ]
+    },
+    {
+      "n": 81,
+      "name": "หัวใจใกล้กัน... Touch By Heart",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "Japanese ver.",
+      "qualifier": "",
+      "group": "BNK48 & CGM48",
+      "tags": [
+        "BNK48",
+        "CGM48",
+        "BNK48 & CGM48"
+      ]
+    },
+    {
+      "n": 82,
+      "name": "หัวใจใกล้กัน... Touch By Heart",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "English ver.",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 83,
+      "name": "หัวใจใกล้กัน... Touch By Heart",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "Lan Na ver.",
+      "qualifier": "",
+      "group": "CGM48",
+      "tags": [
+        "CGM48"
+      ]
+    },
+    {
+      "n": 84,
+      "name": "หัวใจใกล้กัน... Touch By Heart",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "Chinese ver.",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 85,
+      "name": "หัวใจใกล้กัน... Touch By Heart",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "Isan ver.",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 86,
+      "name": "หัวใจใกล้กัน... Touch By Heart",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "Special ver.",
+      "qualifier": "",
+      "group": "BNK48 & CGM48",
+      "tags": [
+        "BNK48",
+        "CGM48",
+        "BNK48 & CGM48"
+      ]
+    },
+    {
+      "n": 87,
+      "name": "Heavy Rotation",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 88,
+      "name": "Hashire Penguin",
+      "nameTh": "วิ่งไปสิ...เพนกวิน",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 89,
+      "name": "Wink wa 3-kai",
+      "nameTh": "วิ้งค์ 3 ครั้ง",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 90,
+      "name": "Can you...?",
+      "nameTh": "เธอนั่นแหละ",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 91,
+      "name": "Ma Ma Milk",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 92,
+      "name": "Melon Juice",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "CGM48",
+      "tags": [
+        "CGM48"
+      ]
+    },
+    {
+      "n": 93,
+      "name": "Otona e no Michi",
+      "nameTh": "เส้นทางของผู้ใหญ่",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "CGM48",
+      "tags": [
+        "CGM48"
+      ]
+    },
+    {
+      "n": 94,
+      "name": "Dareka no Tame ni -What can I do for someone?-",
+      "nameTh": "เพื่อใครสักคน",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "CGM48",
+      "tags": [
+        "CGM48"
+      ]
+    },
+    {
+      "n": 95,
+      "name": "Anata to Christmas Eve",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "Kaew's Ver.",
+      "qualifier": "",
+      "group": "",
+      "tags": []
+    },
+    {
+      "n": 96,
+      "name": "Yokaze no Shiwaza",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "Tarwaan's Ver.",
+      "qualifier": "",
+      "group": "",
+      "tags": []
+    },
+    {
+      "n": 97,
+      "name": "High Tension",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "Namneung's Ver.",
+      "qualifier": "",
+      "group": "",
+      "tags": []
+    },
+    {
+      "n": 98,
+      "name": "Kimi wa Melody",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "Noey's Ver.",
+      "qualifier": "",
+      "group": "",
+      "tags": []
+    },
+    {
+      "n": 99,
+      "name": "RIVER",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "Orn's Ver.",
+      "qualifier": "",
+      "group": "",
+      "tags": []
+    },
+    {
+      "n": 100,
+      "name": "Warota People",
+      "nameTh": "หัวเราะเซ่",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 101,
+      "name": "",
+      "nameTh": "มะลิ",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "CGM48",
+      "tags": [
+        "CGM48"
+      ]
+    },
+    {
+      "n": 102,
+      "name": "Chain of love",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "CGM48",
+      "tags": [
+        "CGM48"
+      ]
+    },
+    {
+      "n": 103,
+      "name": "Anata ga Ite Kureta Kara",
+      "nameTh": "บ้านแห่งหัวใจ",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "CGM48",
+      "tags": [
+        "CGM48"
+      ]
+    },
+    {
+      "n": 104,
+      "name": "",
+      "nameTh": "ไปต่อ",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "CGM48",
+      "tags": [
+        "CGM48"
+      ]
+    },
+    {
+      "n": 105,
+      "name": "",
+      "nameTh": "ดีอะ",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 106,
+      "name": "Sukida Sukida Sukida",
+      "nameTh": "ชอบเธอนะ",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 107,
+      "name": "Only today",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "Band ver.",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 108,
+      "name": "Only today",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "Acapella ver.",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 109,
+      "name": "",
+      "nameTh": "มะลิ",
+      "nameAlt": "",
+      "version": "Special ver.",
+      "qualifier": "",
+      "group": "CGM48",
+      "tags": [
+        "CGM48"
+      ]
+    },
+    {
+      "n": 110,
+      "name": "",
+      "nameTh": "สวัสดีปีใหม่",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 & CGM48",
+      "tags": [
+        "BNK48",
+        "CGM48",
+        "BNK48 & CGM48"
+      ]
+    },
+    {
+      "n": 111,
+      "name": "Eien Pressure",
+      "nameTh": "ผูกพันนิรันดร์",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "CGM48",
+      "tags": [
+        "CGM48"
+      ]
+    },
+    {
+      "n": 112,
+      "name": "Jingle Bells",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "BNK48 ver.",
+      "qualifier": "",
+      "group": "",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 113,
+      "name": "Jingle Bells",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "CGM48 ver.",
+      "qualifier": "",
+      "group": "",
+      "tags": [
+        "CGM48"
+      ]
+    },
+    {
+      "n": 114,
+      "name": "Sayonara Crawl",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 115,
+      "name": "First Rabbit",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 116,
+      "name": "Hoshizora wo Kimi ni",
+      "nameTh": "ทุ่งแสงดาว",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 / Team BIII & Team NV",
+      "tags": [
+        "BNK48",
+        "Team BIII",
+        "Team NV"
+      ]
+    },
+    {
+      "n": 117,
+      "name": "Maeshika Mukanee",
+      "nameTh": "สุดเส้นทาง",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "CGM48",
+      "tags": [
+        "CGM48"
+      ]
+    },
+    {
+      "n": 118,
+      "name": "Niji no Ressha",
+      "nameTh": "รถไฟสายรุ้ง",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "CGM48",
+      "tags": [
+        "CGM48"
+      ]
+    },
+    {
+      "n": 119,
+      "name": "Tomodachi",
+      "nameTh": "เพื่อน",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "CGM48",
+      "tags": [
+        "CGM48"
+      ]
+    },
+    {
+      "n": 120,
+      "name": "",
+      "nameTh": "หมกกบ",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 121,
+      "name": "",
+      "nameTh": "มนต์รักจิ้งหรีด",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 122,
+      "name": "Believers",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 123,
+      "name": "Make noise",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 124,
+      "name": "Kinou Yori Motto Suki",
+      "nameTh": "ชอบเธอมากกว่าเมื่อวาน",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 125,
+      "name": "Jiwaru DAYS",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 126,
+      "name": "Pioneer",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 127,
+      "name": "Sakura no Ki ni Narou",
+      "nameTh": "ดั่งซากุระ ตลอดไป",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 128,
+      "name": "2565",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "CGM48",
+      "tags": [
+        "CGM48"
+      ]
+    },
+    {
+      "n": 129,
+      "name": "Only today",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "CGM48 ver.",
+      "qualifier": "",
+      "group": "",
+      "tags": [
+        "CGM48"
+      ]
+    },
+    {
+      "n": 130,
+      "name": "Kimi wa Boku da",
+      "nameTh": "เธอก็คือฉัน",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "CGM48",
+      "tags": [
+        "CGM48"
+      ]
+    },
+    {
+      "n": 131,
+      "name": "overture",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "CGM48 ver.",
+      "qualifier": "",
+      "group": "",
+      "tags": [
+        "CGM48"
+      ]
+    },
+    {
+      "n": 132,
+      "name": "Koisuru Fortune Cookie",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "Remix ver.",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 133,
+      "name": "Iiwake Maybe",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 134,
+      "name": "Shoujotachi yo",
+      "nameTh": "วันใหม่",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 135,
+      "name": "",
+      "nameTh": "เสียงของใบไม้",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 136,
+      "name": "",
+      "nameTh": "เด็กดื้อย์",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "eRAA / BNK48 & CGM48",
+      "tags": [
+        "BNK48",
+        "CGM48",
+        "BNK48 & CGM48",
+        "eRAA"
+      ]
+    },
+    {
+      "n": 137,
+      "name": "",
+      "nameTh": "แกงหม้อใหญ่",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "eRAA / BNK48 & CGM48",
+      "tags": [
+        "BNK48",
+        "CGM48",
+        "BNK48 & CGM48",
+        "eRAA"
+      ]
+    },
+    {
+      "n": 138,
+      "name": "Sansei Kawaii",
+      "nameTh": "เธออะ...Kawaii",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "CGM48",
+      "tags": [
+        "CGM48"
+      ]
+    },
+    {
+      "n": 139,
+      "name": "Hotei Sokudo to Yuuetsukan",
+      "nameTh": "ซิ่งให้สุด...หยุดที่เธอ",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "CGM48",
+      "tags": [
+        "CGM48"
+      ]
+    },
+    {
+      "n": 140,
+      "name": "Yume wa Nigenai",
+      "nameTh": "จะไม่หนีจากความฝัน",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "CGM48",
+      "tags": [
+        "CGM48"
+      ]
+    },
+    {
+      "n": 141,
+      "name": "",
+      "nameTh": "สัญญานะ",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 142,
+      "name": "Hajimete no Hoshi",
+      "nameTh": "ดาวดวงแรก",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 143,
+      "name": "Tsuyosa to Yowasa no Aida de",
+      "nameTh": "สุดท้ายที่อยากบอก",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 144,
+      "name": "Gingham Check",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 145,
+      "name": "Hisashiburi no Lip Gloss",
+      "nameTh": "Lip Gloss ที่คิดถึง",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "CGM48",
+      "tags": [
+        "CGM48"
+      ]
+    },
+    {
+      "n": 146,
+      "name": "Kibouteki Refrain",
+      "nameTh": "แค่นี้ก็พอใจแล้ว",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 147,
+      "name": "GIVE ME FIVE",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 148,
+      "name": "Must be now",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 149,
+      "name": "Kiss Me",
+      "nameTh": "ให้ฉันได้รู้",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 150,
+      "name": "Dare no Koto wo Ichiban Aishiteru?",
+      "nameTh": "ที่หนึ่งตรงนั้น เป็นฉันได้ไหม?",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 151,
+      "name": "Kurumi to Dialogue",
+      "nameTh": "แล้ว...ต้องทำยังไงล่ะ?",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 152,
+      "name": "LOVE TRIP",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "CGM48",
+      "tags": [
+        "CGM48"
+      ]
+    },
+    {
+      "n": 153,
+      "name": "Anti",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "CGM48",
+      "tags": [
+        "CGM48"
+      ]
+    },
+    {
+      "n": 154,
+      "name": "Chance no Junban",
+      "nameTh": "หมุนไปนะตามโชคชะตา",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "CGM48",
+      "tags": [
+        "CGM48"
+      ]
+    },
+    {
+      "n": 155,
+      "name": "",
+      "nameTh": "น่ายักแบบนี้ เป็นของเธอนะ",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 & CGM48",
+      "tags": [
+        "BNK48",
+        "CGM48",
+        "BNK48 & CGM48"
+      ]
+    },
+    {
+      "n": 156,
+      "name": "",
+      "nameTh": "น่ายักแบบนี้ เป็นของเธอนะ",
+      "nameAlt": "",
+      "version": "Special ver.",
+      "qualifier": "",
+      "group": "CGM48",
+      "tags": [
+        "CGM48"
+      ]
+    },
+    {
+      "n": 157,
+      "name": "Sports Day 2024: Neko Wars",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 & CGM48",
+      "tags": [
+        "BNK48",
+        "CGM48",
+        "BNK48 & CGM48"
+      ]
+    },
+    {
+      "n": 158,
+      "name": "BORDERLESS",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 159,
+      "name": "365-Nichi no Kamihikouki",
+      "nameTh": "365 วันกับเครื่องบินกระดาษ",
+      "nameAlt": "",
+      "version": "2024 ver.",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 160,
+      "name": "Mirai to wa?",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 161,
+      "name": "Mata Aeru Hi Made",
+      "nameTh": "ไว้เจอกันนะ",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 162,
+      "name": "Sakura, Minna de Tabeta",
+      "nameTh": "ซากุระแห่งความทรงจำ",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "CGM48",
+      "tags": [
+        "CGM48"
+      ]
+    },
+    {
+      "n": 163,
+      "name": "Generation Change",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "CGM48",
+      "tags": [
+        "CGM48"
+      ]
+    },
+    {
+      "n": 164,
+      "name": "Arigatou",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "CGM48",
+      "tags": [
+        "CGM48"
+      ]
+    },
+    {
+      "n": 165,
+      "name": "RESET",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "CGM48 / Team C",
+      "tags": [
+        "CGM48",
+        "Team C"
+      ]
+    },
+    {
+      "n": 166,
+      "name": "#.SukiNanda",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 167,
+      "name": "My Sakura",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "Izurina CGM48",
+      "tags": [
+        "CGM48"
+      ]
+    },
+    {
+      "n": 168,
+      "name": "For Your Dream",
+      "nameTh": "อยากให้เธอรอ",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 / Original Stage: WHISPER ROAR",
+      "tags": [
+        "BNK48",
+        "Original Stage"
+      ]
+    },
+    {
+      "n": 169,
+      "name": "",
+      "nameTh": "สัญญานะ",
+      "nameAlt": "",
+      "version": "Original Stage ver.",
+      "qualifier": "",
+      "group": "BNK48 / Original Stage: WHISPER ROAR",
+      "tags": [
+        "BNK48",
+        "Original Stage"
+      ]
+    },
+    {
+      "n": 170,
+      "name": "New Better Day",
+      "nameTh": "ดีกว่าเมื่อวาน",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 / Original Stage: WHISPER ROAR",
+      "tags": [
+        "BNK48",
+        "Original Stage"
+      ]
+    },
+    {
+      "n": 171,
+      "name": "Bloom",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 / Original Stage: WHISPER ROAR",
+      "tags": [
+        "BNK48",
+        "Original Stage"
+      ]
+    },
+    {
+      "n": 172,
+      "name": "",
+      "nameTh": "บัวลอยไข่หวาน",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 / Original Stage: WHISPER ROAR",
+      "tags": [
+        "BNK48",
+        "Original Stage"
+      ]
+    },
+    {
+      "n": 173,
+      "name": "First Love",
+      "nameTh": "รักครั้งแรก",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 / Original Stage: WHISPER ROAR",
+      "tags": [
+        "BNK48",
+        "Original Stage"
+      ]
+    },
+    {
+      "n": 174,
+      "name": "",
+      "nameTh": "เสียงของใบไม้",
+      "nameAlt": "",
+      "version": "Original Stage ver.",
+      "qualifier": "",
+      "group": "BNK48 / Original Stage: WHISPER ROAR",
+      "tags": [
+        "BNK48",
+        "Original Stage"
+      ]
+    },
+    {
+      "n": 175,
+      "name": "Cry",
+      "nameTh": "ฉันต้องนอนร้องไห้",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 / Original Stage: WHISPER ROAR",
+      "tags": [
+        "BNK48",
+        "Original Stage"
+      ]
+    },
+    {
+      "n": 176,
+      "name": "Believers",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "Original Stage ver.",
+      "qualifier": "",
+      "group": "BNK48 / Original Stage: WHISPER ROAR",
+      "tags": [
+        "BNK48",
+        "Original Stage"
+      ]
+    },
+    {
+      "n": 177,
+      "name": "It's Life",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "Original Stage ver.",
+      "qualifier": "",
+      "group": "BNK48 / Original Stage: WHISPER ROAR",
+      "tags": [
+        "BNK48",
+        "Original Stage"
+      ]
+    },
+    {
+      "n": 178,
+      "name": "WHISPER ROAR",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 / Original Stage: WHISPER ROAR",
+      "tags": [
+        "BNK48",
+        "Original Stage"
+      ]
+    },
+    {
+      "n": 179,
+      "name": "",
+      "nameTh": "ไม่อยากนอน",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 / Original Stage: WHISPER ROAR",
+      "tags": [
+        "BNK48",
+        "Original Stage"
+      ]
+    },
+    {
+      "n": 180,
+      "name": "",
+      "nameTh": "เมโลดี้นี้",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 / Original Stage: WHISPER ROAR",
+      "tags": [
+        "BNK48",
+        "Original Stage"
+      ]
+    },
+    {
+      "n": 181,
+      "name": "",
+      "nameTh": "เด็กดื้อย์",
+      "nameAlt": "",
+      "version": "Original Stage ver.",
+      "qualifier": "",
+      "group": "BNK48 / Original Stage: WHISPER ROAR",
+      "tags": [
+        "BNK48",
+        "Original Stage"
+      ]
+    },
+    {
+      "n": 182,
+      "name": "",
+      "nameTh": "ไกลไม่ไกล",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 / Original Stage: WHISPER ROAR",
+      "tags": [
+        "BNK48",
+        "Original Stage"
+      ]
+    },
+    {
+      "n": 183,
+      "name": "Lemon no Toshigoro",
+      "nameTh": "รสชาติของเลมอน",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "Zenza Girls",
+      "group": "CGM48 / Team C",
+      "tags": [
+        "CGM48",
+        "Team C"
+      ]
+    },
+    {
+      "n": 184,
+      "name": "Sentaku Monotachi",
+      "nameTh": "ผ้าผืนใหม่",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "CGM48 / Team C",
+      "tags": [
+        "CGM48",
+        "Team C"
+      ]
+    },
+    {
+      "n": 185,
+      "name": "Kanojo ni Naremasu ka?",
+      "nameTh": "ขอเป็นแฟนเธอได้ไหม?",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "CGM48 / Team C",
+      "tags": [
+        "CGM48",
+        "Team C"
+      ]
+    },
+    {
+      "n": 186,
+      "name": "UHHO UHHOHO",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "CGM48 / Team C",
+      "tags": [
+        "CGM48",
+        "Team C"
+      ]
+    },
+    {
+      "n": 187,
+      "name": "Seifuku Resistance",
+      "nameTh": "ผู้ต่อต้านชุดนักเรียน",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "CGM48 / Team C",
+      "tags": [
+        "CGM48",
+        "Team C"
+      ]
+    },
+    {
+      "n": 188,
+      "name": "Kiseki wa Ma ni Awanai",
+      "nameTh": "รถบัสปาฏิหาริย์",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "CGM48 / Team C",
+      "tags": [
+        "CGM48",
+        "Team C"
+      ]
+    },
+    {
+      "n": 189,
+      "name": "Gyakuten Oujisama",
+      "nameTh": "เจ้าชายในฝัน",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "CGM48 / Team C",
+      "tags": [
+        "CGM48",
+        "Team C"
+      ]
+    },
+    {
+      "n": 190,
+      "name": "Ashita no Tame ni Kiss wo",
+      "nameTh": "",
+      "nameAlt": "Kiss for Tomorrow",
+      "version": "",
+      "qualifier": "",
+      "group": "CGM48 / Team C",
+      "tags": [
+        "CGM48",
+        "Team C"
+      ]
+    },
+    {
+      "n": 191,
+      "name": "Kokoro no Hashi no Sofa",
+      "nameTh": "โซฟาตัวโปรด",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "CGM48 / Team C",
+      "tags": [
+        "CGM48",
+        "Team C"
+      ]
+    },
+    {
+      "n": 192,
+      "name": "Dokugumo",
+      "nameTh": "แมงมุมพิษ",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "CGM48 / Team C",
+      "tags": [
+        "CGM48",
+        "Team C"
+      ]
+    },
+    {
+      "n": 193,
+      "name": "Okera",
+      "nameTh": "การพนันแห่งรัก",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "CGM48 / Team C",
+      "tags": [
+        "CGM48",
+        "Team C"
+      ]
+    },
+    {
+      "n": 194,
+      "name": "White Day ni wa...",
+      "nameTh": "วันไวท์เดย์",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "CGM48 / Team C",
+      "tags": [
+        "CGM48",
+        "Team C"
+      ]
+    },
+    {
+      "n": 195,
+      "name": "Jigsaw Puzzle 48",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "CGM48 / Team C",
+      "tags": [
+        "CGM48",
+        "Team C"
+      ]
+    },
+    {
+      "n": 196,
+      "name": "Hoshizora no Mistake",
+      "nameTh": "รู้ตัวอีกทีก็อิจฉาไปแล้ว",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "CGM48 / Team C",
+      "tags": [
+        "CGM48",
+        "Team C"
+      ]
+    },
+    {
+      "n": 197,
+      "name": "Yume no Kane",
+      "nameTh": "ระฆังแห่งความหวัง",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "CGM48 / Team C",
+      "tags": [
+        "CGM48",
+        "Team C"
+      ]
+    },
+    {
+      "n": 198,
+      "name": "Hikkoshimashita",
+      "nameTh": "ห้องหัวใจที่ไม่มีเธอ",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "CGM48 / Team C",
+      "tags": [
+        "CGM48",
+        "Team C"
+      ]
+    },
+    {
+      "n": 199,
+      "name": "Green Flash",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 200,
+      "name": "Saikyou Twintail",
+      "nameTh": "ทวินเทล สุดยอดเลย",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 201,
+      "name": "GAGAGA",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 202,
+      "name": "RUMOR",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 203,
+      "name": "Totsuzen Do love me",
+      "nameTh": "โทษทีนะ...รักกันได้ไหม?",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "CGM48",
+      "tags": [
+        "CGM48"
+      ]
+    },
+    {
+      "n": 204,
+      "name": "Heart no Dasshutsu Game",
+      "nameTh": "ปริศนาห้องหัวใจ",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "CGM48",
+      "tags": [
+        "CGM48"
+      ]
+    },
+    {
+      "n": 205,
+      "name": "Zankoku na Ame",
+      "nameTh": "ฝนราคะ",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "CGM48",
+      "tags": [
+        "CGM48"
+      ]
+    },
+    {
+      "n": 206,
+      "name": "",
+      "nameTh": "โลกนี้ก็แค่ปากซอย",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 & CGM48",
+      "tags": [
+        "BNK48",
+        "CGM48",
+        "BNK48 & CGM48"
+      ]
+    },
+    {
+      "n": 207,
+      "name": "Colorcon Wink",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 208,
+      "name": "Chouhatsu no Aozora",
+      "nameTh": "คำท้าทายที่ปลายฟ้า",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 209,
+      "name": "11-gatsu no Anklet",
+      "nameTh": "กำไลข้อเท้าแห่งความทรงจำ",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 210,
+      "name": "Sad Cupid",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "CGM48",
+      "tags": [
+        "CGM48"
+      ]
+    },
+    {
+      "n": 211,
+      "name": "Hokori no Oka",
+      "nameTh": "เนินเขาแห่งความฝัน",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "CGM48",
+      "tags": [
+        "CGM48"
+      ]
+    },
+    {
+      "n": 212,
+      "name": "Kaze wo Matsu",
+      "nameTh": "ความทรงจำในสายลม",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "CGM48",
+      "tags": [
+        "CGM48"
+      ]
+    },
+    {
+      "n": 213,
+      "name": "Oh my pumpkin",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "BNK48 ver.",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 214,
+      "name": "Oh my pumpkin",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "CGM48 ver.",
+      "qualifier": "",
+      "group": "CGM48",
+      "tags": [
+        "CGM48"
+      ]
+    },
+    {
+      "n": 215,
+      "name": "Hip Chain",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "SYR3N & BNK48",
+      "tags": [
+        "BNK48",
+        "คอลแลบ"
+      ]
+    },
+    {
+      "n": 216,
+      "name": "Masaka no Confession",
+      "nameTh": "คำสารภาพที่ไม่คาดฝัน",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 217,
+      "name": "Saikou ka yo",
+      "nameTh": "สุดยอดไปเลย",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 218,
+      "name": "Doushitemo Kimi ga Suki da",
+      "nameTh": "จะยังไงก็รักเธอ",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 219,
+      "name": "",
+      "nameTh": "ได้(ด้าย)ไหม",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "CGM48",
+      "tags": [
+        "CGM48"
+      ]
+    },
+    {
+      "n": 220,
+      "name": "Baby Baby Baby",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "CGM48",
+      "tags": [
+        "CGM48"
+      ]
+    },
+    {
+      "n": 221,
+      "name": "Hetaretachi yo",
+      "nameTh": "สิ้นสุดทางแพ้",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "CGM48",
+      "tags": [
+        "CGM48"
+      ]
+    },
+    {
+      "n": 222,
+      "name": "12-Gatsu no Kangaroo",
+      "nameTh": "จิงโจ้น้อยเดือนธันวาคม",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 & CGM48",
+      "tags": [
+        "BNK48",
+        "CGM48",
+        "BNK48 & CGM48"
+      ]
+    },
+    {
+      "n": 223,
+      "name": "Sky Lantern Wish",
+      "nameTh": "คำอธิษฐานใต้แสงโคม",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 & TSH48",
+      "tags": [
+        "BNK48",
+        "คอลแลบ"
+      ]
+    },
+    {
+      "n": 224,
+      "name": "Celebration",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 225,
+      "name": "",
+      "nameTh": "ช็อต",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 OST. Shock Me Girls SS1",
+      "tags": [
+        "BNK48",
+        "OST"
+      ]
+    },
+    {
+      "n": 226,
+      "name": "Kimi ga Iru Dake de",
+      "nameTh": "แค่เพียงมีเธอ",
+      "nameAlt": "",
+      "version": "2026 Thai-Japanese ver.",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 227,
+      "name": "Ponytail to Shushu",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 228,
+      "name": "รำวง Matsuri",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 229,
+      "name": "Yume de Kiss me",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "Pancake BNK48",
+      "tags": [
+        "BNK48"
+      ]
+    },
+    {
+      "n": 230,
+      "name": "Koi Tsunjatta",
+      "nameTh": "",
+      "nameAlt": "Let me know",
+      "version": "",
+      "qualifier": "",
+      "group": "CGM48",
+      "tags": [
+        "CGM48"
+      ]
+    },
+    {
+      "n": 231,
+      "name": "BINGO",
+      "nameTh": "",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "CGM48",
+      "tags": [
+        "CGM48"
+      ]
+    },
+    {
+      "n": 232,
+      "name": "Kibou Ressha",
+      "nameTh": "รถไฟแห่งความหวัง",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "CGM48",
+      "tags": [
+        "CGM48"
+      ]
+    },
+    {
+      "n": 233,
+      "name": "",
+      "nameTh": "มะลิ",
+      "nameAlt": "",
+      "version": "Remix ver.",
+      "qualifier": "",
+      "group": "CGM48",
+      "tags": [
+        "CGM48"
+      ]
+    },
+    {
+      "n": 234,
+      "name": "",
+      "nameTh": "ได้(ด้าย)ไหม",
+      "nameAlt": "",
+      "version": "Remix ver.",
+      "qualifier": "",
+      "group": "CGM48",
+      "tags": [
+        "CGM48"
+      ]
+    },
+    {
+      "n": 235,
+      "name": "",
+      "nameTh": "ฉันต้องนอนร้องไห้",
+      "nameAlt": "",
+      "version": "OST. Shock Me Girls ver.",
+      "qualifier": "",
+      "group": "BNK48",
+      "tags": [
+        "BNK48",
+        "OST"
+      ]
+    },
+    {
+      "n": 236,
+      "name": "Kimi to Doko ka e Ikitai",
+      "nameTh": "อยากจะไปกับเธอ",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 & CGM48",
+      "tags": [
+        "BNK48",
+        "CGM48",
+        "BNK48 & CGM48"
+      ]
+    },
+    {
+      "n": 237,
+      "name": "Kimi to Doko ka e Ikitai",
+      "nameTh": "อยากจะไปกับเธอ",
+      "nameAlt": "",
+      "version": "Live Session ver.",
+      "qualifier": "",
+      "group": "BNK48 & CGM48",
+      "tags": [
+        "BNK48",
+        "CGM48",
+        "BNK48 & CGM48"
+      ]
+    },
+    {
+      "n": 238,
+      "name": "Aisuru Hito",
+      "nameTh": "เธอ",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 & CGM48",
+      "tags": [
+        "BNK48",
+        "CGM48",
+        "BNK48 & CGM48"
+      ]
+    },
+    {
+      "n": 239,
+      "name": "Kegareteiru Shinjitsu",
+      "nameTh": "ความจริงสีเทา",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 & CGM48",
+      "tags": [
+        "BNK48",
+        "CGM48",
+        "BNK48 & CGM48"
+      ]
+    },
+    {
+      "n": 240,
+      "name": "Yobisute Fantasy",
+      "nameTh": "เรียกชื่อที ใจไม่ดีแล้ว",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 & CGM48",
+      "tags": [
+        "BNK48",
+        "CGM48",
+        "BNK48 & CGM48"
+      ]
+    },
+    {
+      "n": 241,
+      "name": "Chiang Mai Station",
+      "nameTh": "สถานีเชียงใหม่",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "CGM48 The Original Stage",
+      "tags": [
+        "CGM48",
+        "Original Stage"
+      ]
+    },
+    {
+      "n": 242,
+      "name": "",
+      "nameTh": "สาวหมวย",
+      "nameAlt": "",
+      "version": "",
+      "qualifier": "",
+      "group": "BNK48 OST. Shock Me Girls SS2",
+      "tags": [
+        "BNK48",
+        "OST"
+      ]
+    }
+  ]
+}

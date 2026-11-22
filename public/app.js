@@ -20,6 +20,11 @@ const demoOnlyTools = isProdHost ? [] : [
     desc: "ใครไปรายการไหน วันไหน และดูได้ที่ไหน หลังประกาศผล GE2026",
     href: "/ge-press-tour/",
   },
+  {
+    name: "242 เพลง",
+    desc: "ค้นหาเพลง BNK48 และ CGM48 ทั้ง 242 เพลง กรองตามวง และเก็บว่าฟังมาแล้วกี่เพลง",
+    href: "/48th-songs/",
+  },
 ];
 
 $("#cards").innerHTML = TOOLS.map((t) => `

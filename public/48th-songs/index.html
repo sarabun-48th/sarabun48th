@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>สารบัญ48th · 242 เพลง</title>
+  <meta name="description" content="สารบัญ48th รวมรายชื่อ 242 เพลง ของ BNK48 และ CGM48 ตลอด 9 ปี ค้นหาได้ทั้งชื่อไทยและโรมาจิ">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="th_TH">
+  <meta property="og:title" content="สารบัญ48th · 242 เพลง">
+  <meta property="og:description" content="รวมรายชื่อ 242 เพลง ของ BNK48 และ CGM48 ตลอด 9 ปี ค้นหาได้ทั้งชื่อไทยและโรมาจิ">
+  <meta property="og:url" content="https://demo.sarabun48th.space/48th-songs/">
+  <meta property="og:image" content="https://demo.sarabun48th.space/48th-songs/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
+  <meta property="og:image:alt" content="สารบัญ48th · 242 เพลง ของ BNK48 และ CGM48 ตลอด 9 ปี">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="สารบัญ48th · 242 เพลง">
+  <meta name="twitter:description" content="รวมรายชื่อ 242 เพลง ของ BNK48 และ CGM48 ตลอด 9 ปี ค้นหาได้ทั้งชื่อไทยและโรมาจิ">
+  <meta name="twitter:image" content="https://demo.sarabun48th.space/48th-songs/og.png">
+  <meta name="theme-color" content="#0c0a0b">
+  <meta name="color-scheme" content="dark">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/webp" sizes="512x512" href="/icon-512.webp">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/48th-songs/style.css">
+</head>
+<body>
+  <header class="wrap top">
+    <a class="brand" href="/"><img class="logo" src="/logo.webp" width="32" height="32" alt="">sarabun<span>48th</span></a>
+    <nav>
+      <a href="/">หน้าแรก</a>
+      <a href="#songs">รายชื่อเพลง</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="wrap hero tour-hero">
+      <p class="back"><a href="/">← กลับหน้าแรก</a></p>
+      <h1>242 เพลง</h1>
+      <p class="hero-date">BNK48 และ CGM48 · รวมรายชื่อตลอด 9 ปี</p>
+      <p class="meta-line">ค้นหาชื่อไทยหรือโรมาจิ กรองตามวงหรือยูนิต แล้วติ๊กเพลงที่ฟังแล้วหรือเคยดูสด</p>
+    </section>
+
+    <section class="wrap hook" id="hook">
+      <p class="hook-kicker">ความคืบหน้าของคุณ</p>
+      <p class="hook-count" id="hook-count">ฟังมาแล้ว <span>0</span> / 242 เพลง</p>
+      <div class="progress-block">
+        <div class="progress is-empty" role="progressbar" aria-valuemin="0" aria-valuemax="242" aria-valuenow="0" aria-labelledby="hook-count" id="progress">
+          <span class="progress-bar" id="progress-bar"></span>
+        </div>
+        <p class="progress-hint" id="progress-hint">ติ๊กเพลงที่ฟังแล้วเพื่อเริ่มนับ</p>
+      </div>
+      <p class="live-count" id="live-count">เคยดูสด 0 เพลง</p>
+      <div class="hook-actions">
+        <button type="button" class="btn" id="random">สุ่มเพลง</button>
+        <button type="button" class="btn ghost" id="share">แชร์การ์ด</button>
+      </div>
+    </section>
+
+    <section class="wrap" id="songs">
+      <h2>รายชื่อเพลง <small>Songs</small></h2>
+      <div class="toolbar">
+        <div class="toolbar-main">
+          <label class="sr-only" for="q">ค้นหาชื่อเพลง</label>
+          <input id="q" type="search" placeholder="ค้นหาชื่อเพลง ไทยหรือโรมาจิ…" autocomplete="off">
+          <button type="button" class="filters-toggle" id="filters-toggle" aria-expanded="false" aria-controls="filters">ตัวกรอง</button>
+        </div>
+        <div class="filters" id="filters"></div>
+      </div>
+      <p class="hint count" id="count">แสดง 242 / 242 เพลง</p>
+      <div class="song-list" id="list"></div>
+      <p class="empty" id="empty" hidden>ไม่พบเพลงที่ตรงกับคำค้น</p>
+    </section>
+
+    <section class="wrap notes" id="notes">
+      <h2>ที่มาและหมายเหตุ <small>Sources</small></h2>
+      <ul id="sources"></ul>
+      <p class="source-note" id="source-note"></p>
+      <ul id="footnotes" class="footnotes"></ul>
+    </section>
+  </main>
+
+  <dialog class="share-dialog" id="share-dialog" aria-labelledby="share-title">
+    <form method="dialog" class="share-panel">
+      <h2 id="share-title">การ์ดแชร์</h2>
+      <canvas id="share-canvas" width="1200" height="675" hidden></canvas>
+      <img id="share-preview" alt="ตัวอย่างการ์ดแชร์">
+      <div class="share-actions">
+        <a class="btn" id="share-download" download="48th-songs-card.png">ดาวน์โหลด PNG</a>
+        <button class="btn ghost" type="button" id="share-share">แชร์</button>
+        <button class="btn ghost" value="close">ปิด</button>
+      </div>
+    </form>
+  </dialog>
+
+  <footer class="wrap foot">
+    <div class="social" id="social"></div>
+    <p>ทำโดยแฟนคลับ เพื่อแฟนคลับ</p>
+    <p class="muted">© <span id="year"></span> sarabun48th</p>
+  </footer>
+  <!-- Cloudflare Web Analytics -->
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "1652b090f2434ea888c572dae8dbba6f","version":"2024.11.0","send":{"to":"/cdn-cgi/rum"}}'></script>
+  <!-- End Cloudflare Web Analytics -->
+  <script type="module" src="/48th-songs/app.js"></script>
+</body>
+</html>

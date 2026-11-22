@@ -21,6 +21,8 @@
         "**/public/ge6-results/data.json",
         "**/public/ge-press-tour/app.js",
         "**/public/ge-press-tour/data.json",
+        "**/public/48th-songs/app.js",
+        "**/public/48th-songs/data.json",
         "**/src/tools.source.js"
       ],
       "fallthrough": false
