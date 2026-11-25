@@ -13,6 +13,9 @@ const read = (p) => fs.readFileSync(path.join(root, p), "utf8");
     ["public/ge6-results/og.png", "src/og-ge6-results.js"],
     ["public/ge-press-tour/og.png", "src/og-ge-press-tour.js"],
     ["public/48th-songs/og.png", "src/og-48th-songs.js"],
+    ["public/48-events/og.png", "src/og-48-events.js"],
+    ["public/ge-song-wish/og.png", "src/og-ge-song-wish.js"],
+    ["public/jod-setlist/og.png", "src/og-jod-setlist.js"],
   ];
   for (const [src, dest] of pairs) {
     const png = fs.readFileSync(path.join(root, src));
@@ -43,11 +46,26 @@ const modules = [
   ["public/48th-songs/style.css", read("public/48th-songs/style.css"), "text/plain"],
   ["public/48th-songs/app.js", read("public/48th-songs/app.js"), "text/plain"],
   ["public/48th-songs/data.json", read("public/48th-songs/data.json"), "text/plain"],
+  ["public/48-events/index.html", read("public/48-events/index.html"), "text/plain"],
+  ["public/48-events/style.css", read("public/48-events/style.css"), "text/plain"],
+  ["public/48-events/app.js", read("public/48-events/app.js"), "text/plain"],
+  ["public/48-events/data.json", read("public/48-events/data.json"), "text/plain"],
+  ["public/ge-song-wish/index.html", read("public/ge-song-wish/index.html"), "text/plain"],
+  ["public/ge-song-wish/style.css", read("public/ge-song-wish/style.css"), "text/plain"],
+  ["public/ge-song-wish/app.js", read("public/ge-song-wish/app.js"), "text/plain"],
+  ["public/ge-song-wish/data.json", read("public/ge-song-wish/data.json"), "text/plain"],
+  ["public/jod-setlist/index.html", read("public/jod-setlist/index.html"), "text/plain"],
+  ["public/jod-setlist/style.css", read("public/jod-setlist/style.css"), "text/plain"],
+  ["public/jod-setlist/app.js", read("public/jod-setlist/app.js"), "text/plain"],
+  ["public/jod-setlist/data.json", read("public/jod-setlist/data.json"), "text/plain"],
   ["src/og-landing.js", read("src/og-landing.js"), "application/javascript+module"],
   ["src/og-ge2026.js", read("src/og-ge2026.js"), "application/javascript+module"],
   ["src/og-ge6-results.js", read("src/og-ge6-results.js"), "application/javascript+module"],
   ["src/og-ge-press-tour.js", read("src/og-ge-press-tour.js"), "application/javascript+module"],
   ["src/og-48th-songs.js", read("src/og-48th-songs.js"), "application/javascript+module"],
+  ["src/og-48-events.js", read("src/og-48-events.js"), "application/javascript+module"],
+  ["src/og-ge-song-wish.js", read("src/og-ge-song-wish.js"), "application/javascript+module"],
+  ["src/og-jod-setlist.js", read("src/og-jod-setlist.js"), "application/javascript+module"],
   ["src/brand.js", read("src/brand.js"), "application/javascript+module"],
 ];
 

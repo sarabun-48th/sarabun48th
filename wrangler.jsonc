@@ -23,6 +23,12 @@
         "**/public/ge-press-tour/data.json",
         "**/public/48th-songs/app.js",
         "**/public/48th-songs/data.json",
+        "**/public/48-events/app.js",
+        "**/public/48-events/data.json",
+        "**/public/ge-song-wish/app.js",
+        "**/public/ge-song-wish/data.json",
+        "**/public/jod-setlist/app.js",
+        "**/public/jod-setlist/data.json",
         "**/src/tools.source.js"
       ],
       "fallthrough": false

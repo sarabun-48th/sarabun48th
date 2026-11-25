@@ -1,0 +1,1073 @@
+{
+  "meta": {
+    "titleTh": "เพลงที่ขอใน GE ได้ออกจริงไหม ใครได้ Center?",
+    "subtitleTh": "สำรวจข้อมูลเพลงที่สมาชิกขอใน General Election กับ Center ที่ออกจริง",
+    "frameNote": "หน้านี้ให้แฟนคลับสำรวจข้อมูลด้วยกัน ไม่ใช่คำอธิบายว่าทางการตัดสินใจอย่างไร ไอเดียและชุดข้อมูลเพลงที่ขอมาจากโพสต์ของ @ThamMiieZ ซึ่งระบุเองว่าเป็นการอ่านข้อมูลและความเห็นส่วนตัว ทางการไม่เคยออกมาบอก",
+    "scopeNote": "ชุดข้อมูลตอนนี้ครอบคลุมเฉพาะเพลงที่ออกหลังซิงเกิล Colorcon Wink และอิงเพลงที่เมมเบอร์เลือกใน GE5 (ไม่นับเพลง OG) ตามโพสต์ของ @ThamMiieZ",
+    "sourceNote": "แถวเพลงที่ขอมาจากโพสต์ของ @ThamMiieZ เท่านั้น ยังไม่มีรายชื่อเพลงที่ขอครบทุกคนใน GE5 หรือ GE อื่น อันดับ GE5 ใช้จากโพสต์สรุปทางการ 1–36 Center นับในสรุปเฉพาะเมื่อมีโพสต์ประกาศจากบัญชีทางการ ถ้ายังไม่พบจะติดป้ายรอตรวจสอบและไม่นับในตัวเลขสรุป",
+    "sources": [
+      {
+        "label": "โพสต์ต้นทางของ @ThamMiieZ (23 พ.ย. 2026)",
+        "url": "https://x.com/ThamMiieZ/status/2124757516638966078"
+      },
+      {
+        "label": "โพสต์ชี้แจงของ @ThamMiieZ",
+        "url": "https://x.com/ThamMiieZ/status/2124837077976236121"
+      },
+      {
+        "label": "ความเห็นในเธรดโดย @wasupretz",
+        "url": "https://x.com/wasupretz/status/2124878826887172289"
+      },
+      {
+        "label": "ความเห็นในเธรดโดย @panda_apink2013",
+        "url": "https://x.com/panda_apink2013/status/2124905423543378335"
+      },
+      {
+        "label": "บัญชีทางการ BNK48 — เซ็มบัตสึ GE5 อันดับ 1–12",
+        "url": "https://x.com/bnk48official/status/1906007460995072051"
+      },
+      {
+        "label": "บัญชีทางการ BNK48 — อันเดอร์เกิลส์ GE5 อันดับ 13–24",
+        "url": "https://x.com/bnk48official/status/1906007425611628666"
+      },
+      {
+        "label": "บัญชีทางการ BNK48 — เน็กซ์เกิลส์ GE5 อันดับ 25–36",
+        "url": "https://x.com/bnk48official/status/1906007395362656511"
+      },
+      {
+        "label": "บัญชีทางการ BNK48 บน Facebook — ผล GE5 (อันดับ 1–36)",
+        "url": "https://www.facebook.com/bnk48official/posts/1229757951842182/"
+      },
+      {
+        "label": "บัญชีทางการ BNK48 — Center เพลง Masaka no Confession",
+        "url": "https://x.com/bnk48official/status/1983874274835493274"
+      },
+      {
+        "label": "บัญชีทางการ BNK48 — Double Center เพลง Kimi to Doko ka e Ikitai",
+        "url": "https://x.com/bnk48official/status/2105636347809517673"
+      },
+      {
+        "label": "บัญชีทางการ BNK48 — Center อาหลี เพลง Saikou ka yo",
+        "url": "https://x.com/bnk48official/status/1962166991416119616"
+      },
+      {
+        "label": "บัญชีทางการ BNK48 — แสดงครั้งแรกเพลง Saikou ka yo 19 ธ.ค. 2025",
+        "url": "https://x.com/bnk48official/status/2001638580180120039"
+      },
+      {
+        "label": "บัญชีทางการ BNK48 — Double Center โยเกิร์ตและแพนเค้ก เพลง Ponytail to Shushu",
+        "url": "https://x.com/bnk48official/status/2059973320809034028"
+      },
+      {
+        "label": "บัญชีทางการ BNK48 — แสดงครั้งแรกเพลง Doushitemo Kimi ga Suki da 11 ต.ค. 2025",
+        "url": "https://x.com/bnk48official/status/1974095979948487106"
+      },
+      {
+        "label": "บัญชีทางการ CGM48 — แสดงครั้งแรกเพลง Koi Tsunjatta 4 ก.ค. 2026",
+        "url": "https://x.com/cgm48official/status/2074028615185174992"
+      },
+      {
+        "label": "รายชื่อเพลงในหน้า 242 เพลง",
+        "url": "/48th-songs/"
+      }
+    ],
+    "notes": [
+      "รูปในโพสต์ต้นทางเป็นภาพคอลลาจปกเพลง ไม่ใช่ตารางข้อมูล แถวในหน้านี้จึงถอดจากข้อความในโพสต์ ไม่ได้ถอดจากรูป",
+      "ตัวเลข (#1) (#2) (#3) ข้างชื่อในโพสต์ต้นทางคือลำดับเพลงที่สมาชิกขอ ไม่ใช่อันดับ GE ตามโพสต์ชี้แจงที่พูดถึงการขอเพลงแม้เป็นอันดับที่ 3",
+      "อันดับ GE5 ใช้ลำดับรายชื่อในโพสต์สรุปทางการวันที่ 29 มี.ค. 2025 ซึ่งสอดคล้องกับอันดับ GE5 ในหน้าผล GE6 สำหรับสมาชิกที่ปรากฏในทั้งสองแหล่ง สมาชิกที่ไม่อยู่ใน 36 อันดับแรก (Earth, Lingling, Ginna, Jjae) ยังไม่พบอันดับทางการจึงใส่รอตรวจสอบ",
+      "Center จากบัญชีทางการที่ยืนยันได้ตอนนี้มี Masaka no Confession (แจนรี่), Kimi to Doko ka e Ikitai (แพรว, แพร), Saikou ka yo (อาหลี) และ Ponytail to Shushu (โยเกิร์ต, แพนเค้ก) เพลงที่มีคนขออีก 4 เพลง (Doushitemo Kimi ga Suki da, Baby! Baby! Baby!, Koi Tsunjatta, Yobisute Fantasy) ยังไม่พบโพสต์ประกาศ Center จากบัญชีทางการจึงติดป้ายรอตรวจสอบและไม่นับในตัวเลขสรุป",
+      "ในโพสต์ต้นทางเขียน Center ของ Yobisute Fantasy ว่า ปาล์มมี่, เอลฟ์ ในข้อมูลนี้คงชื่อ เอลฟ์ ตามต้นทาง และใส่ชื่อในระบบทางการว่า Else (เอลส์) ไว้ให้เทียบ ยังไม่สรุปว่าเป็นคนเดียวกันจากโพสต์ประกาศ Center",
+      "วันออกที่ใส่เป็นวันแสดงครั้งแรก รอบปฐมทัศน์ MV หรือวันสตรีมมิงตามโพสต์ทางการ ไม่เดาวันวางแผงหรือวันดิจิทัลถ้าโพสต์ไม่ได้ระบุ",
+      "เครื่องมือ «ลองเลือกเพลงของคุณ» ใช้รายชื่อจากหน้า 242 เพลง แต่สถานะการออกและ Center ในชุดนี้มีเฉพาะ 15 เพลงหลัง Colorcon Wink ที่อยู่ในโพสต์ต้นทาง เพลงอื่นจะขึ้นว่ายังไม่มีข้อมูลในชุดนี้",
+      "ยังไม่มีแหล่งที่ลิงก์ได้สำหรับเพลงที่ขอใน GE6 หรือ GE ก่อนหน้า จึงยังไม่ใส่แถวเหล่านั้น"
+    ]
+  },
+  "releases": [
+    {
+      "id": "masaka-no-confession",
+      "name": "Masaka no Confession",
+      "nameTh": "คำสารภาพที่ไม่คาดฝัน",
+      "group": "BNK48",
+      "songsN": 216,
+      "status": "released",
+      "releaseType": "single",
+      "releaseTypeLabel": "ซิงเกิล",
+      "releaseName": "BNK48 20th Single “Masaka no Confession – คำสารภาพที่ไม่คาดฝัน”",
+      "releaseDate": "2025-11-02",
+      "releaseDateLabel": "แสดงครั้งแรกและรอบปฐมทัศน์ MV 2 พ.ย. 2025",
+      "releaseDatePrecision": "firstPerformance",
+      "wishedInGe5": false,
+      "wishedInGe5Note": "ไม่ถูกเลือกใน GE5 เพราะออกหลัง GE5",
+      "centers": [
+        {
+          "name": "Janry",
+          "nameTh": "แจนรี่",
+          "status": "confirmed",
+          "source": "https://x.com/bnk48official/status/1983874274835493274",
+          "sourceLabel": "บัญชีทางการ BNK48 — CENTER POSITION"
+        }
+      ],
+      "sources": [
+        {
+          "label": "บัญชีทางการ BNK48 — Center แจนรี่",
+          "url": "https://x.com/bnk48official/status/1983874274835493274"
+        },
+        {
+          "label": "โพสต์ของ @ThamMiieZ",
+          "url": "https://x.com/ThamMiieZ/status/2124757516638966078"
+        }
+      ]
+    },
+    {
+      "id": "saikou-ka-yo",
+      "name": "Saikou ka yo",
+      "nameTh": "สุดยอดไปเลย",
+      "group": "BNK48",
+      "songsN": 217,
+      "status": "released",
+      "releaseType": "coupling",
+      "releaseTypeLabel": "คัปปลิ้ง",
+      "releaseName": "คัปปลิ้งใน BNK48 20th Single “Masaka no Confession – คำสารภาพที่ไม่คาดฝัน”",
+      "releaseDate": "2025-12-19",
+      "releaseDateLabel": "แสดงครั้งแรก 19 ธ.ค. 2025",
+      "releaseDatePrecision": "firstPerformance",
+      "wishedInGe5": true,
+      "centers": [
+        {
+          "name": "Arlee",
+          "nameTh": "อาหลี",
+          "status": "confirmed",
+          "source": "https://x.com/bnk48official/status/1962166991416119616",
+          "sourceLabel": "บัญชีทางการ BNK48 — Senbatsu Members Arlee★"
+        }
+      ],
+      "sources": [
+        {
+          "label": "บัญชีทางการ BNK48 — แสดงครั้งแรก 19 ธ.ค. 2025",
+          "url": "https://x.com/bnk48official/status/2001638580180120039"
+        },
+        {
+          "label": "บัญชีทางการ BNK48 — Center อาหลี (Arlee★)",
+          "url": "https://x.com/bnk48official/status/1962166991416119616"
+        },
+        {
+          "label": "โพสต์ของ @ThamMiieZ",
+          "url": "https://x.com/ThamMiieZ/status/2124757516638966078"
+        }
+      ]
+    },
+    {
+      "id": "doushitemo-kimi-ga-suki-da",
+      "name": "Doushitemo Kimi ga Suki da",
+      "nameTh": "จะยังไงก็รักเธอ",
+      "group": "BNK48",
+      "songsN": 218,
+      "status": "released",
+      "releaseType": "coupling",
+      "releaseTypeLabel": "คัปปลิ้ง",
+      "releaseName": "คัปปลิ้งใน BNK48 20th Single “Masaka no Confession – คำสารภาพที่ไม่คาดฝัน”",
+      "releaseDate": "2025-10-11",
+      "releaseDateLabel": "แสดงครั้งแรกในงาน Debut Stage และรอบปฐมทัศน์ MV 11 ต.ค. 2025",
+      "releaseDatePrecision": "firstPerformance",
+      "wishedInGe5": true,
+      "centers": [
+        {
+          "name": "Luksorn",
+          "nameTh": "ลูกศร",
+          "status": "unconfirmed",
+          "source": "https://x.com/ThamMiieZ/status/2124757516638966078",
+          "sourceLabel": "โพสต์ของ @ThamMiieZ"
+        }
+      ],
+      "sources": [
+        {
+          "label": "บัญชีทางการ BNK48 — MV OUT NOW 11 ต.ค. 2025",
+          "url": "https://x.com/bnk48official/status/1976913155809800577"
+        },
+        {
+          "label": "บัญชีทางการ BNK48 — Debut Stage 11 ต.ค. 2025",
+          "url": "https://x.com/bnk48official/status/1974095979948487106"
+        },
+        {
+          "label": "บัญชีทางการ BNK48 — ระบุว่าเป็นคัปปลิ้งซิงเกิลที่ 20",
+          "url": "https://x.com/bnk48official/status/2121507167090151926"
+        },
+        {
+          "label": "โพสต์ของ @ThamMiieZ",
+          "url": "https://x.com/ThamMiieZ/status/2124757516638966078"
+        }
+      ]
+    },
+    {
+      "id": "ponytail-to-shushu",
+      "name": "Ponytail to Shushu",
+      "nameTh": "",
+      "group": "BNK48",
+      "songsN": 227,
+      "status": "released",
+      "releaseType": "album",
+      "releaseTypeLabel": "อัลบั้ม",
+      "releaseName": "BNK48 6th Album “Ponytail to Shushu”",
+      "releaseDate": "2026-05-30",
+      "releaseDateLabel": "แสดงครั้งแรกและรอบปฐมทัศน์ MV 30 พ.ค. 2026",
+      "releaseDatePrecision": "firstPerformance",
+      "wishedInGe5": true,
+      "centers": [
+        {
+          "name": "Yoghurt",
+          "nameTh": "โยเกิร์ต",
+          "status": "confirmed",
+          "source": "https://x.com/bnk48official/status/2059973320809034028",
+          "sourceLabel": "บัญชีทางการ BNK48 — DOUBLE CENTER"
+        },
+        {
+          "name": "Pancake",
+          "nameTh": "แพนเค้ก",
+          "status": "confirmed",
+          "source": "https://x.com/bnk48official/status/2059973320809034028",
+          "sourceLabel": "บัญชีทางการ BNK48 — DOUBLE CENTER"
+        }
+      ],
+      "sources": [
+        {
+          "label": "บัญชีทางการ BNK48 — Double Center โยเกิร์ตและแพนเค้ก",
+          "url": "https://x.com/bnk48official/status/2059973320809034028"
+        },
+        {
+          "label": "บัญชีทางการ BNK48 — 6th Album “Ponytail to Shushu”",
+          "url": "https://x.com/bnk48official/status/2093209463331471808"
+        },
+        {
+          "label": "โพสต์ของ @ThamMiieZ",
+          "url": "https://x.com/ThamMiieZ/status/2124757516638966078"
+        }
+      ]
+    },
+    {
+      "id": "hokori-no-oka",
+      "name": "Hokori no Oka",
+      "nameTh": "เนินเขาแห่งความฝัน",
+      "group": "CGM48",
+      "songsN": 211,
+      "status": "released",
+      "releaseType": null,
+      "releaseTypeLabel": "รอตรวจสอบ",
+      "releaseName": null,
+      "releaseDate": null,
+      "releaseDateLabel": null,
+      "releaseDatePrecision": null,
+      "wishedInGe5": false,
+      "wishedInGe5Note": "ไม่ถูกเลือกใน GE5",
+      "centers": [
+        {
+          "name": "Nana",
+          "nameTh": "นานา",
+          "status": "unconfirmed",
+          "source": "https://x.com/ThamMiieZ/status/2124757516638966078",
+          "sourceLabel": "โพสต์ของ @ThamMiieZ"
+        },
+        {
+          "name": "Lingling",
+          "nameTh": "หลิงหลิง",
+          "status": "unconfirmed",
+          "source": "https://x.com/ThamMiieZ/status/2124757516638966078",
+          "sourceLabel": "โพสต์ของ @ThamMiieZ"
+        }
+      ],
+      "sources": [
+        {
+          "label": "โพสต์ของ @ThamMiieZ",
+          "url": "https://x.com/ThamMiieZ/status/2124757516638966078"
+        }
+      ]
+    },
+    {
+      "id": "baby-baby-baby",
+      "name": "Baby! Baby! Baby!",
+      "nameTh": "",
+      "nameAlt": "Baby Baby Baby",
+      "group": "CGM48",
+      "songsN": 220,
+      "status": "released",
+      "releaseType": null,
+      "releaseTypeLabel": "รอตรวจสอบ",
+      "releaseName": null,
+      "releaseDate": null,
+      "releaseDateLabel": null,
+      "releaseDatePrecision": null,
+      "wishedInGe5": true,
+      "centers": [
+        {
+          "name": "Kwan",
+          "nameTh": "ขวัญ",
+          "status": "unconfirmed",
+          "source": "https://x.com/ThamMiieZ/status/2124757516638966078",
+          "sourceLabel": "โพสต์ของ @ThamMiieZ"
+        }
+      ],
+      "sources": [
+        {
+          "label": "โพสต์ของ @ThamMiieZ",
+          "url": "https://x.com/ThamMiieZ/status/2124757516638966078"
+        }
+      ]
+    },
+    {
+      "id": "hetaretachi-yo",
+      "name": "Hetaretachi yo",
+      "nameTh": "สิ้นสุดทางแพ้",
+      "group": "CGM48",
+      "songsN": 221,
+      "status": "released",
+      "releaseType": null,
+      "releaseTypeLabel": "รอตรวจสอบ",
+      "releaseName": null,
+      "releaseDate": null,
+      "releaseDateLabel": null,
+      "releaseDatePrecision": null,
+      "wishedInGe5": false,
+      "wishedInGe5Note": "ไม่ถูกเลือกใน GE5",
+      "centers": [
+        {
+          "name": "Nisha",
+          "nameTh": "นิชา",
+          "status": "unconfirmed",
+          "source": "https://x.com/ThamMiieZ/status/2124757516638966078",
+          "sourceLabel": "โพสต์ของ @ThamMiieZ"
+        }
+      ],
+      "sources": [
+        {
+          "label": "โพสต์ของ @ThamMiieZ",
+          "url": "https://x.com/ThamMiieZ/status/2124757516638966078"
+        }
+      ]
+    },
+    {
+      "id": "koi-tsunjatta",
+      "name": "Koi Tsunjatta",
+      "nameTh": "",
+      "nameAlt": "Let me know",
+      "group": "CGM48",
+      "songsN": 230,
+      "status": "released",
+      "releaseType": "single",
+      "releaseTypeLabel": "ซิงเกิล",
+      "releaseName": "CGM48 11th Single “Koi Tsunjatta – Let me know!”",
+      "releaseDate": "2026-07-04",
+      "releaseDateLabel": "แสดงครั้งแรก 4 ก.ค. 2026",
+      "releaseDatePrecision": "firstPerformance",
+      "wishedInGe5": true,
+      "centers": [
+        {
+          "name": "Jingjing",
+          "nameTh": "จิงจิง",
+          "status": "unconfirmed",
+          "source": "https://x.com/ThamMiieZ/status/2124757516638966078",
+          "sourceLabel": "โพสต์ของ @ThamMiieZ"
+        }
+      ],
+      "sources": [
+        {
+          "label": "บัญชีทางการ CGM48 — แสดงครั้งแรก 4 ก.ค. 2026",
+          "url": "https://x.com/cgm48official/status/2074028615185174992"
+        },
+        {
+          "label": "บัญชีทางการ CGM48 — 11th Single “Koi Tsunjatta – Let me know!”",
+          "url": "https://x.com/cgm48official/status/2103801757038264618"
+        },
+        {
+          "label": "โพสต์ของ @ThamMiieZ",
+          "url": "https://x.com/ThamMiieZ/status/2124757516638966078"
+        }
+      ]
+    },
+    {
+      "id": "bingo",
+      "name": "BINGO!",
+      "nameTh": "",
+      "nameAlt": "BINGO",
+      "group": "CGM48",
+      "songsN": 231,
+      "status": "released",
+      "releaseType": null,
+      "releaseTypeLabel": "รอตรวจสอบ",
+      "releaseName": null,
+      "releaseDate": null,
+      "releaseDateLabel": null,
+      "releaseDatePrecision": null,
+      "wishedInGe5": false,
+      "wishedInGe5Note": "ไม่ถูกเลือกใน GE5",
+      "centers": [
+        {
+          "name": "Emma",
+          "nameTh": "เอมม่า",
+          "status": "unconfirmed",
+          "source": "https://x.com/ThamMiieZ/status/2124757516638966078",
+          "sourceLabel": "โพสต์ของ @ThamMiieZ"
+        }
+      ],
+      "sources": [
+        {
+          "label": "โพสต์ของ @ThamMiieZ",
+          "url": "https://x.com/ThamMiieZ/status/2124757516638966078"
+        }
+      ]
+    },
+    {
+      "id": "kibou-ressha",
+      "name": "Kibou Ressha",
+      "nameTh": "รถไฟแห่งความหวัง",
+      "group": "CGM48",
+      "songsN": 232,
+      "status": "released",
+      "releaseType": "other",
+      "releaseTypeLabel": "เพลงรุ่น 5",
+      "releaseName": "CGM48 5th Generation “Kibou Ressha – รถไฟแห่งความหวัง”",
+      "releaseDate": null,
+      "releaseDateLabel": null,
+      "releaseDatePrecision": null,
+      "wishedInGe5": false,
+      "wishedInGe5Note": "ไม่ถูกเลือกใน GE5 เพราะออกหลัง GE5",
+      "centers": [
+        {
+          "name": "Lewlew",
+          "nameTh": "หลิวหลิว",
+          "status": "unconfirmed",
+          "source": "https://x.com/ThamMiieZ/status/2124757516638966078",
+          "sourceLabel": "โพสต์ของ @ThamMiieZ"
+        }
+      ],
+      "sources": [
+        {
+          "label": "บัญชีทางการ BNK48 — ระบุเพลงรุ่น 5 CGM48",
+          "url": "https://x.com/bnk48official/status/2093209463331471808"
+        },
+        {
+          "label": "โพสต์ของ @ThamMiieZ",
+          "url": "https://x.com/ThamMiieZ/status/2124757516638966078"
+        }
+      ]
+    },
+    {
+      "id": "12-gatsu-no-kangaroo",
+      "name": "12-Gatsu no Kangaroo",
+      "nameTh": "จิงโจ้น้อยเดือนธันวาคม",
+      "group": "BNK48 & CGM48",
+      "songsN": 222,
+      "status": "released",
+      "releaseType": null,
+      "releaseTypeLabel": "รอตรวจสอบ",
+      "releaseName": null,
+      "releaseDate": null,
+      "releaseDateLabel": null,
+      "releaseDatePrecision": null,
+      "wishedInGe5": false,
+      "wishedInGe5Note": "ไม่ถูกเลือกใน GE5",
+      "centers": [
+        {
+          "name": "Blythe",
+          "nameTh": "บลายธ์",
+          "status": "unconfirmed",
+          "source": "https://x.com/ThamMiieZ/status/2124757516638966078",
+          "sourceLabel": "โพสต์ของ @ThamMiieZ"
+        },
+        {
+          "name": "Nisha",
+          "nameTh": "นิชา",
+          "status": "unconfirmed",
+          "source": "https://x.com/ThamMiieZ/status/2124757516638966078",
+          "sourceLabel": "โพสต์ของ @ThamMiieZ"
+        }
+      ],
+      "sources": [
+        {
+          "label": "โพสต์ของ @ThamMiieZ",
+          "url": "https://x.com/ThamMiieZ/status/2124757516638966078"
+        }
+      ]
+    },
+    {
+      "id": "kimi-to-doko-ka-e-ikitai",
+      "name": "Kimi to Doko ka e Ikitai",
+      "nameTh": "อยากจะไปกับเธอ",
+      "group": "BNK48 & CGM48",
+      "songsN": 236,
+      "status": "released",
+      "releaseType": "special-single",
+      "releaseTypeLabel": "สเปเชียลซิงเกิล",
+      "releaseName": "BNK48 & CGM48 Special Single “Kimi to Doko ka e Ikitai – อยากจะไปกับเธอ”",
+      "releaseDate": "2026-10-03",
+      "releaseDateLabel": "แสดงครั้งแรกและรอบปฐมทัศน์ MV 3 ต.ค. 2026 · สตรีมมิง 31 ต.ค. 2026",
+      "releaseDatePrecision": "firstPerformance",
+      "wishedInGe5": false,
+      "wishedInGe5Note": "ไม่ถูกเลือกใน GE5",
+      "centers": [
+        {
+          "name": "Praew",
+          "nameTh": "แพรว",
+          "status": "confirmed",
+          "source": "https://x.com/bnk48official/status/2105636347809517673",
+          "sourceLabel": "บัญชีทางการ BNK48 — DOUBLE CENTER"
+        },
+        {
+          "name": "Prae",
+          "nameTh": "แพร",
+          "status": "confirmed",
+          "source": "https://x.com/bnk48official/status/2105636347809517673",
+          "sourceLabel": "บัญชีทางการ BNK48 — DOUBLE CENTER"
+        }
+      ],
+      "sources": [
+        {
+          "label": "บัญชีทางการ BNK48 — Double Center แพรวและแพร",
+          "url": "https://x.com/bnk48official/status/2105636347809517673"
+        },
+        {
+          "label": "บัญชีทางการ BNK48 — สตรีมมิง 31 ต.ค. 2026",
+          "url": "https://x.com/bnk48official/status/2116575931821142486"
+        },
+        {
+          "label": "โพสต์ของ @ThamMiieZ",
+          "url": "https://x.com/ThamMiieZ/status/2124757516638966078"
+        }
+      ]
+    },
+    {
+      "id": "kegareteiru-shinjitsu",
+      "name": "Kegareteiru Shinjitsu",
+      "nameTh": "ความจริงสีเทา",
+      "group": "BNK48 & CGM48",
+      "songsN": 239,
+      "status": "released",
+      "releaseType": "coupling",
+      "releaseTypeLabel": "คัปปลิ้ง",
+      "releaseName": "คัปปลิ้งใน BNK48 & CGM48 Special Single “Kimi to Doko ka e Ikitai – อยากจะไปกับเธอ”",
+      "releaseDate": "2026-10-31",
+      "releaseDateLabel": "สตรีมมิงพร้อมสเปเชียลซิงเกิล 31 ต.ค. 2026",
+      "releaseDatePrecision": "streaming",
+      "wishedInGe5": false,
+      "wishedInGe5Note": "ไม่ถูกเลือกใน GE5",
+      "centers": [
+        {
+          "name": "Wawa",
+          "nameTh": "วาว่า",
+          "status": "unconfirmed",
+          "source": "https://x.com/ThamMiieZ/status/2124757516638966078",
+          "sourceLabel": "โพสต์ของ @ThamMiieZ"
+        },
+        {
+          "name": "Nisha",
+          "nameTh": "นิชา",
+          "status": "unconfirmed",
+          "source": "https://x.com/ThamMiieZ/status/2124757516638966078",
+          "sourceLabel": "โพสต์ของ @ThamMiieZ"
+        }
+      ],
+      "sources": [
+        {
+          "label": "บัญชีทางการ BNK48 — คัปปลิ้งในสเปเชียลซิงเกิล",
+          "url": "https://x.com/bnk48official/status/2116575931821142486"
+        },
+        {
+          "label": "โพสต์ของ @ThamMiieZ",
+          "url": "https://x.com/ThamMiieZ/status/2124757516638966078"
+        }
+      ]
+    },
+    {
+      "id": "aisuru-hito",
+      "name": "Aisuru Hito",
+      "nameTh": "เธอ",
+      "group": "BNK48 & CGM48",
+      "songsN": 238,
+      "status": "released",
+      "releaseType": "coupling",
+      "releaseTypeLabel": "คัปปลิ้ง",
+      "releaseName": "คัปปลิ้งใน BNK48 & CGM48 Special Single “Kimi to Doko ka e Ikitai – อยากจะไปกับเธอ”",
+      "releaseDate": "2026-10-31",
+      "releaseDateLabel": "สตรีมมิงพร้อมสเปเชียลซิงเกิล 31 ต.ค. 2026",
+      "releaseDatePrecision": "streaming",
+      "wishedInGe5": false,
+      "wishedInGe5Note": "ไม่ถูกเลือกใน GE5",
+      "centers": [
+        {
+          "name": "Sindy",
+          "nameTh": "ซินดี้",
+          "status": "unconfirmed",
+          "source": "https://x.com/ThamMiieZ/status/2124757516638966078",
+          "sourceLabel": "โพสต์ของ @ThamMiieZ"
+        },
+        {
+          "name": "Ploen",
+          "nameTh": "เพลิน",
+          "status": "unconfirmed",
+          "source": "https://x.com/ThamMiieZ/status/2124757516638966078",
+          "sourceLabel": "โพสต์ของ @ThamMiieZ"
+        }
+      ],
+      "sources": [
+        {
+          "label": "บัญชีทางการ BNK48 — คัปปลิ้งในสเปเชียลซิงเกิล",
+          "url": "https://x.com/bnk48official/status/2116575931821142486"
+        },
+        {
+          "label": "โพสต์ของ @ThamMiieZ",
+          "url": "https://x.com/ThamMiieZ/status/2124757516638966078"
+        }
+      ]
+    },
+    {
+      "id": "yobisute-fantasy",
+      "name": "Yobisute Fantasy",
+      "nameTh": "เรียกชื่อที ใจไม่ดีแล้ว",
+      "group": "BNK48 & CGM48",
+      "songsN": 240,
+      "status": "released",
+      "releaseType": "coupling",
+      "releaseTypeLabel": "คัปปลิ้ง",
+      "releaseName": "คัปปลิ้งใน BNK48 & CGM48 Special Single “Kimi to Doko ka e Ikitai – อยากจะไปกับเธอ”",
+      "releaseDate": "2026-10-31",
+      "releaseDateLabel": "สตรีมมิงพร้อมสเปเชียลซิงเกิล 31 ต.ค. 2026",
+      "releaseDatePrecision": "streaming",
+      "wishedInGe5": true,
+      "centers": [
+        {
+          "name": "Palmmy",
+          "nameTh": "ปาล์มมี่",
+          "status": "unconfirmed",
+          "source": "https://x.com/ThamMiieZ/status/2124757516638966078",
+          "sourceLabel": "โพสต์ของ @ThamMiieZ"
+        },
+        {
+          "name": "Else",
+          "nameTh": "เอลส์",
+          "status": "unconfirmed",
+          "source": "https://x.com/ThamMiieZ/status/2124757516638966078",
+          "sourceLabel": "โพสต์ของ @ThamMiieZ",
+          "asWritten": "เอลฟ์"
+        }
+      ],
+      "sources": [
+        {
+          "label": "บัญชีทางการ BNK48 — คัปปลิ้งในสเปเชียลซิงเกิล",
+          "url": "https://x.com/bnk48official/status/2116575931821142486"
+        },
+        {
+          "label": "โพสต์ของ @ThamMiieZ",
+          "url": "https://x.com/ThamMiieZ/status/2124757516638966078"
+        }
+      ]
+    }
+  ],
+  "wishes": [
+    {
+      "id": "ge5-01-galeya-saikou-ka-yo",
+      "ge": "GE5",
+      "geLabel": "GE5 (2025)",
+      "member": "Galeya",
+      "memberTh": "เกลญ่า",
+      "group": "BNK48",
+      "geRank": 34,
+      "geRankStatus": "confirmed",
+      "geRankSource": "https://x.com/bnk48official/status/1906007395362656511",
+      "wishOrder": 2,
+      "songId": "saikou-ka-yo",
+      "source": "https://x.com/ThamMiieZ/status/2124757516638966078",
+      "centerMatch": "no",
+      "centerMatchStatus": "confirmed",
+      "centerMatchBasis": "official"
+    },
+    {
+      "id": "ge5-02-kaofrang-saikou-ka-yo",
+      "ge": "GE5",
+      "geLabel": "GE5 (2025)",
+      "member": "Kaofrang",
+      "memberTh": "",
+      "group": "BNK48",
+      "geRank": 15,
+      "geRankStatus": "confirmed",
+      "geRankSource": "https://x.com/bnk48official/status/1906007425611628666",
+      "wishOrder": 1,
+      "songId": "saikou-ka-yo",
+      "source": "https://x.com/ThamMiieZ/status/2124757516638966078",
+      "centerMatch": "no",
+      "centerMatchStatus": "confirmed",
+      "centerMatchBasis": "official"
+    },
+    {
+      "id": "ge5-03-sindy-saikou-ka-yo",
+      "ge": "GE5",
+      "geLabel": "GE5 (2025)",
+      "member": "Sindy",
+      "memberTh": "ซินดี้",
+      "group": "BNK48",
+      "geRank": 33,
+      "geRankStatus": "confirmed",
+      "geRankSource": "https://x.com/bnk48official/status/1906007395362656511",
+      "wishOrder": 3,
+      "songId": "saikou-ka-yo",
+      "source": "https://x.com/ThamMiieZ/status/2124757516638966078",
+      "centerMatch": "no",
+      "centerMatchStatus": "confirmed",
+      "centerMatchBasis": "official"
+    },
+    {
+      "id": "ge5-04-arlee-doushitemo-kimi-ga-suki-da",
+      "ge": "GE5",
+      "geLabel": "GE5 (2025)",
+      "member": "Arlee",
+      "memberTh": "อาหลี",
+      "group": "BNK48",
+      "geRank": 19,
+      "geRankStatus": "confirmed",
+      "geRankSource": "https://x.com/bnk48official/status/1906007425611628666",
+      "wishOrder": 1,
+      "songId": "doushitemo-kimi-ga-suki-da",
+      "source": "https://x.com/ThamMiieZ/status/2124757516638966078",
+      "centerMatch": "no",
+      "centerMatchStatus": "unconfirmed",
+      "centerMatchBasis": "thammiiez"
+    },
+    {
+      "id": "ge5-05-janry-doushitemo-kimi-ga-suki-da",
+      "ge": "GE5",
+      "geLabel": "GE5 (2025)",
+      "member": "Janry",
+      "memberTh": "แจนรี่",
+      "group": "BNK48",
+      "geRank": 16,
+      "geRankStatus": "confirmed",
+      "geRankSource": "https://x.com/bnk48official/status/1906007425611628666",
+      "wishOrder": 1,
+      "songId": "doushitemo-kimi-ga-suki-da",
+      "source": "https://x.com/ThamMiieZ/status/2124757516638966078",
+      "centerMatch": "no",
+      "centerMatchStatus": "unconfirmed",
+      "centerMatchBasis": "thammiiez"
+    },
+    {
+      "id": "ge5-06-lingling-doushitemo-kimi-ga-suki-da",
+      "ge": "GE5",
+      "geLabel": "GE5 (2025)",
+      "member": "Lingling",
+      "memberTh": "หลิงหลิง",
+      "group": "CGM48",
+      "geRank": null,
+      "geRankStatus": "unconfirmed",
+      "geRankSource": null,
+      "wishOrder": 2,
+      "songId": "doushitemo-kimi-ga-suki-da",
+      "source": "https://x.com/ThamMiieZ/status/2124757516638966078",
+      "centerMatch": "no",
+      "centerMatchStatus": "unconfirmed",
+      "centerMatchBasis": "thammiiez"
+    },
+    {
+      "id": "ge5-07-micha-doushitemo-kimi-ga-suki-da",
+      "ge": "GE5",
+      "geLabel": "GE5 (2025)",
+      "member": "Micha",
+      "memberTh": "มิชา",
+      "group": "BNK48",
+      "geRank": 23,
+      "geRankStatus": "confirmed",
+      "geRankSource": "https://x.com/bnk48official/status/1906007425611628666",
+      "wishOrder": 1,
+      "songId": "doushitemo-kimi-ga-suki-da",
+      "source": "https://x.com/ThamMiieZ/status/2124757516638966078",
+      "centerMatch": "no",
+      "centerMatchStatus": "unconfirmed",
+      "centerMatchBasis": "thammiiez"
+    },
+    {
+      "id": "ge5-08-patt-doushitemo-kimi-ga-suki-da",
+      "ge": "GE5",
+      "geLabel": "GE5 (2025)",
+      "member": "Patt",
+      "memberTh": "แพท",
+      "group": "BNK48",
+      "geRank": 29,
+      "geRankStatus": "confirmed",
+      "geRankSource": "https://x.com/bnk48official/status/1906007395362656511",
+      "wishOrder": 2,
+      "songId": "doushitemo-kimi-ga-suki-da",
+      "source": "https://x.com/ThamMiieZ/status/2124757516638966078",
+      "centerMatch": "no",
+      "centerMatchStatus": "unconfirmed",
+      "centerMatchBasis": "thammiiez"
+    },
+    {
+      "id": "ge5-09-saonoi-doushitemo-kimi-ga-suki-da",
+      "ge": "GE5",
+      "geLabel": "GE5 (2025)",
+      "member": "Saonoi",
+      "memberTh": "สาวน้อย",
+      "group": "BNK48",
+      "geRank": 22,
+      "geRankStatus": "confirmed",
+      "geRankSource": "https://x.com/bnk48official/status/1906007425611628666",
+      "wishOrder": 2,
+      "songId": "doushitemo-kimi-ga-suki-da",
+      "source": "https://x.com/ThamMiieZ/status/2124757516638966078",
+      "centerMatch": "no",
+      "centerMatchStatus": "unconfirmed",
+      "centerMatchBasis": "thammiiez"
+    },
+    {
+      "id": "ge5-10-wawa-doushitemo-kimi-ga-suki-da",
+      "ge": "GE5",
+      "geLabel": "GE5 (2025)",
+      "member": "Wawa",
+      "memberTh": "วาว่า",
+      "group": "BNK48",
+      "geRank": 21,
+      "geRankStatus": "confirmed",
+      "geRankSource": "https://x.com/bnk48official/status/1906007425611628666",
+      "wishOrder": 3,
+      "songId": "doushitemo-kimi-ga-suki-da",
+      "source": "https://x.com/ThamMiieZ/status/2124757516638966078",
+      "centerMatch": "no",
+      "centerMatchStatus": "unconfirmed",
+      "centerMatchBasis": "thammiiez"
+    },
+    {
+      "id": "ge5-11-earth-ponytail-to-shushu",
+      "ge": "GE5",
+      "geLabel": "GE5 (2025)",
+      "member": "Earth",
+      "memberTh": "",
+      "group": "BNK48",
+      "geRank": null,
+      "geRankStatus": "unconfirmed",
+      "geRankSource": null,
+      "wishOrder": 3,
+      "songId": "ponytail-to-shushu",
+      "source": "https://x.com/ThamMiieZ/status/2124757516638966078",
+      "centerMatch": "no",
+      "centerMatchStatus": "confirmed",
+      "centerMatchBasis": "official"
+    },
+    {
+      "id": "ge5-12-grace-baby-baby-baby",
+      "ge": "GE5",
+      "geLabel": "GE5 (2025)",
+      "member": "Grace",
+      "memberTh": "",
+      "group": "BNK48",
+      "geRank": 11,
+      "geRankStatus": "confirmed",
+      "geRankSource": "https://x.com/bnk48official/status/1906007460995072051",
+      "wishOrder": 3,
+      "songId": "baby-baby-baby",
+      "source": "https://x.com/ThamMiieZ/status/2124757516638966078",
+      "centerMatch": "no",
+      "centerMatchStatus": "unconfirmed",
+      "centerMatchBasis": "thammiiez"
+    },
+    {
+      "id": "ge5-13-niya-baby-baby-baby",
+      "ge": "GE5",
+      "geLabel": "GE5 (2025)",
+      "member": "Niya",
+      "memberTh": "นีย่า",
+      "group": "BNK48",
+      "geRank": 24,
+      "geRankStatus": "confirmed",
+      "geRankSource": "https://x.com/bnk48official/status/1906007425611628666",
+      "wishOrder": 1,
+      "songId": "baby-baby-baby",
+      "source": "https://x.com/ThamMiieZ/status/2124757516638966078",
+      "centerMatch": "no",
+      "centerMatchStatus": "unconfirmed",
+      "centerMatchBasis": "thammiiez"
+    },
+    {
+      "id": "ge5-14-sindy-baby-baby-baby",
+      "ge": "GE5",
+      "geLabel": "GE5 (2025)",
+      "member": "Sindy",
+      "memberTh": "ซินดี้",
+      "group": "BNK48",
+      "geRank": 33,
+      "geRankStatus": "confirmed",
+      "geRankSource": "https://x.com/bnk48official/status/1906007395362656511",
+      "wishOrder": 1,
+      "songId": "baby-baby-baby",
+      "source": "https://x.com/ThamMiieZ/status/2124757516638966078",
+      "centerMatch": "no",
+      "centerMatchStatus": "unconfirmed",
+      "centerMatchBasis": "thammiiez"
+    },
+    {
+      "id": "ge5-15-ginna-koi-tsunjatta",
+      "ge": "GE5",
+      "geLabel": "GE5 (2025)",
+      "member": "Ginna",
+      "memberTh": "จีนน่า",
+      "group": "CGM48",
+      "geRank": null,
+      "geRankStatus": "unconfirmed",
+      "geRankSource": null,
+      "wishOrder": 3,
+      "songId": "koi-tsunjatta",
+      "source": "https://x.com/ThamMiieZ/status/2124757516638966078",
+      "centerMatch": "no",
+      "centerMatchStatus": "unconfirmed",
+      "centerMatchBasis": "thammiiez"
+    },
+    {
+      "id": "ge5-16-jjae-koi-tsunjatta",
+      "ge": "GE5",
+      "geLabel": "GE5 (2025)",
+      "member": "Jjae",
+      "memberTh": "",
+      "group": "CGM48",
+      "geRank": null,
+      "geRankStatus": "unconfirmed",
+      "geRankSource": null,
+      "wishOrder": 1,
+      "songId": "koi-tsunjatta",
+      "source": "https://x.com/ThamMiieZ/status/2124757516638966078",
+      "centerMatch": "no",
+      "centerMatchStatus": "unconfirmed",
+      "centerMatchBasis": "thammiiez"
+    },
+    {
+      "id": "ge5-17-l-koi-tsunjatta",
+      "ge": "GE5",
+      "geLabel": "GE5 (2025)",
+      "member": "L",
+      "memberTh": "แอล",
+      "group": "BNK48",
+      "geRank": 9,
+      "geRankStatus": "confirmed",
+      "geRankSource": "https://x.com/bnk48official/status/1906007460995072051",
+      "wishOrder": 3,
+      "songId": "koi-tsunjatta",
+      "source": "https://x.com/ThamMiieZ/status/2124757516638966078",
+      "centerMatch": "no",
+      "centerMatchStatus": "unconfirmed",
+      "centerMatchBasis": "thammiiez"
+    },
+    {
+      "id": "ge5-18-lingling-koi-tsunjatta",
+      "ge": "GE5",
+      "geLabel": "GE5 (2025)",
+      "member": "Lingling",
+      "memberTh": "หลิงหลิง",
+      "group": "CGM48",
+      "geRank": null,
+      "geRankStatus": "unconfirmed",
+      "geRankSource": null,
+      "wishOrder": 1,
+      "songId": "koi-tsunjatta",
+      "source": "https://x.com/ThamMiieZ/status/2124757516638966078",
+      "centerMatch": "no",
+      "centerMatchStatus": "unconfirmed",
+      "centerMatchBasis": "thammiiez"
+    },
+    {
+      "id": "ge5-19-wawa-koi-tsunjatta",
+      "ge": "GE5",
+      "geLabel": "GE5 (2025)",
+      "member": "Wawa",
+      "memberTh": "วาว่า",
+      "group": "BNK48",
+      "geRank": 21,
+      "geRankStatus": "confirmed",
+      "geRankSource": "https://x.com/bnk48official/status/1906007425611628666",
+      "wishOrder": 2,
+      "songId": "koi-tsunjatta",
+      "source": "https://x.com/ThamMiieZ/status/2124757516638966078",
+      "centerMatch": "no",
+      "centerMatchStatus": "unconfirmed",
+      "centerMatchBasis": "thammiiez"
+    },
+    {
+      "id": "ge5-20-emmy-yobisute-fantasy",
+      "ge": "GE5",
+      "geLabel": "GE5 (2025)",
+      "member": "Emmy",
+      "memberTh": "เอ็มมี่",
+      "group": "BNK48",
+      "geRank": 20,
+      "geRankStatus": "confirmed",
+      "geRankSource": "https://x.com/bnk48official/status/1906007425611628666",
+      "wishOrder": 3,
+      "songId": "yobisute-fantasy",
+      "source": "https://x.com/ThamMiieZ/status/2124757516638966078",
+      "centerMatch": "no",
+      "centerMatchStatus": "unconfirmed",
+      "centerMatchBasis": "thammiiez"
+    },
+    {
+      "id": "ge5-21-janry-yobisute-fantasy",
+      "ge": "GE5",
+      "geLabel": "GE5 (2025)",
+      "member": "Janry",
+      "memberTh": "แจนรี่",
+      "group": "BNK48",
+      "geRank": 16,
+      "geRankStatus": "confirmed",
+      "geRankSource": "https://x.com/bnk48official/status/1906007425611628666",
+      "wishOrder": 3,
+      "songId": "yobisute-fantasy",
+      "source": "https://x.com/ThamMiieZ/status/2124757516638966078",
+      "centerMatch": "no",
+      "centerMatchStatus": "unconfirmed",
+      "centerMatchBasis": "thammiiez"
+    },
+    {
+      "id": "ge5-22-mean-yobisute-fantasy",
+      "ge": "GE5",
+      "geLabel": "GE5 (2025)",
+      "member": "Mean",
+      "memberTh": "",
+      "group": "BNK48",
+      "geRank": 18,
+      "geRankStatus": "confirmed",
+      "geRankSource": "https://x.com/bnk48official/status/1906007425611628666",
+      "wishOrder": 2,
+      "songId": "yobisute-fantasy",
+      "source": "https://x.com/ThamMiieZ/status/2124757516638966078",
+      "centerMatch": "no",
+      "centerMatchStatus": "unconfirmed",
+      "centerMatchBasis": "thammiiez"
+    },
+    {
+      "id": "ge5-23-mei-yobisute-fantasy",
+      "ge": "GE5",
+      "geLabel": "GE5 (2025)",
+      "member": "Mei",
+      "memberTh": "",
+      "group": "CGM48",
+      "geRank": 17,
+      "geRankStatus": "confirmed",
+      "geRankSource": "https://x.com/bnk48official/status/1906007425611628666",
+      "wishOrder": 3,
+      "songId": "yobisute-fantasy",
+      "source": "https://x.com/ThamMiieZ/status/2124757516638966078",
+      "centerMatch": "no",
+      "centerMatchStatus": "unconfirmed",
+      "centerMatchBasis": "thammiiez"
+    },
+    {
+      "id": "ge5-24-niya-yobisute-fantasy",
+      "ge": "GE5",
+      "geLabel": "GE5 (2025)",
+      "member": "Niya",
+      "memberTh": "นีย่า",
+      "group": "BNK48",
+      "geRank": 24,
+      "geRankStatus": "confirmed",
+      "geRankSource": "https://x.com/bnk48official/status/1906007425611628666",
+      "wishOrder": 2,
+      "songId": "yobisute-fantasy",
+      "source": "https://x.com/ThamMiieZ/status/2124757516638966078",
+      "centerMatch": "no",
+      "centerMatchStatus": "unconfirmed",
+      "centerMatchBasis": "thammiiez"
+    }
+  ]
+}

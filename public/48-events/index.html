@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>สารบัญ48th · ตามงาน 48 · พาสปอร์ตแฟนคลับ</title>
+  <meta name="description" content="สารบัญ48th รวมงาน BNK48 และ CGM48 ทั้ง Roadshow งานจับมือ Original Stage และงานอื่น ๆ ว่าวันไหน ที่ไหน ใครขึ้น และร้องเพลงอะไร">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="th_TH">
+  <meta property="og:title" content="สารบัญ48th · ตามงาน 48 · พาสปอร์ตแฟนคลับ">
+  <meta property="og:description" content="รวมงาน BNK48 และ CGM48 ว่าวันไหน ที่ไหน ใครขึ้น และร้องเพลงอะไร ติ๊กงานที่ไปแล้วเป็นพาสปอร์ตแฟนคลับ">
+  <meta property="og:url" content="https://demo.sarabun48th.space/48-events/">
+  <meta property="og:image" content="https://demo.sarabun48th.space/48-events/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
+  <meta property="og:image:alt" content="สารบัญ48th · ตามงาน 48 · พาสปอร์ตแฟนคลับ">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="สารบัญ48th · ตามงาน 48 · พาสปอร์ตแฟนคลับ">
+  <meta name="twitter:description" content="รวมงาน BNK48 และ CGM48 ว่าวันไหน ที่ไหน ใครขึ้น และร้องเพลงอะไร">
+  <meta name="twitter:image" content="https://demo.sarabun48th.space/48-events/og.png">
+  <meta name="theme-color" content="#0c0a0b">
+  <meta name="color-scheme" content="dark">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/webp" sizes="512x512" href="/icon-512.webp">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/48-events/style.css">
+</head>
+<body>
+  <header class="wrap top">
+    <a class="brand" href="/"><img class="logo" src="/logo.webp" width="32" height="32" alt="">sarabun<span>48th</span></a>
+    <nav>
+      <a href="/">หน้าแรก</a>
+      <a href="#timeline">ไทม์ไลน์</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="wrap hero tour-hero">
+      <p class="back"><a href="/">← กลับหน้าแรก</a></p>
+      <h1>ตามงาน 48</h1>
+      <p class="hero-date">พาสปอร์ตแฟนคลับ</p>
+      <p class="meta-line">รวม Roadshow งานจับมือ Original Stage และงานอื่น ๆ ของ BNK48 และ CGM48 ว่าวันไหน ที่ไหน ใครขึ้น และร้องเพลงอะไร</p>
+    </section>
+
+    <section class="wrap hook" id="next-hook"></section>
+
+    <section class="wrap hook passport" id="passport">
+      <p class="hook-kicker">พาสปอร์ตแฟนคลับ</p>
+      <p class="hook-count" id="passport-count">ไปงานมาแล้ว <span>0</span> / 0 งาน</p>
+      <div class="progress-block">
+        <div class="progress is-empty" role="progressbar" aria-valuemin="0" aria-valuemax="0" aria-valuenow="0" aria-labelledby="passport-count" id="progress">
+          <span class="progress-bar" id="progress-bar"></span>
+        </div>
+        <p class="progress-hint" id="progress-hint">ติ๊กงานที่ไปแล้วเพื่อเริ่มนับ</p>
+      </div>
+      <div class="hook-actions">
+        <button type="button" class="btn" id="share">แชร์การ์ด</button>
+      </div>
+    </section>
+
+    <section class="wrap" id="timeline">
+      <h2>ไทม์ไลน์งาน <small>Events</small></h2>
+      <div class="toolbar">
+        <div class="toolbar-main">
+          <label class="sr-only" for="q">ค้นหาชื่องาน สถานที่ หรือชื่อสมาชิก</label>
+          <input id="q" type="search" placeholder="ค้นหาชื่องาน สถานที่ หรือชื่อสมาชิก…" autocomplete="off">
+          <button type="button" class="filters-toggle" id="filters-toggle" aria-expanded="false" aria-controls="filters">ตัวกรอง</button>
+        </div>
+        <div class="filters" id="filters"></div>
+      </div>
+      <div class="sort-row" id="sort-row" role="group" aria-label="เรียงลำดับ"></div>
+      <div class="member-summary" id="member-summary" hidden></div>
+      <p class="hint count" id="count"></p>
+      <div class="stops" id="stops"></div>
+      <p class="empty" id="empty" hidden>ไม่พบงานที่ตรงกับคำค้น</p>
+    </section>
+
+    <section class="wrap stats" id="stats">
+      <h2 id="stats-title">เซ็ตลิสต์ที่ยืนยันแล้ว <small>Setlist</small></h2>
+      <p class="hint" id="stats-hint"></p>
+      <ul class="song-stats" id="song-stats"></ul>
+    </section>
+
+    <section class="wrap notes" id="notes">
+      <h2>ที่มาและหมายเหตุ <small>Sources</small></h2>
+      <ul id="sources"></ul>
+      <p class="source-note" id="source-note"></p>
+      <ul id="footnotes" class="footnotes"></ul>
+    </section>
+  </main>
+
+  <dialog class="share-dialog" id="share-dialog" aria-labelledby="share-title">
+    <form method="dialog" class="share-panel">
+      <h2 id="share-title">การ์ดแชร์</h2>
+      <canvas id="share-canvas" width="1200" height="675" hidden></canvas>
+      <img id="share-preview" alt="ตัวอย่างการ์ดแชร์">
+      <div class="share-actions">
+        <a class="btn" id="share-download" download="48-events-card.png">ดาวน์โหลด PNG</a>
+        <button class="btn ghost" type="button" id="share-share">แชร์</button>
+        <button class="btn ghost" value="close">ปิด</button>
+      </div>
+    </form>
+  </dialog>
+
+  <footer class="wrap foot">
+    <div class="social" id="social"></div>
+    <p>ทำโดยแฟนคลับ เพื่อแฟนคลับ</p>
+    <p class="muted">© <span id="year"></span> sarabun48th</p>
+  </footer>
+  <!-- Cloudflare Web Analytics -->
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "1652b090f2434ea888c572dae8dbba6f","version":"2024.11.0","send":{"to":"/cdn-cgi/rum"}}'></script>
+  <!-- End Cloudflare Web Analytics -->
+  <script type="module" src="/48-events/app.js"></script>
+</body>
+</html>

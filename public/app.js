@@ -25,6 +25,21 @@ const demoOnlyTools = isProdHost ? [] : [
     desc: "ค้นหาเพลง BNK48 และ CGM48 ทั้ง 242 เพลง กรองตามวง และเก็บว่าฟังมาแล้วกี่เพลง",
     href: "/48th-songs/",
   },
+  {
+    name: "ตามงาน 48",
+    desc: "พาสปอร์ตแฟนคลับ รวม Roadshow งานจับมือ Original Stage และงานอื่น ๆ ว่าวันไหน ที่ไหน ใครขึ้น",
+    href: "/48-events/",
+  },
+  {
+    name: "เพลงที่ขอใน GE ได้ออกจริงไหม ใครได้ Center?",
+    desc: "สำรวจว่าเพลงที่สมาชิกขอใน General Election ได้ออกจริงไหม และใครได้ Center ตามโพสต์ของ @ThamMiieZ",
+    href: "/ge-song-wish/",
+  },
+  {
+    name: "ใน Journey of Dreams เธอขึ้นกี่เพลง?",
+    desc: "ค้นหาว่าสมาชิก BNK48 และ CGM48 คนไหนขึ้นเพลงอะไรบ้างในคอนเสิร์ต 14 พ.ย. 2026 จากตารางของ @immabird_z",
+    href: "/jod-setlist/",
+  },
 ];
 
 $("#cards").innerHTML = TOOLS.map((t) => `

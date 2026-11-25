@@ -1,0 +1,917 @@
+{
+  "meta": {
+    "titleTh": "ตามงาน 48",
+    "titleSubTh": "พาสปอร์ตแฟนคลับ",
+    "timezone": "Asia/Bangkok",
+    "sourceNote": "ข้อมูลมาจากโพสต์ทางการและโพสต์แฟนคลับที่ระบุไว้เท่านั้น ไม่ใส่งานหรือรายชื่อที่ไม่มีแหล่ง รายการที่ยังไม่ยืนยันติดป้ายรอตรวจสอบ",
+    "sources": [
+      {
+        "id": "src-official-bigc",
+        "label": "บัญชีทางการ @bnk48official — ประกาศ Roadshow บิ๊กซี ราชดำริ 28–29 พ.ย. 2026 (แก้คำว่า Monet แล้ว)",
+        "url": "https://x.com/bnk48official/status/2124018824270020619",
+        "handle": "bnk48official",
+        "kind": "official"
+      },
+      {
+        "id": "src-official-bigc-typo",
+        "label": "บัญชีทางการ @bnk48official — โพสต์ก่อนหน้าของประกาศบิ๊กซี ราชดำริ ที่สะกด Monet เป็น Money",
+        "url": "https://x.com/bnk48official/status/2124004880818040869",
+        "handle": "bnk48official",
+        "kind": "official"
+      },
+      {
+        "id": "src-official-t21",
+        "label": "บัญชีทางการ @bnk48official — ประกาศ Roadshow Terminal21 พระราม 3 วันที่ 21–22 พ.ย. 2026",
+        "url": "https://x.com/bnk48official/status/2123642497012281480",
+        "handle": "bnk48official",
+        "kind": "official"
+      },
+      {
+        "id": "src-official-phs",
+        "label": "บัญชีทางการ @cgm48official — ขอบคุณผู้มาร่วม Roadshow เซ็นทรัล พิษณุโลก วันที่ 21 พ.ย. และนัดวันรุ่งขึ้น",
+        "url": "https://x.com/cgm48official/status/2124109578443108704",
+        "handle": "cgm48official",
+        "kind": "official"
+      },
+      {
+        "id": "src-minato-setlist",
+        "label": "โพสต์แฟนคลับ @minato2013 — เซ็ตลิสต์ CGM48 Roadshow พิษณุโลก วันที่ 21 พ.ย. 2026",
+        "url": "https://x.com/minato2013/status/2124034383204241901",
+        "handle": "minato2013",
+        "kind": "fan"
+      },
+      {
+        "id": "src-fancam-t21",
+        "label": "แฟนแคม @1yearmiracle — Aitakatta ที่ Terminal21 พระราม 3 วันที่ 22 พ.ย. 2026",
+        "url": "https://x.com/1yearmiracle/status/2124387042432049607",
+        "handle": "1yearmiracle",
+        "kind": "fan"
+      },
+      {
+        "id": "src-fancam-phs",
+        "label": "แฟนแคม @worawutg — Sansei Kawaii ที่เซ็นทรัล พิษณุโลก วันที่ 22 พ.ย. 2026",
+        "url": "https://x.com/worawutg/status/2124415877219324206",
+        "handle": "worawutg",
+        "kind": "fan"
+      },
+      {
+        "id": "src-fan-cnx",
+        "label": "โพสต์แฟนคลับ @2VaftZXzhQ7yWUo — Central Chiangmai Airport วันที่ 18 ต.ค. 2026 ระบุชื่อ ชิฟา จิงจิง เอมม่า",
+        "url": "https://x.com/2VaftZXzhQ7yWUo/status/2123264606303101294",
+        "handle": "2VaftZXzhQ7yWUo",
+        "kind": "fan"
+      },
+      {
+        "id": "src-fan-mbk",
+        "label": "โพสต์แฟนคลับ @prearts — MBK วันที่ 25 ต.ค. 2026 ระบุชื่อนานา",
+        "url": "https://x.com/prearts/status/2123055357669105694",
+        "handle": "prearts",
+        "kind": "fan"
+      },
+      {
+        "id": "src-fan-8nov",
+        "label": "โพสต์แฟนคลับ @sisasterteam — ขอบคุณผู้มาร่วม Roadshow วันอาทิตย์ที่ 8 พ.ย. 2026 (ไม่ได้ระบุสถานที่)",
+        "url": "https://x.com/sisasterteam/status/2123869458062250207",
+        "handle": "sisasterteam",
+        "kind": "fan"
+      },
+      {
+        "id": "src-official-hs-announce",
+        "label": "บัญชีทางการ @bnk48official — ประกาศ Handshake Event อยากจะไปกับเธอ วันที่ 31 ต.ค.–1 พ.ย. 2026 ที่ MCC Hall, The Mall Lifestore Ngamwongwan (นนทบุรี)",
+        "url": "https://x.com/bnk48official/status/2109146978882113643",
+        "handle": "bnk48official",
+        "kind": "official"
+      },
+      {
+        "id": "src-official-hs-plan",
+        "label": "บัญชีทางการ @bnk48official — ประกาศรอบและแผนผัง Handshake Event (แผนผัง 22 เลน) พร้อมลิงก์ประกาศบนเฟซบุ๊กทางการ",
+        "url": "https://x.com/bnk48official/status/2109975812976058543",
+        "handle": "bnk48official",
+        "kind": "official"
+      },
+      {
+        "id": "src-official-hs-plan-fb",
+        "label": "เพจทางการ BNK48 บนเฟซบุ๊ก — ประกาศรอบและแผนผัง Handshake Event ที่ลิงก์จากโพสต์ X ของ @bnk48official",
+        "url": "https://www.facebook.com/share/p/1DThbrxq2x/",
+        "handle": "bnk48official",
+        "kind": "official"
+      },
+      {
+        "id": "src-official-hs-galeya",
+        "label": "บัญชีทางการ @bnk48official — ประกาศย้ายรอบของ Galeya จาก 31 ต.ค. 11:00–12:30 (LANE 7) ไป 1 พ.ย. 11:00–12:30 (LANE 3)",
+        "url": "https://x.com/bnk48official/status/2114960287216570717",
+        "handle": "bnk48official",
+        "kind": "official"
+      },
+      {
+        "id": "src-official-hs-merch",
+        "label": "บัญชีทางการ @bnk48official — ประกาศสินค้าที่ระลึกในงาน Handshake Event ยืนยันสถานที่ MCC Hall, The Mall Lifestore Ngamwongwan (นนทบุรี)",
+        "url": "https://x.com/bnk48official/status/2115745472208072777",
+        "handle": "bnk48official",
+        "kind": "official"
+      },
+      {
+        "id": "src-official-hs-day2",
+        "label": "บัญชีทางการ @bnk48official — ขอบคุณผู้มาร่วม Handshake Event วันที่ 2 (1 พ.ย. 2026)",
+        "url": "https://x.com/bnk48official/status/2116941364319682794",
+        "handle": "bnk48official",
+        "kind": "official"
+      },
+      {
+        "id": "src-official-cgm-os-schedule",
+        "label": "บัญชีทางการ @cgm48official — ตาราง CGM48 Original Stage สถานีเชียงใหม่: Lanna Smile Station 5–6 ธ.ค., นิทรรศการ 5–13 ธ.ค., แฟนไซน์ 12–13 ธ.ค., 1st Stage 29–31 ม.ค. 2027",
+        "url": "https://x.com/cgm48official/status/2122570433685762102",
+        "handle": "cgm48official",
+        "kind": "official"
+      },
+      {
+        "id": "src-official-cgm-os-visit",
+        "label": "บัญชีทางการ @cgm48official — Members Visit Round นิทรรศการ วันที่ 7–11 ธ.ค. 2026 เวลา 10:00–20:00 ที่หอกลางเวียง ราคา 880 บาท",
+        "url": "https://x.com/cgm48official/status/2123770839132672034",
+        "handle": "cgm48official",
+        "kind": "official"
+      },
+      {
+        "id": "src-official-cgm-os-merch",
+        "label": "บัญชีทางการ @cgm48official — สินค้าที่ระลึกและตู้ Photobooth ที่ Lanna Smile Station 5–6 ธ.ค. และนิทรรศการที่หอกลางเวียง 7–11 ธ.ค. 2026",
+        "url": "https://x.com/cgm48official/status/2124029690377601467",
+        "handle": "cgm48official",
+        "kind": "official"
+      },
+      {
+        "id": "src-official-cgm-os-fansign",
+        "label": "บัญชีทางการ @cgm48official — Exhibition Book + Fansign Event ของสมาชิกทุกคน วันที่ 12–13 ธ.ค. 2026 ที่ Muan More Space เชียงใหม่",
+        "url": "https://x.com/cgm48official/status/2123295206527447457",
+        "handle": "cgm48official",
+        "kind": "official"
+      }
+    ],
+    "notes": [
+      "รายชื่อสมาชิกและตารางบิ๊กซี ราชดำริใช้จากโพสต์ทางการที่แก้คำแล้ว เมื่อ 21 พ.ย. 2026 เวลา 12:55 น. เวลาไทย โพสต์ก่อนหน้าสะกด Monet เป็น Money หน้านี้ใช้ Monet ตามโพสต์ที่แก้แล้ว",
+      "โปสเตอร์ตารางกิจกรรมของบิ๊กซี ราชดำริ แผ่นที่ 3 ติดป้ายวันเสาร์เป็น SAT 29 NOV ซึ่งชนกับวันอาทิตย์ โปสเตอร์อีกสองแผ่นและข้อความในโพสต์ระบุว่าวันเสาร์คือ 28 พ.ย. และวันอาทิตย์คือ 29 พ.ย. หน้านี้จึงใช้ 28–29 ตามข้อความ",
+      "สถานที่บิ๊กซี ราชดำริในโปสเตอร์ระบุว่าเป็นลานกิจกรรม ชั้น 5",
+      "โพสต์ทางการ Terminal21 พระราม 3 และเซ็นทรัล พิษณุโลกไม่ได้ระบุรายชื่อสมาชิก หน้านี้จึงไม่ใส่ชื่อจากการดูรูปหรือทายใบหน้า",
+      "เซ็ตลิสต์ที่ยืนยันได้ในหน้านี้มีเพียงวันเสาร์ที่ 21 พ.ย. ที่พิษณุโลก จากโพสต์ของ @minato2013 รวมจุด MC ตามที่โพสต์เขียน สถิติเพลงนับเฉพาะเซ็ตนี้",
+      "เพลง Aitakatta ที่ Terminal21 วันที่ 22 พ.ย. และ Sansei Kawaii ที่พิษณุโลกวันที่ 22 พ.ย. มาจากแฟนแคมทีละเพลง จึงติดป้ายรอตรวจสอบ และไม่นับในสถิติเพลง",
+      "โพสต์เซ็ตลิสต์ของ @minato2013 มีแฮชแท็ก #PraeCGM48 แต่ไม่ได้ระบุในรายชื่อสมาชิก หน้านี้จึงยังไม่ใส่ชื่อแพรในวันนั้น",
+      "แฟนแคม Terminal21 วันที่ 22 พ.ย. มีแฮชแท็ก #LBNK48 แต่ไม่ได้ระบุในข้อความว่าแอลขึ้นแสดง หน้านี้จึงยังไม่ใส่ชื่อแอลในวันนั้น",
+      "สต็อป 18 ต.ค., 25 ต.ค. และ 8 พ.ย. รวมถึงรายชื่อสมาชิกในวันนั้นมาจากโพสต์แฟนคลับ จึงติดป้ายรอตรวจสอบทั้งหมด",
+      "สต็อป 8 พ.ย. โพสต์ระบุเพียงวันอาทิตย์ที่ 8 พฤศจิกายน และน้องแอลกับเหล่าเมมเบอร์ ไม่ได้ระบุสถานที่ รูปในโพสต์เห็นบรรยากาศห้างและป้าย CENTRAL แต่ไม่ชัดว่าสาขาไหน จึงยังติดป้ายรอตรวจสอบ",
+      "งานจับมือ อยากจะไปกับเธอ วันที่ 31 ต.ค.–1 พ.ย. 2026 ใช้จากโพสต์ทางการของ @bnk48official สถานที่คือ MCC Hall, The Mall Lifestore Ngamwongwan (นนทบุรี) แผนผังทางการมี 22 เลน",
+      "รายชื่อสมาชิกต่อเลนและเวลารอบจับมือทั้งงานถูกประกาศผ่านลิงก์เฟซบุ๊กทางการในโพสต์ประกาศแผนผัง หน้านี้ยังไม่ได้ถอดตารางนั้นเพราะไม่ได้ยืนยันจากรูปในโพสต์ X จึงไม่ใส่รายชื่อทั้งงาน และไม่ทายจากตารางแฟนเมด",
+      "การย้ายรอบของ Galeya จาก 31 ต.ค. 11:00–12:30 เลน 7 ไป 1 พ.ย. 11:00–12:30 เลน 3 มาจากโพสต์ทางการ ใช้เป็นหมายเหตุของงานนี้เท่านั้น ไม่ได้ใส่เป็นรายชื่อสมาชิกทั้งงาน",
+      "กิจกรรม CGM48 Original Stage สถานีเชียงใหม่ใช้จากโพสต์ตารางทางการของ @cgm48official วันที่ 17 พ.ย. 2026 และโพสต์อัปเดตเรื่องนิทรรศการ แฟนไซน์ และ Members Visit",
+      "1st Stage ของ CGM48 Original Stage สถานีเชียงใหม่ ทางการประกาศวันที่ 29–31 ม.ค. 2027 ที่ Muan More Space จึงใส่ไว้แม้เลยช่วง พ.ย.–ธ.ค. 2026 เพราะเป็นรอบแสดงจริงที่ประกาศแล้ว",
+      "ในโพสต์ Members Visit มีตัวอย่างการปิดจำหน่ายที่เขียนว่า 7 Nov 2026 ทั้งที่งานอยู่เดือนธันวาคม หน้านี้ใช้วันที่จัดตามหัวข้อโพสต์คือ 7–11 ธ.ค. 2026",
+      "ค้นโพสต์ทางการ @bnk48official และ @cgm48official รวมถึงหน้าตารางและบัตรของ bnk48.com / ticket.bnk48.com ในช่วง ก.ย.–ธ.ค. 2026 แล้วยังไม่พบรอบแสดง BNK48 Original Stage WHISPER ROAR หรือเธียเตอร์ Team BIII / Team NV ในเดือน พ.ย.–ธ.ค. 2026 จึงยังไม่ใส่ซีรีส์นั้น"
+    ]
+  },
+  "series": [
+    {
+      "id": "kimidoko-roadshow",
+      "nameTh": "Roadshow อยากจะไปกับเธอ",
+      "nameEn": "Kimi to Doko ka e Ikitai Roadshow",
+      "type": "roadshow",
+      "group": "both",
+      "team": null,
+      "description": "BNK48 และ CGM48 Special Single “Kimi to Doko ka e Ikitai – อยากจะไปกับเธอ” Roadshow",
+      "sources": [
+        "src-official-bigc",
+        "src-official-t21",
+        "src-official-phs"
+      ]
+    },
+    {
+      "id": "kimidoko-handshake",
+      "nameTh": "งานจับมือ อยากจะไปกับเธอ",
+      "nameEn": "Kimi to Doko ka e Ikitai Handshake Event",
+      "type": "handshake",
+      "group": "both",
+      "team": null,
+      "description": "BNK48 และ CGM48 Special Single “Kimi to Doko ka e Ikitai – อยากจะไปกับเธอ” Handshake Event",
+      "sources": [
+        "src-official-hs-announce",
+        "src-official-hs-plan",
+        "src-official-hs-galeya"
+      ]
+    },
+    {
+      "id": "cgm48-chiangmai-station",
+      "nameTh": "CGM48 Original Stage สถานีเชียงใหม่",
+      "nameEn": "CGM48 Original Stage Chiang Mai Station",
+      "type": "original-stage",
+      "group": "CGM48",
+      "team": null,
+      "description": "กิจกรรมรอบเพลงหลักและนิทรรศการ CGM48 Original Stage “สถานีเชียงใหม่ – Chiang Mai Station”",
+      "sources": [
+        "src-official-cgm-os-schedule"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "central-chiangmai-airport-2026-10-18",
+      "venueTh": "เซ็นทรัล เชียงใหม่ แอร์พอร์ต",
+      "venueEn": "Central Chiangmai Airport",
+      "venueDetailTh": null,
+      "cityTh": "เชียงใหม่",
+      "groups": [
+        "CGM48"
+      ],
+      "dates": [
+        "2026-10-18"
+      ],
+      "official": false,
+      "unconfirmed": true,
+      "unconfirmedNote": "สต็อปและรายชื่อสมาชิกมาจากโพสต์แฟนคลับ ยังไม่มีโพสต์ทางการในชุดข้อมูลนี้",
+      "sources": [
+        "src-fan-cnx"
+      ],
+      "schedule": [],
+      "days": [
+        {
+          "id": "central-chiangmai-airport-2026-10-18",
+          "date": "2026-10-18",
+          "members": [
+            {
+              "id": "chifa",
+              "nameTh": "ชิฟา",
+              "name": "Chifa",
+              "confirmed": false
+            },
+            {
+              "id": "jingjing",
+              "nameTh": "จิงจิง",
+              "name": "Jingjing",
+              "confirmed": false
+            },
+            {
+              "id": "emma",
+              "nameTh": "เอมม่า",
+              "name": "Emma",
+              "confirmed": false
+            }
+          ],
+          "membersNote": "ชื่อจากข้อความโพสต์ของ @2VaftZXzhQ7yWUo และแฮชแท็ก #ChifaCGM48 #JingjingCGM48 #EmmaCGM48",
+          "setlist": [],
+          "setlistStatus": "none"
+        }
+      ],
+      "seriesId": "kimidoko-roadshow"
+    },
+    {
+      "id": "mbk-2026-10-25",
+      "venueTh": "MBK",
+      "venueEn": "MBK",
+      "venueDetailTh": null,
+      "cityTh": "กรุงเทพฯ",
+      "groups": [
+        "CGM48"
+      ],
+      "dates": [
+        "2026-10-25"
+      ],
+      "official": false,
+      "unconfirmed": true,
+      "unconfirmedNote": "สต็อปและรายชื่อสมาชิกมาจากโพสต์แฟนคลับ ยังไม่มีโพสต์ทางการในชุดข้อมูลนี้",
+      "sources": [
+        "src-fan-mbk"
+      ],
+      "schedule": [],
+      "days": [
+        {
+          "id": "mbk-2026-10-25",
+          "date": "2026-10-25",
+          "members": [
+            {
+              "id": "nana",
+              "nameTh": "นานา",
+              "name": "Nana",
+              "confirmed": false
+            }
+          ],
+          "membersNote": "ชื่อจากข้อความโพสต์ของ @prearts และแฮชแท็ก #NanaCGM48",
+          "setlist": [],
+          "setlistStatus": "none"
+        }
+      ],
+      "seriesId": "kimidoko-roadshow"
+    },
+    {
+      "id": "unknown-2026-11-08",
+      "venueTh": "ยังไม่ทราบสถานที่",
+      "venueEn": null,
+      "venueDetailTh": null,
+      "cityTh": null,
+      "groups": [
+        "BNK48"
+      ],
+      "dates": [
+        "2026-11-08"
+      ],
+      "official": false,
+      "unconfirmed": true,
+      "unconfirmedNote": "โพสต์แฟนคลับระบุวันอาทิตย์ที่ 8 พ.ย. แต่ไม่ได้บอกสถานที่ รายชื่อสมาชิกนอกจากแอลก็ยังไม่ครบ",
+      "sources": [
+        "src-fan-8nov"
+      ],
+      "schedule": [],
+      "days": [
+        {
+          "id": "unknown-2026-11-08",
+          "date": "2026-11-08",
+          "members": [
+            {
+              "id": "l",
+              "nameTh": "แอล",
+              "name": "L",
+              "confirmed": false
+            }
+          ],
+          "membersNote": "โพสต์ของ @sisasterteam เขียนว่าน้องแอลและเหล่าเมมเบอร์ แต่ไม่ได้ระบุชื่อคนอื่น",
+          "setlist": [],
+          "setlistStatus": "none"
+        }
+      ],
+      "seriesId": "kimidoko-roadshow"
+    },
+    {
+      "id": "terminal21-rama3-2026-11-21",
+      "venueTh": "เทอร์มินอล 21 พระราม 3",
+      "venueEn": "Terminal21 Rama 3",
+      "venueDetailTh": null,
+      "cityTh": "กรุงเทพฯ",
+      "groups": [
+        "BNK48",
+        "CGM48"
+      ],
+      "dates": [
+        "2026-11-21",
+        "2026-11-22"
+      ],
+      "official": true,
+      "unconfirmed": false,
+      "unconfirmedNote": null,
+      "sources": [
+        "src-official-t21",
+        "src-fancam-t21"
+      ],
+      "schedule": [],
+      "days": [
+        {
+          "id": "terminal21-rama3-2026-11-21",
+          "date": "2026-11-21",
+          "members": [],
+          "membersNote": "โพสต์ทางการประกาศวันที่และสถานที่ แต่ไม่ได้ระบุรายชื่อสมาชิก",
+          "setlist": [],
+          "setlistStatus": "none"
+        },
+        {
+          "id": "terminal21-rama3-2026-11-22",
+          "date": "2026-11-22",
+          "members": [],
+          "membersNote": "โพสต์ทางการไม่ได้ระบุรายชื่อสมาชิก แฟนแคมมีแฮชแท็ก #LBNK48 แต่ไม่ได้เขียนในข้อความว่าใครขึ้นแสดง",
+          "setlist": [
+            {
+              "type": "song",
+              "songId": "aitakatta",
+              "nameTh": "อยากจะได้พบเธอ",
+              "name": "Aitakatta",
+              "confirmed": false,
+              "sourceId": "src-fancam-t21"
+            }
+          ],
+          "setlistStatus": "hints"
+        }
+      ],
+      "seriesId": "kimidoko-roadshow"
+    },
+    {
+      "id": "central-phitsanulok-2026-11-21",
+      "venueTh": "เซ็นทรัล พิษณุโลก",
+      "venueEn": "Central Phitsanulok",
+      "venueDetailTh": "ลานโปรโมชัน ชั้น 1",
+      "cityTh": "พิษณุโลก",
+      "groups": [
+        "BNK48",
+        "CGM48"
+      ],
+      "dates": [
+        "2026-11-21",
+        "2026-11-22"
+      ],
+      "official": true,
+      "unconfirmed": false,
+      "unconfirmedNote": null,
+      "sources": [
+        "src-official-phs",
+        "src-minato-setlist",
+        "src-fancam-phs"
+      ],
+      "schedule": [],
+      "days": [
+        {
+          "id": "central-phitsanulok-2026-11-21",
+          "date": "2026-11-21",
+          "members": [],
+          "membersNote": "โพสต์ทางการเป็นข้อความขอบคุณหลังจบวันเสาร์ แต่ไม่ได้ระบุรายชื่อสมาชิก โพสต์เซ็ตลิสต์มีแฮชแท็ก #PraeCGM48 แต่ไม่ได้ระบุชื่อในรายการ",
+          "setlist": [
+            {
+              "type": "song",
+              "songId": "kimi-doko",
+              "nameTh": "อยากจะไปกับเธอ",
+              "name": "Kimi to Doko ka e Ikitai",
+              "confirmed": true,
+              "sourceId": "src-minato-setlist"
+            },
+            {
+              "type": "song",
+              "songId": "2565",
+              "nameTh": "2565",
+              "name": "2565",
+              "confirmed": true,
+              "sourceId": "src-minato-setlist"
+            },
+            {
+              "type": "song",
+              "songId": "anklet",
+              "nameTh": "กำไลข้อเท้าแห่งความทรงจำ",
+              "name": "11-gatsu no Anklet",
+              "confirmed": true,
+              "sourceId": "src-minato-setlist"
+            },
+            {
+              "type": "mc",
+              "labelTh": "MC",
+              "confirmed": true,
+              "sourceId": "src-minato-setlist"
+            },
+            {
+              "type": "song",
+              "songId": "hokori",
+              "nameTh": "เนินเขาแห่งความฝัน",
+              "name": "Hokori no Oka",
+              "confirmed": true,
+              "sourceId": "src-minato-setlist"
+            },
+            {
+              "type": "song",
+              "songId": "reborn",
+              "nameTh": "Reborn",
+              "name": "Reborn",
+              "confirmed": true,
+              "sourceId": "src-minato-setlist"
+            },
+            {
+              "type": "mc",
+              "labelTh": "MC+เล่นเกม",
+              "confirmed": true,
+              "sourceId": "src-minato-setlist"
+            },
+            {
+              "type": "song",
+              "songId": "kamihikouki",
+              "nameTh": "365 วันกับเครื่องบินกระดาษ",
+              "name": "365-nichi no Kamihikouki",
+              "confirmed": true,
+              "sourceId": "src-minato-setlist"
+            },
+            {
+              "type": "song",
+              "songId": "chiangmai-106",
+              "nameTh": "เชียงใหม่ 106",
+              "name": "Chiang Mai 106",
+              "confirmed": true,
+              "sourceId": "src-minato-setlist"
+            },
+            {
+              "type": "mc",
+              "labelTh": "MC",
+              "confirmed": true,
+              "sourceId": "src-minato-setlist"
+            },
+            {
+              "type": "song",
+              "songId": "kibou-ressha",
+              "nameTh": "รถไฟแห่งความหวัง",
+              "name": "Kibou Ressha",
+              "confirmed": true,
+              "sourceId": "src-minato-setlist"
+            }
+          ],
+          "setlistStatus": "confirmed"
+        },
+        {
+          "id": "central-phitsanulok-2026-11-22",
+          "date": "2026-11-22",
+          "members": [],
+          "membersNote": "ยังไม่มีรายชื่อสมาชิกจากแหล่งในชุดข้อมูลนี้",
+          "setlist": [
+            {
+              "type": "song",
+              "songId": "sansei-kawaii",
+              "nameTh": "เธออะ...Kawaii",
+              "name": "Sansei Kawaii",
+              "confirmed": false,
+              "sourceId": "src-fancam-phs"
+            }
+          ],
+          "setlistStatus": "hints"
+        }
+      ],
+      "seriesId": "kimidoko-roadshow"
+    },
+    {
+      "id": "big-c-rajdamri-2026-11-28",
+      "venueTh": "บิ๊กซี ราชดำริ",
+      "venueEn": "Big C Rajdamri",
+      "venueDetailTh": "ลานกิจกรรม ชั้น 5",
+      "cityTh": "กรุงเทพฯ",
+      "groups": [
+        "BNK48",
+        "CGM48"
+      ],
+      "dates": [
+        "2026-11-28",
+        "2026-11-29"
+      ],
+      "official": true,
+      "unconfirmed": false,
+      "unconfirmedNote": null,
+      "sources": [
+        "src-official-bigc"
+      ],
+      "schedule": [
+        {
+          "time": "12:00–13:00",
+          "labelTh": "Mini Concert"
+        },
+        {
+          "time": "14:00–15:00",
+          "labelTh": "Group Hi-Touch"
+        },
+        {
+          "time": "15:30–16:30",
+          "labelTh": "Official Merchandise และ Hachi Cha"
+        },
+        {
+          "time": "17:00–18:00",
+          "labelTh": "Group Hi-Touch"
+        }
+      ],
+      "scheduleNote": "บัตรเข้าร่วมกิจกรรม Group Hi-Touch จะได้จากการซื้อเข็มกลัดภายในงาน ตารางอาจมีการเปลี่ยนแปลงตามความเหมาะสม",
+      "days": [
+        {
+          "id": "big-c-rajdamri-2026-11-28",
+          "date": "2026-11-28",
+          "members": [
+            {
+              "id": "emmy",
+              "nameTh": "Emmy",
+              "name": "Emmy",
+              "confirmed": true
+            },
+            {
+              "id": "marine",
+              "nameTh": "Marine",
+              "name": "Marine",
+              "confirmed": true
+            },
+            {
+              "id": "janry",
+              "nameTh": "Janry",
+              "name": "Janry",
+              "confirmed": true
+            },
+            {
+              "id": "luksorn",
+              "nameTh": "Luksorn",
+              "name": "Luksorn",
+              "confirmed": true
+            },
+            {
+              "id": "arlee",
+              "nameTh": "Arlee",
+              "name": "Arlee",
+              "confirmed": true
+            },
+            {
+              "id": "sindy",
+              "nameTh": "Sindy",
+              "name": "Sindy",
+              "confirmed": true
+            }
+          ],
+          "membersNote": null,
+          "setlist": [],
+          "setlistStatus": "none"
+        },
+        {
+          "id": "big-c-rajdamri-2026-11-29",
+          "date": "2026-11-29",
+          "members": [
+            {
+              "id": "praew",
+              "nameTh": "Praew",
+              "name": "Praew",
+              "confirmed": true
+            },
+            {
+              "id": "monet",
+              "nameTh": "Monet",
+              "name": "Monet",
+              "confirmed": true
+            },
+            {
+              "id": "blythe",
+              "nameTh": "Blythe",
+              "name": "Blythe",
+              "confirmed": true
+            },
+            {
+              "id": "grape",
+              "nameTh": "Grape",
+              "name": "Grape",
+              "confirmed": true
+            },
+            {
+              "id": "mail",
+              "nameTh": "Mail",
+              "name": "Mail",
+              "confirmed": true
+            },
+            {
+              "id": "mirin",
+              "nameTh": "Mirin",
+              "name": "Mirin",
+              "confirmed": true
+            }
+          ],
+          "membersNote": null,
+          "setlist": [],
+          "setlistStatus": "none"
+        }
+      ],
+      "seriesId": "kimidoko-roadshow"
+    },
+    {
+      "id": "mcc-hall-ngamwongwan-2026-10-31",
+      "seriesId": "kimidoko-handshake",
+      "venueTh": "MCC Hall เดอะมอลล์ไลฟ์สโตร์ งามวงศ์วาน",
+      "venueEn": "MCC Hall, The Mall Lifestore Ngamwongwan",
+      "venueDetailTh": null,
+      "cityTh": "นนทบุรี",
+      "groups": [
+        "BNK48",
+        "CGM48"
+      ],
+      "dates": [
+        "2026-10-31",
+        "2026-11-01"
+      ],
+      "official": true,
+      "unconfirmed": false,
+      "unconfirmedNote": null,
+      "sources": [
+        "src-official-hs-announce",
+        "src-official-hs-plan",
+        "src-official-hs-plan-fb",
+        "src-official-hs-galeya"
+      ],
+      "schedule": [],
+      "scheduleNote": "โปสเตอร์ทางการระบุว่ามีรอบจับมือปกติและ Special Round (ถ่าย 1-Shot Video ได้เฉพาะรอบปกติ ใช้บัตร 3 ใบ) แต่โพสต์ X ไม่ได้ลงเวลารอบครบทุกช่วง",
+      "days": [
+        {
+          "id": "mcc-hall-ngamwongwan-2026-10-31",
+          "date": "2026-10-31",
+          "members": [],
+          "membersNote": null,
+          "setlist": [],
+          "setlistStatus": "none"
+        },
+        {
+          "id": "mcc-hall-ngamwongwan-2026-11-01",
+          "date": "2026-11-01",
+          "members": [],
+          "membersNote": null,
+          "setlist": [],
+          "setlistStatus": "none"
+        }
+      ],
+      "handshake": {
+        "laneCount": 22,
+        "changes": [
+          {
+            "member": {
+              "id": "galeya",
+              "nameTh": "Galeya",
+              "name": "Galeya",
+              "confirmed": true
+            },
+            "from": {
+              "date": "2026-10-31",
+              "time": "11:00–12:30",
+              "lane": "7"
+            },
+            "to": {
+              "date": "2026-11-01",
+              "time": "11:00–12:30",
+              "lane": "3"
+            },
+            "sourceId": "src-official-hs-galeya",
+            "noteTh": "เนื่องจากภารกิจด้านการศึกษา ไม่สามารถเข้าร่วมรอบเดิมได้"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lanna-smile-station-2026-12-05",
+      "seriesId": "cgm48-chiangmai-station",
+      "venueTh": "เซ็นทรัล เชียงใหม่ แอร์พอร์ต",
+      "venueEn": "Central Chiangmai Airport",
+      "venueDetailTh": "CGM48 Lanna Smile Station",
+      "cityTh": "เชียงใหม่",
+      "groups": [
+        "CGM48"
+      ],
+      "dates": [
+        "2026-12-05",
+        "2026-12-06"
+      ],
+      "official": true,
+      "unconfirmed": false,
+      "unconfirmedNote": null,
+      "sources": [
+        "src-official-cgm-os-schedule",
+        "src-official-cgm-os-merch"
+      ],
+      "schedule": [
+        {
+          "labelTh": "MV Premiere (5 ธ.ค.)"
+        },
+        {
+          "labelTh": "สินค้าที่ระลึกและตู้ Photobooth ในงาน"
+        }
+      ],
+      "scheduleNote": "ทางการระบุ MV Premiere วันที่ 5 ธ.ค. 2026 ที่งานนี้ แต่ยังไม่ได้ประกาศช่วงเวลา",
+      "days": [
+        {
+          "id": "lanna-smile-station-2026-12-05",
+          "date": "2026-12-05",
+          "members": [],
+          "membersNote": null,
+          "setlist": [],
+          "setlistStatus": "none"
+        },
+        {
+          "id": "lanna-smile-station-2026-12-06",
+          "date": "2026-12-06",
+          "members": [],
+          "membersNote": null,
+          "setlist": [],
+          "setlistStatus": "none"
+        }
+      ]
+    },
+    {
+      "id": "cgm-os-exhibition-2026-12-05",
+      "seriesId": "cgm48-chiangmai-station",
+      "venueTh": "Chiangmai Design Week 2026",
+      "venueEn": "Chiangmai Design Week 2026",
+      "venueDetailTh": "สินค้าที่ระลึกและตู้ Photobooth วันที่ 7–11 ธ.ค. ที่หอกลางเวียง (Chiangmai Cultural Centre)",
+      "cityTh": "เชียงใหม่",
+      "groups": [
+        "CGM48"
+      ],
+      "dates": [
+        "2026-12-05",
+        "2026-12-06",
+        "2026-12-07",
+        "2026-12-08",
+        "2026-12-09",
+        "2026-12-10",
+        "2026-12-11",
+        "2026-12-12",
+        "2026-12-13"
+      ],
+      "official": true,
+      "unconfirmed": false,
+      "unconfirmedNote": null,
+      "sources": [
+        "src-official-cgm-os-schedule",
+        "src-official-cgm-os-merch"
+      ],
+      "schedule": [],
+      "scheduleNote": "ตารางหลักระบุนิทรรศการวันที่ 5–13 ธ.ค. ที่ Chiangmai Design Week 2026 โพสต์สินค้าที่ระลึกระบุจุดจำหน่ายวันที่ 7–11 ธ.ค. ที่หอกลางเวียง",
+      "days": [],
+      "continuous": true
+    },
+    {
+      "id": "cgm-os-members-visit-2026-12-07",
+      "seriesId": "cgm48-chiangmai-station",
+      "venueTh": "หอกลางเวียง",
+      "venueEn": "Chiangmai Cultural Centre",
+      "venueDetailTh": "Members Visit Round ของนิทรรศการ CGM48 Original Stage สถานีเชียงใหม่ · 880 บาท",
+      "cityTh": "เชียงใหม่",
+      "groups": [
+        "CGM48"
+      ],
+      "dates": [
+        "2026-12-07",
+        "2026-12-08",
+        "2026-12-09",
+        "2026-12-10",
+        "2026-12-11"
+      ],
+      "official": true,
+      "unconfirmed": false,
+      "unconfirmedNote": null,
+      "sources": [
+        "src-official-cgm-os-visit"
+      ],
+      "schedule": [
+        {
+          "time": "10:00–20:00",
+          "labelTh": "Members Visit Round"
+        }
+      ],
+      "scheduleNote": "จำหน่ายบัตรใน iAM48 ตั้งแต่ 24 พ.ย. 2026 เวลา 18:00 น. ปิดจำหน่ายล่วงหน้า 1 วันก่อนแต่ละรอบ เวลา 12:00 น. ไม่มี Express Round จำกัด 1 สิทธิ์ต่อ 1 บัญชี ตารางอาจเปลี่ยนแปลงได้",
+      "showTimes": [
+        {
+          "time": "10:00–20:00",
+          "labelTh": "เปิดให้เข้าชมพร้อมสมาชิกในรอบที่เลือก"
+        }
+      ],
+      "days": [],
+      "continuous": true
+    },
+    {
+      "id": "cgm-os-fansign-2026-12-12",
+      "seriesId": "cgm48-chiangmai-station",
+      "venueTh": "Muan More Space",
+      "venueEn": "Muan More Space",
+      "venueDetailTh": "Exhibition Book + Fansign Event",
+      "cityTh": "เชียงใหม่",
+      "groups": [
+        "CGM48"
+      ],
+      "dates": [
+        "2026-12-12",
+        "2026-12-13"
+      ],
+      "official": true,
+      "unconfirmed": false,
+      "unconfirmedNote": null,
+      "sources": [
+        "src-official-cgm-os-fansign",
+        "src-official-cgm-os-schedule"
+      ],
+      "schedule": [],
+      "scheduleNote": "ทางการยังไม่ได้ประกาศช่วงเวลาในแต่ละวัน",
+      "days": [
+        {
+          "id": "cgm-os-fansign-2026-12-12",
+          "date": "2026-12-12",
+          "members": [],
+          "membersNote": "ทางการระบุว่าเป็นแฟนไซน์ของสมาชิกทุกคน (ALL MEMBERS) แต่ไม่ได้ลงรายชื่อเป็นรายคน",
+          "setlist": [],
+          "setlistStatus": "none"
+        },
+        {
+          "id": "cgm-os-fansign-2026-12-13",
+          "date": "2026-12-13",
+          "members": [],
+          "membersNote": "ทางการระบุว่าเป็นแฟนไซน์ของสมาชิกทุกคน (ALL MEMBERS) แต่ไม่ได้ลงรายชื่อเป็นรายคน",
+          "setlist": [],
+          "setlistStatus": "none"
+        }
+      ]
+    },
+    {
+      "id": "cgm-os-1st-stage-2027-01-29",
+      "seriesId": "cgm48-chiangmai-station",
+      "venueTh": "Muan More Space",
+      "venueEn": "Muan More Space",
+      "venueDetailTh": "CGM48 The Original Stage “สถานีเชียงใหม่” (1st Stage + Cheki)",
+      "cityTh": "เชียงใหม่",
+      "groups": [
+        "CGM48"
+      ],
+      "dates": [
+        "2027-01-29",
+        "2027-01-30",
+        "2027-01-31"
+      ],
+      "official": true,
+      "unconfirmed": false,
+      "unconfirmedNote": null,
+      "sources": [
+        "src-official-cgm-os-schedule"
+      ],
+      "schedule": [],
+      "scheduleNote": "ทางการประกาศวันที่ 29–31 ม.ค. 2027 แต่ยังไม่ได้ประกาศรอบแสดงหรือรายชื่อสมาชิก",
+      "days": [],
+      "continuous": true
+    }
+  ]
+}

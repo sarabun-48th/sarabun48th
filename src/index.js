@@ -1,6 +1,9 @@
 // sarabun48th-demo: landing at / plus GE2026 at /ge2026/, GE6 results
-// at /ge6-results/, GE6 press tour at /ge-press-tour/ and 48th-songs
-// at /48th-songs/ (demo host only), with two small form APIs backed
+// at /ge6-results/, GE6 press tour at /ge-press-tour/, 48th-songs
+// at /48th-songs/, 48-events at /48-events/
+// and ge-song-wish at /ge-song-wish/,
+// and jod-setlist at /jod-setlist/
+// (demo host only), with two small form APIs backed
 // by D1 (sarabun48th-feedback).
 import { TOOLS } from "../public/tools.js";
 import html from "../public/index.html";
@@ -22,11 +25,26 @@ import songsHtml from "../public/48th-songs/index.html";
 import songsCss from "../public/48th-songs/style.css";
 import songsJs from "../public/48th-songs/app.js";
 import songsData from "../public/48th-songs/data.json";
+import evHtml from "../public/48-events/index.html";
+import evCss from "../public/48-events/style.css";
+import evJs from "../public/48-events/app.js";
+import evData from "../public/48-events/data.json";
+import wishHtml from "../public/ge-song-wish/index.html";
+import wishCss from "../public/ge-song-wish/style.css";
+import wishJs from "../public/ge-song-wish/app.js";
+import wishData from "../public/ge-song-wish/data.json";
+import jodHtml from "../public/jod-setlist/index.html";
+import jodCss from "../public/jod-setlist/style.css";
+import jodJs from "../public/jod-setlist/app.js";
+import jodData from "../public/jod-setlist/data.json";
 import ogLandingB64 from "./og-landing.js";
 import ogGeB64 from "./og-ge2026.js";
 import ogGe6B64 from "./og-ge6-results.js";
 import ogTourB64 from "./og-ge-press-tour.js";
 import ogSongsB64 from "./og-48th-songs.js";
+import ogEvB64 from "./og-48-events.js";
+import ogWishB64 from "./og-ge-song-wish.js";
+import ogJodB64 from "./og-jod-setlist.js";
 import { faviconIco, favicon32, appleTouch, icon512, logoWebp } from "./brand.js";
 
 const b64ToBytes = (s) => Uint8Array.from(atob(s), (c) => c.charCodeAt(0));
@@ -35,6 +53,9 @@ const ogGe = b64ToBytes(ogGeB64);
 const ogGe6 = b64ToBytes(ogGe6B64);
 const ogTour = b64ToBytes(ogTourB64);
 const ogSongs = b64ToBytes(ogSongsB64);
+const ogEv = b64ToBytes(ogEvB64);
+const ogWish = b64ToBytes(ogWishB64);
+const ogJod = b64ToBytes(ogJodB64);
 const ico = b64ToBytes(faviconIco);
 const fav32 = b64ToBytes(favicon32);
 const apple = b64ToBytes(appleTouch);
@@ -73,6 +94,24 @@ const FILES = {
   "/48th-songs/app.js": [songsJs, "text/javascript; charset=utf-8"],
   "/48th-songs/data.json": [songsData, "application/json; charset=utf-8"],
   "/48th-songs/og.png": [ogSongs, "image/png"],
+  "/48-events/": [evHtml, "text/html; charset=utf-8"],
+  "/48-events/index.html": [evHtml, "text/html; charset=utf-8"],
+  "/48-events/style.css": [evCss, "text/css; charset=utf-8"],
+  "/48-events/app.js": [evJs, "text/javascript; charset=utf-8"],
+  "/48-events/data.json": [evData, "application/json; charset=utf-8"],
+  "/48-events/og.png": [ogEv, "image/png"],
+  "/ge-song-wish/": [wishHtml, "text/html; charset=utf-8"],
+  "/ge-song-wish/index.html": [wishHtml, "text/html; charset=utf-8"],
+  "/ge-song-wish/style.css": [wishCss, "text/css; charset=utf-8"],
+  "/ge-song-wish/app.js": [wishJs, "text/javascript; charset=utf-8"],
+  "/ge-song-wish/data.json": [wishData, "application/json; charset=utf-8"],
+  "/ge-song-wish/og.png": [ogWish, "image/png"],
+  "/jod-setlist/": [jodHtml, "text/html; charset=utf-8"],
+  "/jod-setlist/index.html": [jodHtml, "text/html; charset=utf-8"],
+  "/jod-setlist/style.css": [jodCss, "text/css; charset=utf-8"],
+  "/jod-setlist/app.js": [jodJs, "text/javascript; charset=utf-8"],
+  "/jod-setlist/data.json": [jodData, "application/json; charset=utf-8"],
+  "/jod-setlist/og.png": [ogJod, "image/png"],
   "/og.png": [ogLanding, "image/png"],
   "/ge2026/og.png": [ogGe, "image/png"],
   "/favicon.ico": [ico, "image/x-icon"],
@@ -164,10 +203,25 @@ export default {
       url.pathname = "/48th-songs/";
       return Response.redirect(url.toString(), 301);
     }
+    if (pathname === "/48-events") {
+      url.pathname = "/48-events/";
+      return Response.redirect(url.toString(), 301);
+    }
+    if (pathname === "/ge-song-wish") {
+      url.pathname = "/ge-song-wish/";
+      return Response.redirect(url.toString(), 301);
+    }
+    if (pathname === "/jod-setlist") {
+      url.pathname = "/jod-setlist/";
+      return Response.redirect(url.toString(), 301);
+    }
     // Demo-only pages: one Worker serves both hosts, so hide these paths on prod.
     const demoOnly = pathname === "/ge6-results/" || pathname.startsWith("/ge6-results/")
       || pathname === "/ge-press-tour/" || pathname.startsWith("/ge-press-tour/")
-      || pathname === "/48th-songs/" || pathname.startsWith("/48th-songs/");
+      || pathname === "/48th-songs/" || pathname.startsWith("/48th-songs/")
+      || pathname === "/48-events/" || pathname.startsWith("/48-events/")
+      || pathname === "/ge-song-wish/" || pathname.startsWith("/ge-song-wish/")
+      || pathname === "/jod-setlist/" || pathname.startsWith("/jod-setlist/");
     if (demoOnly && isProdHost) return new Response("Not found", { status: 404 });
     if (pathname === "/api/feedback" || pathname === "/api/suggest") {
       if (request.method !== "POST") return json({ ok: false, error: "method_not_allowed" }, 405);

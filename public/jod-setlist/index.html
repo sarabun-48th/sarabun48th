@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>สารบัญ48th · ใน Journey of Dreams เธอขึ้นกี่เพลง?</title>
+  <meta name="description" content="สารบัญ48th ค้นหาว่าสมาชิก BNK48 และ CGM48 คนไหนขึ้นเพลงอะไรบ้างในคอนเสิร์ต JOURNEY OF DREAMS 14 พ.ย. 2026 จากตารางของ @immabird_z">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="th_TH">
+  <meta property="og:title" content="สารบัญ48th · ใน Journey of Dreams เธอขึ้นกี่เพลง?">
+  <meta property="og:description" content="ค้นหาว่าสมาชิกคนไหนขึ้นเพลงอะไรบ้างในคอนเสิร์ต JOURNEY OF DREAMS จากตารางของ @immabird_z">
+  <meta property="og:url" content="https://demo.sarabun48th.space/jod-setlist/">
+  <meta property="og:image" content="https://demo.sarabun48th.space/jod-setlist/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
+  <meta property="og:image:alt" content="สารบัญ48th · ใน Journey of Dreams เธอขึ้นกี่เพลง?">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="สารบัญ48th · ใน Journey of Dreams เธอขึ้นกี่เพลง?">
+  <meta name="twitter:description" content="ค้นหาว่าสมาชิกคนไหนขึ้นเพลงอะไรบ้างในคอนเสิร์ต JOURNEY OF DREAMS จากตารางของ @immabird_z">
+  <meta name="twitter:image" content="https://demo.sarabun48th.space/jod-setlist/og.png">
+  <meta name="theme-color" content="#0c0a0b">
+  <meta name="color-scheme" content="dark">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/webp" sizes="512x512" href="/icon-512.webp">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/jod-setlist/style.css">
+</head>
+<body>
+  <header class="wrap top" id="top">
+    <a class="brand" href="/"><img class="logo" src="/logo.webp" width="32" height="32" alt="">sarabun<span>48th</span></a>
+    <nav>
+      <a href="/">หน้าแรก</a>
+      <a href="#browse">ดูข้อมูล</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="wrap hero tour-hero">
+      <p class="back"><a href="/">← กลับหน้าแรก</a></p>
+      <h1>ใน Journey of Dreams เธอขึ้นกี่เพลง?</h1>
+      <p class="hero-date">BNK48 &amp; CGM48 Concert 2026 · 14 พ.ย. 2026 · MCC Hall บางกะปิ</p>
+      <p class="meta-line">ถอดจากตารางการขึ้นเพลงของ <a href="https://x.com/immabird_z/status/2124904386061295964" target="_blank" rel="noopener">@immabird_z</a> แล้วเทียบกับ <a href="https://x.com/bnk48official/status/2121473032460136621" target="_blank" rel="noopener">LIVE SETLIST REPORT</a> ของบัญชีทางการ</p>
+    </section>
+
+    <section class="wrap" id="summary" aria-label="สรุป">
+      <div class="hook">
+        <p class="hook-kicker">จากตาราง 24 เพลง · 60 คน</p>
+        <p class="hook-count" id="summary-count"></p>
+        <p class="summary-stat" id="summary-stat"></p>
+      </div>
+    </section>
+
+    <section class="wrap" id="browse">
+      <h2>ค้นหาการขึ้นเพลง <small>Setlist</small></h2>
+      <div class="view-bar">
+        <div class="view-toggle" role="group" aria-label="มุมมอง">
+          <button type="button" class="view-btn is-on" id="view-member" aria-pressed="true">ดูตามสมาชิก</button>
+          <button type="button" class="view-btn" id="view-song" aria-pressed="false">ดูตามเพลง</button>
+          <button type="button" class="view-btn" id="view-rank" aria-pressed="false">อันดับ</button>
+        </div>
+      </div>
+      <div class="toolbar">
+        <div class="toolbar-main">
+          <label class="sr-only" for="q">ค้นหาชื่อสมาชิกหรือเพลง</label>
+          <input id="q" type="search" placeholder="ค้นหาชื่อสมาชิกหรือเพลง…" autocomplete="off">
+          <button type="button" class="filters-toggle" id="filters-toggle" aria-expanded="false" aria-controls="filters">ตัวกรอง</button>
+        </div>
+        <div class="filters" id="filters"></div>
+      </div>
+      <p class="hint count" id="count"></p>
+      <div id="member-view"></div>
+      <div id="song-view" hidden></div>
+      <div id="rank-view" hidden></div>
+      <p class="empty" id="empty" hidden>ไม่พบรายการที่ตรงกับคำค้น</p>
+      <p class="to-top-wrap"><a class="to-top" href="#top" id="to-top">กลับขึ้นบน</a></p>
+    </section>
+
+    <section class="wrap notes" id="notes">
+      <h2>ที่มาและหมายเหตุ <small>Sources</small></h2>
+      <ul id="sources"></ul>
+      <p class="source-note" id="source-note"></p>
+      <ul id="footnotes" class="footnotes"></ul>
+    </section>
+    <p class="wrap to-top-wrap"><a class="to-top" href="#top">กลับขึ้นบน</a></p>
+  </main>
+
+  <dialog class="share-dialog" id="share-dialog" aria-labelledby="share-title">
+    <form method="dialog" class="share-panel">
+      <h2 id="share-title">การ์ดแชร์</h2>
+      <canvas id="share-canvas" width="1200" height="675" hidden></canvas>
+      <img id="share-preview" alt="ตัวอย่างการ์ดแชร์">
+      <div class="share-actions">
+        <a class="btn" id="share-download" download="jod-setlist-card.png">ดาวน์โหลด PNG</a>
+        <button class="btn ghost" type="button" id="share-share">แชร์</button>
+        <button class="btn ghost" value="close">ปิด</button>
+      </div>
+    </form>
+  </dialog>
+
+  <footer class="wrap foot">
+    <div class="social" id="social"></div>
+    <p>ทำโดยแฟนคลับ เพื่อแฟนคลับ</p>
+    <p class="muted">© <span id="year"></span> sarabun48th</p>
+  </footer>
+  <!-- Cloudflare Web Analytics -->
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "1652b090f2434ea888c572dae8dbba6f","version":"2024.11.0","send":{"to":"/cdn-cgi/rum"}}'></script>
+  <!-- End Cloudflare Web Analytics -->
+  <script type="module" src="/jod-setlist/app.js"></script>
+</body>
+</html>

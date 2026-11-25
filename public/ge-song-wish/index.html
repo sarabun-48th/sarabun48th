@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>สารบัญ48th · เพลงที่ขอใน GE ได้ออกจริงไหม ใครได้ Center?</title>
+  <meta name="description" content="สารบัญ48th สำรวจว่าเพลงที่สมาชิก BNK48 และ CGM48 ขอใน General Election ได้ออกจริงไหม และใครได้ Center ตามโพสต์ของ @ThamMiieZ">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="th_TH">
+  <meta property="og:title" content="สารบัญ48th · เพลงที่ขอใน GE ได้ออกจริงไหม ใครได้ Center?">
+  <meta property="og:description" content="สำรวจว่าเพลงที่สมาชิกขอใน General Election ได้ออกจริงไหม และใครได้ Center ตามโพสต์ของ @ThamMiieZ">
+  <meta property="og:url" content="https://demo.sarabun48th.space/ge-song-wish/">
+  <meta property="og:image" content="https://demo.sarabun48th.space/ge-song-wish/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
+  <meta property="og:image:alt" content="สารบัญ48th · เพลงที่ขอใน GE ได้ออกจริงไหม ใครได้ Center?">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="สารบัญ48th · เพลงที่ขอใน GE ได้ออกจริงไหม ใครได้ Center?">
+  <meta name="twitter:description" content="สำรวจว่าเพลงที่สมาชิกขอใน General Election ได้ออกจริงไหม และใครได้ Center ตามโพสต์ของ @ThamMiieZ">
+  <meta name="twitter:image" content="https://demo.sarabun48th.space/ge-song-wish/og.png">
+  <meta name="theme-color" content="#0c0a0b">
+  <meta name="color-scheme" content="dark">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/webp" sizes="512x512" href="/icon-512.webp">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/ge-song-wish/style.css">
+</head>
+<body>
+  <header class="wrap top">
+    <a class="brand" href="/"><img class="logo" src="/logo.webp" width="32" height="32" alt="">sarabun<span>48th</span></a>
+    <nav>
+      <a href="/">หน้าแรก</a>
+      <a href="#wishes">เพลงที่ขอ</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="wrap hero tour-hero">
+      <p class="back"><a href="/">← กลับหน้าแรก</a></p>
+      <h1>เพลงที่ขอใน GE ได้ออกจริงไหม ใครได้ Center?</h1>
+      <p class="hero-date">สำรวจข้อมูลจากโพสต์ของ <a href="https://x.com/ThamMiieZ/status/2124757516638966078" target="_blank" rel="noopener">@ThamMiieZ</a></p>
+    </section>
+
+    <section class="wrap hook" id="summary" aria-label="สรุป">
+      <p class="hook-count" id="summary-count"></p>
+      <p class="summary-fan" id="summary-fan"></p>
+    </section>
+
+    <section class="wrap" id="wishes">
+      <h2>เพลงที่ขอแล้วได้ออก <small>Wish songs</small></h2>
+      <p class="legend" id="legend">เพลงที่ขอ #1 #2 #3 หมายถึงลำดับเพลงที่สมาชิกขอใน GE ไม่ใช่อันดับ GE</p>
+      <div class="toolbar">
+        <div class="toolbar-main">
+          <label class="sr-only" for="q">ค้นหาชื่อสมาชิกหรือเพลง</label>
+          <input id="q" type="search" placeholder="ค้นหาชื่อสมาชิกหรือเพลง…" autocomplete="off">
+          <button type="button" class="filters-toggle" id="filters-toggle" aria-expanded="false" aria-controls="filters">ตัวกรอง</button>
+        </div>
+        <div class="filters" id="filters"></div>
+      </div>
+      <div class="view-bar">
+        <div class="view-toggle" role="group" aria-label="มุมมอง">
+          <button type="button" class="view-btn is-on" id="view-songs" aria-pressed="true">ดูเป็นการ์ดเพลง</button>
+          <button type="button" class="view-btn" id="view-rows" aria-pressed="false">ดูเป็นแถวสมาชิก</button>
+        </div>
+        <p class="hint count" id="count"></p>
+      </div>
+      <div class="song-cards" id="song-list"></div>
+      <div class="wish-list" id="list" hidden></div>
+      <p class="empty" id="empty" hidden>ไม่พบรายการที่ตรงกับคำค้น</p>
+    </section>
+
+    <section class="wrap" id="unwished">
+      <h2>เพลงที่ออกแล้ว แต่ไม่มีคนขอใน GE5 <small>No GE5 wish</small></h2>
+      <p class="hint" id="unwished-hint">เพลงที่ @ThamMiieZ ยกมาเทียบ ว่าออกหลังซิงเกิล Colorcon Wink โดยไม่มีรายชื่อคนขอใน GE5</p>
+      <div class="release-list" id="unwished-list"></div>
+    </section>
+
+    <section class="wrap hook tool-box" id="picker">
+      <p class="hook-kicker">ลองเลือกเพลงของคุณ</p>
+      <p class="tool-lead">เลือกได้สูงสุด 3 เพลง จากรายชื่อในหน้า 242 เพลง แล้วดูว่าในชุดข้อมูลนี้เพลงนั้นออกแล้วหรือยัง และ Center คือใคร</p>
+      <div class="picker-controls">
+        <label class="sr-only" for="song-q">ค้นหาเพลงเพื่อเลือก</label>
+        <input id="song-q" type="search" placeholder="ค้นหาชื่อเพลง ไทยหรือโรมาจิ…" autocomplete="off">
+        <p class="picker-limit" id="picker-limit">เลือกได้ 3 เพลง</p>
+      </div>
+      <div class="song-suggest" id="song-suggest" hidden></div>
+      <div class="picked" id="picked"></div>
+    </section>
+
+    <section class="wrap notes" id="notes">
+      <h2>ที่มาและหมายเหตุ <small>Sources</small></h2>
+      <ul id="sources"></ul>
+      <p class="source-note" id="source-note"></p>
+      <ul id="footnotes" class="footnotes"></ul>
+      <p class="help-note" id="help-note">ช่วยเติมข้อมูล: ถ้ามีโพสต์ประกาศ Center จากบัญชีทางการที่หน้านี้ยังไม่มี สามารถส่งลิงก์มาที่ <a href="https://x.com/sarabun48th" target="_blank" rel="noopener">@sarabun48th</a> ได้</p>
+    </section>
+  </main>
+
+  <footer class="wrap foot">
+    <div class="social" id="social"></div>
+    <p>ทำโดยแฟนคลับ เพื่อแฟนคลับ</p>
+    <p class="muted">© <span id="year"></span> sarabun48th</p>
+  </footer>
+  <!-- Cloudflare Web Analytics -->
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "1652b090f2434ea888c572dae8dbba6f","version":"2024.11.0","send":{"to":"/cdn-cgi/rum"}}'></script>
+  <!-- End Cloudflare Web Analytics -->
+  <script type="module" src="/ge-song-wish/app.js"></script>
+</body>
+</html>
